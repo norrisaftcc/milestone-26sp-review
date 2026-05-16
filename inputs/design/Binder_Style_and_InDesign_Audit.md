@@ -171,7 +171,7 @@ These align with the author's stated intent. Where Adobe Typekit is named, note 
 | Heading 1 (chapter / objective title) | **Goldman** Bold, 22–28pt | Google Fonts | Wedge-serif display face. Matches the "in-character / institutional banner" tone of the AlgoCratic Futures framing. If AF brand fonts arrive and include a display face, swap Goldman for that. |
 | Heading 2 (section) | **Exo** Bold 14–16pt | Google Fonts | Tonally consistent with body. |
 | Heading 3 (subsection) | **Exo** Semibold 11–12pt with small letterspacing | Google Fonts | |
-| Monospace (code, terminal voice, Sacred Workflow callouts, in-character "GREY clearance" tags) | **IBM Plex Mono** Regular 9.5–10pt | Google Fonts | Best legibility of the three monospaces; supports the simulation framing. |
+| Monospace (code, terminal voice, Sacred Workflow callouts, in-character "GRAY clearance" tags) | **IBM Plex Mono** Regular 9.5–10pt | Google Fonts | Best legibility of the three monospaces; supports the simulation framing. |
 | Display monospace (titles, banners, "AlgoCratic Futures™" wordmark contexts) | **Courier Prime** Bold | Google Fonts | Reserve for distinctive in-character moments; do not use for body code. |
 | Captions, footers, page numbers, classification banners | **Exo** Regular 8–9pt, tracking +20 | Google Fonts | The "Classification: Indigo and Above" banners in INDIGO and PerfZero v2 are currently Arial 7.5pt — Exo at the same visual size with +20 tracking will read as deliberate UI chrome. |
 | AF brand fonts (when delivered) | TBD by author | AF style guide | Likely candidates for Heading 1 / display roles, replacing Goldman if the style guide says so. |
@@ -189,7 +189,7 @@ Each of the four example documents contributes at least one element worth pullin
 | Coherent 3-color palette (`#1A2332` ink / `#2B4C6F` rule / `#595959` muted) | **Spring** | Base `ink` / `rule` / `muted` color tokens in the unified palette |
 | Single body face used consistently | **Spring** | The "one body face" principle — Exo (or the AF body face when delivered) replaces Calibri / Arial across the board |
 | Restraint to three heading levels actually applied | **Spring** | Only `Heading1` / `Heading2` / `Heading3` defined in the reference doc; `Heading4`–`Heading6` stripped |
-| Classification-banner / clearance-frame aesthetic | **INDIGO** | The `accent-indigo` / `accent-grey` palette slots, the `Caption` paragraph spec at +20 tracking, and a dedicated treatment for clearance tags |
+| Classification-banner / clearance-frame aesthetic | **INDIGO** | The `accent-indigo` / `accent-gray` palette slots, the `Caption` paragraph spec at +20 tracking, and a dedicated treatment for clearance tags |
 | Full-page brief composition with a top color block | **INDIGO** | Reproduced in InDesign as a styled text frame with a color block, *not* imported as anonymous Word tables (see import notes) |
 | Per-document footer naming the classification and page number | **INDIGO** and **PerfZero v2** | A single footer convention: one classification line + page number, applied across the binder with per-doc clearance text |
 | Header rule above page chrome | **PerfZero v2** | A 0.5pt rule on the header paragraph in the reference doc |
@@ -241,9 +241,9 @@ A minimal paragraph + character style list for the binder. Eight paragraph style
 | muted | `#595959` | Captions, footers, classification banners |
 | paper | `#FFFFFF` | Background |
 | accent-indigo | `#3D2080` | INDIGO clearance framing only |
-| accent-grey | `#666688` | GREY clearance framing only |
+| accent-gray | `#666688` | GRAY clearance framing only |
 
-Color tokens for the in-character clearance levels (INDIGO, GREY, etc.) belong in a separate "clearance palette" — they should be the *only* place those colors appear, not sprinkled through general body content.
+Color tokens for the in-character clearance levels (INDIGO, GRAY, etc.) belong in a separate "clearance palette" — they should be the *only* place those colors appear, not sprinkled through general body content.
 
 ---
 
@@ -298,5 +298,5 @@ A trivial script could grep the markdown sources for things that will produce di
 2. **Are Adobe Typekit fonts in or out of scope for the binder?** They cannot ride along in the `.docx` files. If the author wants to use them, the binder fonts at print time will come from the InDesign workstation's Adobe Fonts sync, not from the markdown pipeline. The Google Fonts list is the only candidate that can be installed locally and shared. Decide which world this binder lives in.
 3. **Is INDIGO's table-as-layout treatment intentional design, or an export artifact?** The current `.docx` builds the entire INDIGO brief as a series of full-width tables with cell shading. If that's the desired final design (institutional-classification banner aesthetic), it needs to be reproduced in InDesign as a proper text frame with a top color block — not as imported anonymous Word tables. If it's just how pandoc rendered something, the markdown source can be simplified.
 4. **Do PerfZero v1 and v2 both ship in the binder, or does v2 supersede v1?** They use different style names for the same logical heading levels, and v2's color palette in particular is much wider than v1's. If both ship, they need to reconcile. If only v2 ships, deleting v1 saves an inconsistency.
-5. **What goes in `Callout` paragraphs?** The recommended style above is reserved for "Sacred Workflow" / in-character pedagogy. The author should decide whether the AlgoCratic Futures clearance tags (GREY clearance, YELLOW exit tickets, etc.) get their own dedicated paragraph or character style, or all share `Callout`. The current `.docx` files use direct color and bold for these but no named style.
+5. **What goes in `Callout` paragraphs?** The recommended style above is reserved for "Sacred Workflow" / in-character pedagogy. The author should decide whether the AlgoCratic Futures clearance tags (GRAY clearance, YELLOW exit tickets, etc.) get their own dedicated paragraph or character style, or all share `Callout`. The current `.docx` files use direct color and bold for these but no named style.
 6. **Footer treatment per document.** Spring's footer says "Spring 2026 Performance Objectives"; INDIGO's says "Classification: Indigo and Above"; PerfZero v1's says "AlgoCratic Futures™ · Instructor OOC / Performance Documentation · Spring 2026"; PerfZero v2's says "Classification: Blue and Above". These need a per-document plan or a uniform plan — decide which.

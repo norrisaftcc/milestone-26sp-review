@@ -145,7 +145,7 @@ The student who arrives at zero and finishes at fifty has demonstrated something
 | System 2: Claude Code per-group setup documentation | Complete | AI tool integration scaffolding |
 | `CLAUDE.md` dual-purpose guardrail files | Complete | Pedagogical AI guardrails |
 | Growth gamification system (GitHub Actions + METRICS.md) | Designed; in progress | Learning-velocity measurement |
-| GREY Clearance instructional design onboarding brief | Complete | Cross-disciplinary integration |
+| GRAY Clearance instructional design onboarding brief | Complete | Cross-disciplinary integration |
 | Wireframing instructional deck (HTML/JS) | Complete | Gap-filling instructional content |
 | Group 4 late-start catch-up package | Complete | Differentiated access / resilient infrastructure |
 | AlgoCratic GitHub Pages site | In progress | Public-facing program identity |
@@ -185,7 +185,7 @@ The structured cross-disciplinary approach is now available as a model for other
 - An original, theoretically grounded, six-level immersive pedagogical environment built from scratch.
 - Assessment architecture that measures learning velocity rather than position, operationalizing growth-mindset research in rubric form.
 - Technical infrastructure (System 1, System 2, `CLAUDE.md` guardrails) enabling AI-tool integration as a first-class curricular component.
-- Cross-disciplinary collaboration framework built on the GREY clearance model (Objective 1).
+- Cross-disciplinary collaboration framework built on the GRAY clearance model (Objective 1).
 - Fully documented, replicable platform positioned for multi-semester deployment and institutional adoption.
 - Graduate Showcase output demonstrating professional-quality, publicly presented student work.
 

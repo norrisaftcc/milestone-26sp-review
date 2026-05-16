@@ -53,11 +53,11 @@ These are exactly the failure modes students encounter when collaboration struct
 
 The framework is organized around one insight: structure doesn't constrain creativity; it creates the conditions in which creativity can be delivered reliably.
 
-### Role Clarity: The GREY Clearance Model
+### Role Clarity: The GRAY Clearance Model
 
-Within the AlgoCratic Futures project context, Graphic Design students were designated **GREY clearance** — a cross-functional specialist role operating within the same project structure as CS teams but under a distinct operational mandate. This framing solved the most persistent problem in cross-disciplinary collaboration: role ambiguity.
+Within the AlgoCratic Futures project context, Graphic Design students were designated **GRAY clearance** — an acronym for *Guidance, Review, Aesthetic Yield*, naming a cross-functional specialist role operating within the same project structure as CS teams but under a distinct operational mandate. This framing solved the most persistent problem in cross-disciplinary collaboration: role ambiguity.
 
-When roles are vague, students default to either avoidance (waiting for the other party to define the work) or collision (overlapping efforts, conflicting directions). The GREY designation did four structural things:
+When roles are vague, students default to either avoidance (waiting for the other party to define the work) or collision (overlapping efforts, conflicting directions). The GRAY designation did four structural things:
 
 1. Established design students as specialized consultants with defined deliverables — not subordinate support, not passive recipients
 1. Positioned the Creative Brief as a formal work order between professional roles, creating mutual accountability

@@ -19,7 +19,7 @@ If a question is really about the curriculum, the simulation, or the dashboard i
 
 Authoritative summary: `inputs/Spring_2026_Performance_Objectives.md`. Long-form per-objective detail: `inputs/raw_material/`.
 
-- **Objective 1 — Cross-Departmental Capstone Collaboration:** Formalized CSC ↔ Graphic Design protocol with three milestone touchpoints, GREY-clearance role for GRD students inside the AlgoCratic Futures simulation, and a 100-point pitch/collaboration rubric.
+- **Objective 1 — Cross-Departmental Capstone Collaboration:** Formalized CSC ↔ Graphic Design protocol with three milestone touchpoints, GRAY-clearance role for GRD students inside the AlgoCratic Futures simulation, and a 100-point pitch/collaboration rubric.
 - **Objective 2 — GitHub / SCVC Instructional Modules:** Four modules anchored on the **Sacred Workflow** — `Issue → Branch → Draft PR → Code & Test → Finish PR → Review → Merge`. Scaffolded as Solo Burger → Team Lunch → Full Sprint.
 - **Objective 3 — Ghost Tool:** Applied the Objective 1/2 methodology (briefs, milestones, Sacred Workflow discipline) to a live institutional duplicate-enrollment project for Student Services.
 
@@ -46,5 +46,5 @@ Per `inputs/# Purpose of work.md`: the meta-recursion of *a performance review d
 
 - Don't propose CI, package management, test scaffolding, or linting. There is no code to lint.
 - Don't invent commands. There are none — `make`, `npm`, `pytest`, etc. do not apply.
-- Don't strip the in-character framing (AlgoCratic Futures, Sacred Workflow, GREY clearance, YELLOW exit tickets) out of documents. It is load-bearing pedagogy, not decorative flavor.
+- Don't strip the in-character framing (AlgoCratic Futures, Sacred Workflow, GRAY clearance, YELLOW exit tickets) out of documents. It is load-bearing pedagogy, not decorative flavor.
 - Don't commit a regenerated `.docx` without a matching update to its `.md` source.
