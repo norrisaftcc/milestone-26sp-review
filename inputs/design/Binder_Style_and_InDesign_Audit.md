@@ -163,25 +163,45 @@ Across all four documents combined, **486 of 557 runs carry direct character for
 
 ## Suggested font assignments
 
-> **Updated after the InDesign PDF calibration (PR #19).** The audit's original font assignments — built from the author's pre-design Fonts/Look-and-Feel notes — proposed Exo for body and Goldman for display, expecting AF brand fonts to arrive later. The designer's PDF export revealed the AF brand fonts are already in use as Adobe Typekit kit `qng8dvy`, with a deliberate sans-serif (display) / serif (body) split. The table below now reflects the designer's actual font system. The earlier proposal is preserved in git history.
+> **Updated after the InDesign PDF calibration (PR #19) and the IDML extraction (this PR).** The audit's original font assignments proposed Exo for body and Goldman for display. The PR #19 PDF font-catalog analysis identified the AF brand fonts but could not tell which family was assigned to which role; PR #21 adopted a sans-display / serif-body interpretation that the IDML now contradicts. The IDML (`inputs/design/AF_PerformanceObjective_Report.idml`, `Resources/Styles.xml`) is the source of truth: each AF paragraph style's `AppliedFont` attribute names the actual face. Body is Magistral; headlines and subheads are Kallisto; Title is Ethnocentric. The table below reflects that.
 
-| Role | Recommended face | Source | Notes |
-|---|---|---|---|
-| Body copy (long-form prose) | **Kallisto** Light or Medium 10–11pt, 1.4 line-height | Adobe Typekit (kit `qng8dvy`) | Serif by Hannes von Döhren / ITC. Deliberate counterpoint to the Magistral display sans — the audit's earlier "same family for body and headings" recommendation is **retired** in favor of this sans/serif split. |
-| Heading 1 (chapter / objective title) | **Magistral** Bold or ExtraBold, 22–28pt | Adobe Typekit (kit `qng8dvy`) | Geometric humanist sans by Paratype. Display face for chapter titles and the binder's branded chrome moments. |
-| Heading 2 (section) | **Magistral** Medium 14–16pt | Adobe Typekit (kit `qng8dvy`) | Same family as Heading 1, lighter weight for section breaks. |
-| Heading 3 (subsection) | **Magistral** Book 11–12pt with small letterspacing | Adobe Typekit (kit `qng8dvy`) | |
-| Monospace — routine voice (code, file paths, callouts, Sacred Workflow, in-character "GRAY clearance" tags, AlgoCratic Futures wordmark contexts) | **Courier Prime** Regular 9.5–10pt | Google Fonts | The audit's earlier "Courier Prime reserved for distinctive in-character moments only / IBM Plex Mono for routine code" recommendation is **retired**. The designer uses Courier Prime as the single monospace voice across the binder, and that consolidation is the right call — drops one font, drops one decision per paragraph. |
-| Captions, footers, page numbers, classification banners | **Magistral** Book or **Kallisto** Light, 8–9pt with tracking +20 | Adobe Typekit (kit `qng8dvy`) | Designer's actual choice between these two for chrome text not yet confirmed; visual confirmation pending the designer working session. |
-| Wordmark / brand chrome (`ALGOCRATIC FUTURES™` strap, `INSTITUTIONAL EFFECTIVENESS DIVISION` chrome) | **Ethnocentric Rg-Regular** | Adobe Typekit (kit `qng8dvy`) | Futuristic / techno sans. Reserved for the brand chrome moments — the cover wordmark and the institutional headers. Should *not* leak into body heading or paragraph styles. |
-| Decorative accent | **Thirsty Script Regular** | Adobe Typekit (kit `qng8dvy`) | Script face used sparingly for signature or tagline moments. Treat as a "designer's reserved tool" — do not invoke from markdown source. |
+| Role | AF style | Recommended face | Source | Notes |
+|---|---|---|---|---|
+| Title (cover, chapter opener) | `AF Title` | **Ethnocentric** 32pt | Adobe Typekit (kit `qng8dvy`) | Futuristic techno sans. Doubles as the wordmark face — `ALGOCRATIC FUTURES™` chrome — and the document Title style. |
+| Heading 1 (chapter / objective title) | `AF Headline` | **Kallisto** 22pt | Adobe Typekit (kit `qng8dvy`) | Display serif by Hannes von Döhren / ITC. The display voice. |
+| Heading 2 (section) | `AF Subheading` | **Kallisto** 16pt | Adobe Typekit (kit `qng8dvy`) | Same family as Headline, smaller. |
+| Heading 3 (subsection) | `AF Subheading` (folded) | **Kallisto** 16pt | Adobe Typekit (kit `qng8dvy`) | Per author direction, H3 maps to the same AF style as H2 — no separate visual tier needed at the binder level. |
+| Body copy (long-form prose) | `AF Body Text Clean` | **Magistral** 11pt, 140% leading | Adobe Typekit (kit `qng8dvy`) | Geometric humanist sans by Paratype. The body face. Also covers list items (`AF List Item`) and the framed-heading variant (`AF Heading Framed`). |
+| Monospace — routine voice (code, file paths, callouts, Sacred Workflow, in-character "GRAY clearance" tags) | `AF Body Text Typewriter` (paragraph) and `AF Inline Code` (character, new) | **Courier Prime** 11pt | Google Fonts | The designer uses Courier Prime as the single monospace voice. `AF Body Text Typewriter` is the paragraph style for code/callout blocks; an `AF Inline Code` character style is needed for inline code — the IDML currently has only paragraph-level Courier Prime, so the designer may want to create a matching character style. |
+| Captions, footers, classification banners | `AF Caption` | **Kallisto** 10pt | Adobe Typekit (kit `qng8dvy`) | |
+| Block quote / pull quote | `AF Pull Quote` | inherits (font not pinned in IDML) | Adobe Typekit (kit `qng8dvy`) | Designer applies font and size via character overrides; the paragraph style itself just sets spacing. |
+| Wordmark / brand chrome | `AF Title` / `AF Heading 6` | **Ethnocentric Rg-Regular** | Adobe Typekit (kit `qng8dvy`) | `AF Heading 6` (Ethnocentric 14pt) is the chrome-line variant — used for `INSTITUTIONAL EFFECTIVENESS DIVISION` straps and similar. |
+| Kicker / call-out label | `AF Kicker` | **Exo** 16pt | Adobe Typekit (kit `qng8dvy`) | The designer's only Exo usage — a deliberate accent face for kickers. Not invoked by the markdown source pipeline. |
+| Decorative accent | (designer-applied) | **Thirsty Script Regular** | Adobe Typekit (kit `qng8dvy`) | Script face. Designer's reserved tool; not surfaced as an AF paragraph or character style for source markdown to invoke. |
 
-**On Adobe Typekit:** Typekit fonts cannot embed in `.docx` — Word and pandoc do not consume web-font CSS at export time, and the resulting `.docx` will not carry the typeface metrics. The designer's InDesign workstation has the kit activated via Adobe Fonts; this is what allows the PDF to render the layout correctly. The `.docx` export pipeline (Word, pandoc) therefore needs *one of*: (a) the same Adobe Fonts kit activated on whichever workstation runs the build, or (b) a documented font-fallback chain in the reference doc (e.g., a Google Fonts second-choice such as Exo for Magistral's sans role, Lora for Kallisto's serif role) that lets non-Typekit machines build the binder with acceptable substitution and the designer's machine remains the source of truth for final layout.
+### Pandoc → AF style name mapping
 
-**Two audit recommendations explicitly retired** (recorded here so future readers don't reintroduce them):
+For the build pipeline to land in the right AF style on InDesign import, pandoc-emitted style names are rewritten in the reference doc:
 
-1. *"Body and headings share the same family"* — replaced by the deliberate Magistral (sans, display) + Kallisto (serif, body) split.
-2. *"Courier Prime reserved for distinctive in-character moments only; IBM Plex Mono for routine monospace"* — replaced by Courier Prime as the single routine monospace voice. IBM Plex Mono drops out of the recommendation set entirely.
+| Pandoc emits (`w:name`) | Renamed to | Notes |
+|---|---|---|
+| `Title` | `AF Title` | |
+| `heading 1` | `AF Headline` | |
+| `heading 2` | `AF Subheading` | |
+| `heading 3` | `AF Subheading` | Folded per author direction |
+| `Body Text` | `AF Body Text Clean` | |
+| `Block Text` | `AF Pull Quote` | |
+| `Caption` | `AF Caption` | |
+| `Verbatim Char` | `AF Inline Code` | New character-style name; designer may want to create matching style in InDesign |
+| `List Paragraph` | (not yet renamed) | Pandoc creates this at emission, not in the reference doc. Known limitation — handled via InDesign style-mapping preset or a future post-emit script. |
+
+**On Adobe Typekit:** Typekit fonts cannot embed in `.docx` — Word and pandoc do not consume web-font CSS at export time, and the resulting `.docx` will not carry the typeface metrics. The designer's InDesign workstation has the kit activated via Adobe Fonts. The `.docx` export pipeline (Word, pandoc) therefore needs *one of*: (a) the same Adobe Fonts kit activated on whichever workstation runs the build, or (b) a documented font-fallback chain in the reference doc (e.g., a Google Fonts second-choice such as Lora for Kallisto's display-serif role, Exo for Magistral's sans-body role) that lets non-Typekit machines build the binder with acceptable substitution.
+
+**Audit recommendations explicitly retired** (recorded here so future readers don't reintroduce them):
+
+1. *"Body and headings share the same family"* (audit original) — retired by PR #21 in favor of a sans/serif split.
+2. *"Courier Prime reserved for distinctive in-character moments only; IBM Plex Mono for routine monospace"* (audit original) — retired by PR #21. Courier Prime is the single routine monospace voice.
+3. *"Body = Kallisto (serif); Heading = Magistral (sans)"* (PR #21 + PR #22 interpretation of the PDF font catalog) — retired by this PR. The IDML's `AppliedFont` attributes show Magistral on `AF Body Text Clean` and Kallisto on `AF Headline` / `AF Subheading` — the direction is reversed.
 
 ---
 
@@ -192,7 +212,7 @@ Each of the four example documents contributes at least one element worth pullin
 | Element | Source | Adopted as |
 |---|---|---|
 | Coherent 3-color palette (`#1A2332` ink / `#2B4C6F` rule / `#595959` muted) | **Spring** | Base `ink` / `rule` / `muted` color tokens in the unified palette |
-| Single body face used consistently | **Spring** | The "one body face" principle — Kallisto (the designer's settled body face, per PR #19's calibration) replaces Calibri / Arial across the board |
+| Single body face used consistently | **Spring** | The "one body face" principle — Magistral (the designer's settled body face, per IDML extraction) replaces Calibri / Arial across the board |
 | Restraint to three heading levels actually applied | **Spring** | Only `Heading1` / `Heading2` / `Heading3` defined in the reference doc; `Heading4`–`Heading6` stripped |
 | Classification-banner / clearance-frame aesthetic | **INDIGO** | The `accent-indigo` / `accent-gray` palette slots, the `Caption` paragraph spec at +20 tracking, and a dedicated treatment for clearance tags |
 | Full-page brief composition with a top color block | **INDIGO** | Reproduced in InDesign as a styled text frame with a color block, *not* imported as anonymous Word tables (see import notes) |
