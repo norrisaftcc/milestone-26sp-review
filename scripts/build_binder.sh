@@ -19,10 +19,9 @@ REFERENCE_DOC="$REPO_ROOT/inputs/design/binder-reference.docx"
 OUT_DIR="$REPO_ROOT/outputs"
 
 # Sources in binder read order. Numeric prefixes (01_, 02_, ...) make the
-# reader sequence explicit. Internal scratchpads (`# Purpose of work.md`,
-# `# PHILOSOPHICAL ISSUES.md`) and the supporting_documentation/ appendix
-# files are deliberately excluded from the main build — appendix material
-# can be added via a `--with-supporting` flag in a follow-up if needed.
+# reader sequence explicit. 01–06 are the binder chapters; 07–09 are the
+# supporting documentation appendix files. Internal scratchpads
+# (`# Purpose of work.md`, `# PHILOSOPHICAL ISSUES.md`) remain excluded.
 SOURCES=(
   "inputs/01_Introduction.md"
   "inputs/02_Executive_Summary.md"
@@ -30,6 +29,9 @@ SOURCES=(
   "inputs/04_Objective_2_Source_Control_Version_Control_Instructional_Modules.md"
   "inputs/05_Objective_3_Ghost_Student_Discovery_Tool.md"
   "inputs/06_Performance_Objective_Zero.md"
+  "inputs/supporting_documentation/07_capstone_research_support.md"
+  "inputs/supporting_documentation/08_ghost_tool_research_support.md"
+  "inputs/supporting_documentation/09_Adjacent_Faculty_Engagement.md"
 )
 
 if ! command -v pandoc >/dev/null 2>&1; then
