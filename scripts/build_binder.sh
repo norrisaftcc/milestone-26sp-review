@@ -18,16 +18,18 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 REFERENCE_DOC="$REPO_ROOT/inputs/design/binder-reference.docx"
 OUT_DIR="$REPO_ROOT/outputs"
 
-# Sources in binder order. Internal-only documents (`# Purpose of work.md`,
-# `# PHILOSOPHICAL ISSUES.md`) are deliberately excluded — those are author
-# scratchpads, not binder content per the project's own framing.
+# Sources in binder read order. Numeric prefixes (01_, 02_, ...) make the
+# reader sequence explicit. Internal scratchpads (`# Purpose of work.md`,
+# `# PHILOSOPHICAL ISSUES.md`) and the supporting_documentation/ appendix
+# files are deliberately excluded from the main build — appendix material
+# can be added via a `--with-supporting` flag in a follow-up if needed.
 SOURCES=(
-  "inputs/Spring_2026_Performance_Objectives.md"
-  "inputs/raw_material/Objective_1_Cross-Departmental_Capstone_Collaboration_Framework.md"
-  "inputs/raw_material/Objective_2_Source_Control_Version_Control_Instructional_Modules.md"
-  "inputs/raw_material/Objective_3_Ghost_Student_Discovery_Tool.md"
-  "inputs/raw_material/obj1_research_support.md"
-  "inputs/raw_material/obj3_research_support.md"
+  "inputs/01_Introduction.md"
+  "inputs/02_Executive_Summary.md"
+  "inputs/03_Objective_1_Cross-Departmental_Capstone_Collaboration_Framework.md"
+  "inputs/04_Objective_2_Source_Control_Version_Control_Instructional_Modules.md"
+  "inputs/05_Objective_3_Ghost_Student_Discovery_Tool.md"
+  "inputs/06_Performance_Objective_Zero.md"
 )
 
 if ! command -v pandoc >/dev/null 2>&1; then
