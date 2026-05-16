@@ -34,7 +34,7 @@ scripts/build_binder.sh --clean
 
 ### What gets built
 
-Six `.docx` files land flat in `outputs/`, in binder read order:
+Eight `.docx` files land flat in `outputs/`, in binder read order — six binder chapters plus the two-file supporting research appendix:
 
 | Output | Source | Role |
 |---|---|---|
@@ -44,8 +44,13 @@ Six `.docx` files land flat in `outputs/`, in binder read order:
 | `04_Objective_2_Source_Control_Version_Control_Instructional_Modules.docx` | `inputs/04_*.md` | Obj 2 detail (SCVC instructional modules) |
 | `05_Objective_3_Ghost_Student_Discovery_Tool.docx` | `inputs/05_*.md` | Obj 3 detail (Ghost Tool / PM support) |
 | `06_Performance_Objective_Zero.docx` | `inputs/06_*.md` | Foundational meta-objective (AlgoCratic Futures architecture, Dilts six-level model) |
+| `07_capstone_research_support.docx` | `inputs/supporting_documentation/07_*.md` | Appendix — Obj 1 supporting research |
+| `08_ghost_tool_research_support.docx` | `inputs/supporting_documentation/08_*.md` | Appendix — Obj 3 supporting research (ghost-student fraud brief) |
 
-Internal scratchpads (`inputs/# Purpose of work.md`, `inputs/raw_material/# PHILOSOPHICAL ISSUES.md`) and the supporting documentation appendix (`inputs/supporting_documentation/*.md`) are deliberately excluded from the main build. Appendix material can be added via a `--with-supporting` flag in a follow-up if reviewer scope expands.
+Not built into the binder:
+
+- `inputs/supporting_documentation/Adjacent_Faculty_Engagement.md` — appendix reference material kept alongside the binder but not part of the built `.docx` set.
+- `inputs/# Purpose of work.md` and `inputs/raw_material/# PHILOSOPHICAL ISSUES.md` — author scratchpads, not binder content.
 
 ### Reference doc (style consistency)
 
