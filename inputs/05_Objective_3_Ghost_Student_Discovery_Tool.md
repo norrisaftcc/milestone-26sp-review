@@ -96,6 +96,26 @@ Effective Summer 2025, the U.S. Department of Education implemented mandatory id
 
 ---
 
+## Tool Capabilities
+
+Delivered by the development team (lead developers **HS** and **MM**, supporting developer **BS**, team lead **DT**); summarized here for binder context. Full technical credit belongs to the team.
+
+- Composite-signal duplicate detection across names, addresses, emails, and phone numbers.
+- Configurable sensitivity thresholds with weighted confidence scoring.
+- Flagged-record reporting with field-level match breakdown for staff review.
+
+---
+
+## Outcomes
+
+- Tool operational and in use by Student Services for ongoing enrollment-cycle screening.
+- Manual review burden reduced from ~12,000 records to a tractable flagged subset.
+- Stakeholder validation: Student Services confirmed the tool's signal set — phone, address, program-placement, and email-design patterns — matches the patterns they encounter operationally (25–40 suspected applications per average week, hundreds at peak two weeks before first day of class).
+- Requirements and documentation artifacts available for the team's continued refinement and for any future similar engagements.
+- The engagement served as a live application of the curriculum methodology outside the classroom — the same briefing, milestone, and feedback patterns used in CSC 289 operating in a cross-stakeholder institutional context.
+
+---
+
 ## Alignment with Institutional Mission
 
 The Ghost Student Discovery Tool directly protects FTCC's ability to serve legitimate students by reducing enrollment fraud, safeguarding federal financial aid eligibility, and closing vulnerabilities that have already been exploited in documented, prosecuted cases targeting this institution. Deploying detection tooling places FTCC ahead of the NC Community College System's current posture — which research indicates **has not yet adopted** the AI-powered screening, identity verification, or system-wide fraud prevention frameworks deployed by peer systems in Virginia, California, and Pennsylvania — and aligns with the Department of Education's escalating enforcement posture.
