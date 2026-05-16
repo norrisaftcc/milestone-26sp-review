@@ -34,18 +34,18 @@ scripts/build_binder.sh --clean
 
 ### What gets built
 
-Six `.docx` files land flat in `outputs/`:
+Six `.docx` files land flat in `outputs/`, in binder read order:
 
-| File | Source |
-|---|---|
-| `Spring_2026_Performance_Objectives.docx` | Centerpiece overview |
-| `Objective_1_Cross-Departmental_Capstone_Collaboration_Framework.docx` | Obj 1 detail |
-| `Objective_2_Source_Control_Version_Control_Instructional_Modules.docx` | Obj 2 detail |
-| `Objective_3_Ghost_Student_Discovery_Tool.docx` | Obj 3 detail (Ghost Tool / PM support) |
-| `obj1_research_support.docx` | Obj 1 supporting research |
-| `obj3_research_support.docx` | Obj 3 supporting research (ghost-student fraud brief) |
+| Output | Source | Role |
+|---|---|---|
+| `01_Introduction.docx` | `inputs/01_Introduction.md` | Binder front matter — what this binder documents, the dy/dx methodological thread, the in-character apparatus |
+| `02_Executive_Summary.docx` | `inputs/02_Executive_Summary.md` | One-page synthesis: metrics, per-objective summaries, bottom line |
+| `03_Objective_1_Cross-Departmental_Capstone_Collaboration_Framework.docx` | `inputs/03_*.md` | Obj 1 detail (cross-departmental capstone) |
+| `04_Objective_2_Source_Control_Version_Control_Instructional_Modules.docx` | `inputs/04_*.md` | Obj 2 detail (SCVC instructional modules) |
+| `05_Objective_3_Ghost_Student_Discovery_Tool.docx` | `inputs/05_*.md` | Obj 3 detail (Ghost Tool / PM support) |
+| `06_Performance_Objective_Zero.docx` | `inputs/06_*.md` | Foundational meta-objective (AlgoCratic Futures architecture, Dilts six-level model) |
 
-Internal-only docs (`inputs/# Purpose of work.md`, `inputs/raw_material/# PHILOSOPHICAL ISSUES.md`) are deliberately excluded — they are author scratchpads, not binder content.
+Internal scratchpads (`inputs/# Purpose of work.md`, `inputs/raw_material/# PHILOSOPHICAL ISSUES.md`) and the supporting documentation appendix (`inputs/supporting_documentation/*.md`) are deliberately excluded from the main build. Appendix material can be added via a `--with-supporting` flag in a follow-up if reviewer scope expands.
 
 ### Reference doc (style consistency)
 
