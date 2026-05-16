@@ -8,8 +8,14 @@ designer's font system:
 
     Body / Normal / lists / captions    -> Kallisto      (Adobe Typekit)
     Heading 1 / 2 / 3 (display)         -> Magistral     (Adobe Typekit)
-    Callout / inline code (Verbatim)    -> Courier Prime (Google Fonts)
+    Inline code (VerbatimChar)          -> Courier Prime (Google Fonts)
     Heading ink color                   -> #1A2332
+
+The audit also specifies a `Callout` paragraph style (Courier Prime,
+ruled left, indented) for Sacred Workflow / in-character pedagogy
+blocks. That style is NOT yet created here — adding a new paragraph
+style to pandoc's reference doc is a larger change than the in-place
+font substitutions this script does. Tracked as follow-up.
 
 This is a one-shot tool. Re-run only when font specs change.
 
@@ -40,6 +46,12 @@ MONOSPACE_FONT = "Courier Prime"
 INK_COLOR = "1A2332"  # audit's `ink` token
 
 
+# Each substitution is (label, src, dst, expected_count). The expected
+# count is the number of occurrences of `src` in pandoc's *current* default
+# reference doc. If a future pandoc version shifts these (renames styles,
+# reorganizes the theme references, etc.), the script will emit a WARN and
+# exit non-zero — preferable to silently producing a partially styled
+# reference doc that "looks right" but only covers some of the styles.
 SUBSTITUTIONS = [
     # docDefaults rFonts (theme-referenced) -> Kallisto explicit family
     (
@@ -48,8 +60,11 @@ SUBSTITUTIONS = [
         ' w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" />',
         f'<w:rFonts w:ascii="{BODY_FONT}" w:hAnsi="{BODY_FONT}"'
         f' w:eastAsia="{BODY_FONT}" w:cs="{BODY_FONT}" />',
+        1,
     ),
-    # Heading rFonts (theme-referenced, used by Heading1 / 2 / 3) -> Magistral
+    # Heading rFonts (theme-referenced) -> Magistral. Appears 6x in pandoc's
+    # default: Heading 1 / 2 / 3 paragraph styles + their Heading{N}Char
+    # character-style siblings.
     (
         "Heading rFonts -> Magistral (H1/H2/H3)",
         '<w:rFonts w:asciiTheme="majorHAnsi"\n'
@@ -57,25 +72,37 @@ SUBSTITUTIONS = [
         '      w:cstheme="majorBidi" />',
         f'<w:rFonts w:ascii="{HEADING_FONT}" w:hAnsi="{HEADING_FONT}"'
         f' w:eastAsia="{HEADING_FONT}" w:cs="{HEADING_FONT}" />',
+        6,
     ),
-    # Heading color (theme accent1 with shade) -> ink token
+    # Heading color (theme accent1 with shade) -> ink token. Appears 10x in
+    # pandoc's default — every heading-color reference across the H1/2/3
+    # paragraph + character styles plus a few other heading-derived styles.
     (
         "Heading color -> ink (#1A2332)",
         '<w:color w:val="0F4761" w:themeColor="accent1"\n      w:themeShade="BF" />',
         f'<w:color w:val="{INK_COLOR}" />',
+        10,
     ),
-    # VerbatimChar / inline code monospace -> Courier Prime
+    # VerbatimChar / inline code monospace -> Courier Prime. One occurrence.
     (
         "VerbatimChar (inline code) -> Courier Prime",
         '<w:rFonts w:ascii="Consolas" w:hAnsi="Consolas" />',
         f'<w:rFonts w:ascii="{MONOSPACE_FONT}" w:hAnsi="{MONOSPACE_FONT}" />',
+        1,
     ),
 ]
 
 
 def main() -> int:
     if not shutil.which("pandoc"):
-        print("ERROR: pandoc not on PATH. Install via `brew install pandoc`.", file=sys.stderr)
+        print(
+            "ERROR: 'pandoc' is not on PATH.\n\n"
+            "Install on macOS:\n"
+            "    brew install pandoc\n\n"
+            "Install on Ubuntu/Debian:\n"
+            "    sudo apt install pandoc\n",
+            file=sys.stderr,
+        )
         return 1
 
     workdir = tempfile.mkdtemp(prefix="binder-ref-build-")
@@ -98,12 +125,18 @@ def main() -> int:
             xml = f.read()
 
         any_failed = False
-        for label, src, dst in SUBSTITUTIONS:
-            if src not in xml:
+        for label, src, dst, expected in SUBSTITUTIONS:
+            count = xml.count(src)
+            if count == 0:
                 print(f"  WARN: substitution '{label}' did not match — pandoc's default may have shifted")
                 any_failed = True
                 continue
-            count = xml.count(src)
+            if count != expected:
+                print(
+                    f"  WARN: substitution '{label}' matched {count}x but expected {expected}x"
+                    " — pandoc's default may have shifted"
+                )
+                any_failed = True
             xml = xml.replace(src, dst)
             print(f"  applied: {label} ({count}x)")
 

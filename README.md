@@ -64,4 +64,4 @@ scripts/build_reference_doc.py
 
 This is a one-shot tool. It pulls pandoc's default reference doc, substitutes the binder's font assignments into `word/styles.xml`, and writes the result to `inputs/design/binder-reference.docx`. The build script picks the new reference doc up automatically on the next run.
 
-If the reference doc is ever removed, the build falls back to pandoc's defaults (Calibri / Arial / Consolas) so the build is still functional; output just won't reflect the designer's font choices.
+If the reference doc is ever removed, the build falls back to pandoc's defaults so the build is still functional; output just won't reflect the designer's font choices (exact substitutes depend on the installed pandoc version and the workstation's available fonts).
