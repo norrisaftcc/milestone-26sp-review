@@ -54,6 +54,14 @@ Not built into the binder:
 
 ### Reference doc (style consistency)
 
-If a Word reference document exists at `inputs/design/binder-reference.docx`, the build picks it up automatically via pandoc's `--reference-doc=` flag, producing `.docx` output that conforms to the unified style set defined in [`inputs/design/Binder_Style_and_InDesign_Audit.md`](inputs/design/Binder_Style_and_InDesign_Audit.md).
+The build uses `inputs/design/binder-reference.docx` as pandoc's `--reference-doc=` so every output `.docx` references the designer's font system: **Kallisto** for body, **Magistral** for headings, **Courier Prime** for monospace/inline code, with the `#1A2332` ink color on headings. These are the AF brand fonts as confirmed by the InDesign PDF calibration in PR #19.
 
-If the reference doc is absent, the build falls back to pandoc's defaults so the designer has concrete output to react to on the first pass. Creating the reference doc is a follow-up once the designer settles on fonts (item 1 in the audit's "needing human judgment" list).
+To regenerate the reference doc (only needed if the font spec changes):
+
+```bash
+scripts/build_reference_doc.py
+```
+
+This is a one-shot tool. It pulls pandoc's default reference doc, substitutes the binder's font assignments into `word/styles.xml`, and writes the result to `inputs/design/binder-reference.docx`. The build script picks the new reference doc up automatically on the next run.
+
+If the reference doc is ever removed, the build falls back to pandoc's defaults (Calibri / Arial / Consolas) so the build is still functional; output just won't reflect the designer's font choices.
