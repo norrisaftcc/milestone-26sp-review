@@ -79,14 +79,15 @@ for src in "${SOURCES[@]}"; do
   base="$(basename "$src" .md)"
   dst="$OUT_DIR/${base}.docx"
   printf "  ->    %s\n" "$dst"
-  if [ ${#PANDOC_ARGS[@]} -gt 0 ]; then
-    pandoc "$src_path" "${PANDOC_ARGS[@]}" -o "$dst"
-  else
-    pandoc "$src_path" -o "$dst"
-  fi
+  pandoc "$src_path" "${PANDOC_ARGS[@]}" -o "$dst"
   built=$((built + 1))
 done
 
 echo "------------------------------------------------------------"
 echo "Built $built file(s); skipped $missing missing source(s)."
 echo "Review the .docx files in $OUT_DIR/."
+
+# Exit non-zero if any source from the allowlist was missing — silent
+# partial builds would hand the designer or author an incomplete review
+# set without anyone noticing.
+[ "$missing" -eq 0 ]

@@ -3,7 +3,7 @@
 
 This repository and binder have been implemented using the Algocratic Futures "Sacred Workflow" method.
 They serve to demonstrate iterative software development using a team of AI agents.
-See Issues, Pull Requests for supplemental documentation.
+See Issues and Pull Requests for supplemental documentation.
 
 ## Building the binder for review
 
