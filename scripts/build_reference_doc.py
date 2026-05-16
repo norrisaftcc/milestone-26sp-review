@@ -138,26 +138,26 @@ SUBSTITUTIONS = [
 # below are expected to duplicate, but the validation handles it if pandoc
 # shifts).
 STYLE_NAME_RENAMES = [
-    ("Title",          "AF Title",            1),
-    ("heading 1",      "AF Headline",         1),
-    ("heading 2",      "AF Subheading",       1),
-    ("heading 3",      "AF Subheading",       1),  # author: H3 folds to H2's AF style
-    ("Body Text",      "AF Body Text Clean",  1),
-    ("Block Text",     "AF Pull Quote",       1),
-    ("Caption",        "AF Caption",          1),
-    ("Verbatim Char",  "AF Inline Code",      1),
+    ("Title",            "AF Title",            1),
+    ("heading 1",        "AF Headline",         1),
+    ("heading 2",        "AF Subheading",       1),
+    ("heading 3",        "AF Subheading",       1),  # author: H3 folds to H2's AF style
+    ("Body Text",        "AF Body Text Clean",  1),
+    ("Block Text",       "AF Pull Quote",       1),
+    ("Caption",          "AF Caption",          1),
+    ("Verbatim Char",    "AF Inline Code",      1),
+    # Pandoc-default styles used for body text variants. Fold into
+    # AF Body Text Clean — multiple .docx styles sharing the same w:name
+    # all resolve to the same target on InDesign import.
+    ("Compact",          "AF Body Text Clean",  1),
+    ("First Paragraph",  "AF Body Text Clean",  1),
 ]
 
-# Known limitation: pandoc creates `ListParagraph` (w:name="List Paragraph")
-# at .docx emission time rather than carrying it through the reference doc,
-# so we can't rename it via this script. Lists in the output `.docx` will
-# arrive in InDesign with w:name="List Paragraph" and won't auto-match
-# `AF List Item`. The designer will need either:
-#   (a) a Word-to-InDesign style mapping preset that maps "List Paragraph"
-#       to "AF List Item" on Place;
-#   (b) a follow-up build step that post-processes outputs/*.docx to
-#       rewrite ListParagraph's w:name.
-# Tracked as follow-up; out of scope for the IDML-correction iteration.
+# Note: `ListParagraph` (w:name="List Paragraph") and `SourceCode`
+# (w:name="Source Code") are NOT in pandoc's reference doc — pandoc creates
+# them at .docx emission time. They're handled by
+# `scripts/_postprocess_output_styles.py`, which `scripts/build_binder.sh`
+# runs against each output after pandoc emits it.
 
 
 def main() -> int:

@@ -86,6 +86,11 @@ for src in "${SOURCES[@]}"; do
   dst="$OUT_DIR/${base}.docx"
   printf "  ->    %s\n" "$dst"
   pandoc "$src_path" "${PANDOC_ARGS[@]}" -o "$dst"
+  # Post-emit: rename pandoc-generated-at-emission styles (ListParagraph,
+  # SourceCode) to their AF equivalents. The reference-doc path can't reach
+  # these — they don't exist there to be substituted. Quiet-by-default;
+  # the helper prints one line per non-empty rename.
+  python3 "$REPO_ROOT/scripts/_postprocess_output_styles.py" "$dst"
   built=$((built + 1))
 done
 
