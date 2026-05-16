@@ -89,7 +89,7 @@ Review framework with four categories (Functionality, Readability, Best Practice
 
 ## Objective 3: Ghost Student Discovery Tool — Project Management & Requirements Support
 
-**Status:** Tool shipped May 2026, delivered by the CPD Tools Group development team with primary development by **HS** and **MM**; support role complete.
+**Status:** Tool shipped May 2026, delivered by the CPD Tools Group development team — lead developers **HS** and **MM**, supporting developer **BS**, team lead **DT**; support role complete.
 
 **Purpose:** Provide project management, Agile/Scrum mentoring, requirements gathering, and documentation support to the Ghost Student Discovery Tool development team — a team objective focused on detecting ghost-student fraud and other anomalous enrollment patterns across the college's ~12,000 student records, in alignment with the U.S. Department of Education's mid-2025 identity-verification mandates and ahead of the Fall 2026 enrollment cycle.
 
@@ -99,7 +99,7 @@ Review framework with four categories (Functionality, Readability, Best Practice
 
 - **Project Management Support** — milestone coordination, obstacle resolution, and stakeholder feedback cycles modeled on the Sprint-review pattern from CSC 289.
 - **Agile/Scrum Mentoring** — establishing the same GitHub-anchored Sacred Workflow taught in Objective 2 as the development team's non-optional standard, including issue tracking, branch discipline, and pull-request review.
-- **Requirements Gathering** — interviews with Student Services and administrative staff, documentation of the existing manual review process, identification of pain points, articulation of acceptance criteria.
+- **Requirements Gathering** — interviews with Student Services and administrative staff, documentation of the existing manual review process, identification of pain points, articulation of acceptance criteria; stakeholder-observed fraud patterns translated into signal categories that all shipped in the tool.
 - **Documentation** — user-facing materials for non-technical Student Services staff, configuration documentation for IT, and sustained brief and stakeholder communications across iteration cycles.
 
 **Tool capabilities (delivered by the development team, for context):**

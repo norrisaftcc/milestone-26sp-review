@@ -28,7 +28,14 @@
 
 ## Development Team
 
-The Ghost Student Discovery Tool was designed, built, tested, and shipped by the CPD Tools Group development team. Primary development was completed by **HS** and **MM**, who carried the bulk of design, implementation, and ship-readiness work. Full credit for the technical delivery belongs to the development team; the objective documented here covers the project-management, requirements, and process-discipline scaffolding that ran alongside their work.
+The Ghost Student Discovery Tool was designed, built, tested, and shipped by the CPD Tools Group development team:
+
+- **HS** and **MM** — lead developers; primary design, implementation, and ship-readiness work.
+- **BS** — supporting developer.
+- **DT** — team lead.
+- **[REDACTED]** (the contributor documented here) — project management support, as detailed in the Contribution Summary below.
+
+Full credit for the technical delivery belongs to the development team; the objective documented here covers the project-management, requirements, and process-discipline scaffolding that ran alongside their work.
 
 ---
 
@@ -84,7 +91,7 @@ Effective Summer 2025, the U.S. Department of Education implemented mandatory id
 |---|---|---|
 | **Project Management Support** | Coordinated planning, milestone tracking, and obstacle resolution across the development cycle; surfaced and helped resolve cross-team blockers; maintained brief-and-feedback cadences modeled on the Sprint-review patterns codified in Objectives 1 and 2. | Kept the project on track for a May 2026 ship date aligned with federal compliance timelines and ahead of Fall 2026 enrollment. |
 | **Agile/Scrum Mentoring** | Advocated for and established Scrum methodology and GitHub-based version control, issue tracking, and pull-request workflows as non-optional project standards for the team — the same Sacred Workflow taught in CSC 289 (Objective 2), now applied to a live institutional project. | Provided the process discipline necessary for a cross-functional tool with institutional compliance implications, consistent with AACRAO guidance recommending structured workflows for fraud prevention teams. |
-| **Requirements Gathering** | Collected and documented customer requirements from institutional stakeholders (Student Services, financial aid, admissions, registrar, IT) to define detection criteria and workflow needs. | Ensured the tool addressed real operational pain points from documented and prosecuted fraud cases, rather than theoretical requirements. |
+| **Requirements Gathering** | Collected and documented customer requirements from institutional stakeholders (Student Services, financial aid, admissions, registrar, IT). Translated stakeholder-observed fraud patterns — shared phone numbers across applicants, mismatched and out-of-state addresses, synthetic email constructions, target-program concentration — into structured signal categories handed to the development team as action items. | All requested detection signals shipped as implemented capabilities in the May 2026 release. |
 | **Documentation** | Produced and maintained user-facing materials for non-technical Student Services staff and configuration documentation for IT; sustained brief artifacts and stakeholder communications across iteration cycles. | Reduced onboarding friction for downstream users and produced reusable documentation artifacts for the team's continued refinement and for any future similar engagements. |
 
 ---
