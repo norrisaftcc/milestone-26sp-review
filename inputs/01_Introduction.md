@@ -9,7 +9,7 @@
 
 ## What This Binder Documents
 
-This binder documents three completed performance objectives undertaken during the Spring 2026 review period — and one fourth objective that was not, strictly speaking, assigned. The three formal objectives are discrete deliverables: a cross-departmental capstone framework, a four-module source-control curriculum, and a project-management contribution to a live institutional fraud-detection tool. They were specified in advance, completed on schedule, and assessed against criteria the reviewer can verify against the supporting artifacts.
+This binder documents three completed performance objectives undertaken during the Spring 2026 review period — and a fourth objective that was not, strictly speaking, assigned. The three formal objectives are discrete deliverables: a cross-departmental capstone framework, a four-module source-control curriculum, and a project-management contribution to a live institutional fraud-detection tool. They were specified in advance, completed on schedule, and assessed against criteria the reviewer can verify against the supporting artifacts.
 
 The fourth objective — labeled here as Objective Zero — is the design and construction of the instructional environment inside which the other three operate. It is documented last in the binder because it is the architecture, and architecture is most usefully read after the reader has held the finished rooms in hand.
 
@@ -30,7 +30,7 @@ Standard performance assessment — for students, for instructors, for instituti
 
 This is the wrong measurement.
 
-What matters in a community college serving the Research Triangle job market — and what matters to any employer screening recent graduates — is **dy/dx**: the rate at which a person develops capability. A student who arrived at zero and finished at fifty has demonstrated something more consequential for a hiring manager than the student who arrived at sixty and finished at sixty-five. They demonstrated that they will not stay where they started. That is the trait an employer is actually buying when they hire entry-level talent. Credentials measure y. Careers are built on dy/dx.
+What matters in a community college serving the Research Triangle job market — and what matters to any employer screening recent graduates — is **dy/dx**: the rate at which a person develops capability. A student who arrived at zero and finished at fifty has demonstrated something more consequential for a hiring manager than the student who arrived at sixty and finished at sixty-five: they will not stay where they started. Credentials measure y. Careers are built on dy/dx.
 
 The same logic applies one level up. A pedagogical framework that produces measurable iteration — students opening pull requests they would not previously have opened, design students sitting inside Scrum ceremonies they would not previously have attended, peer reviews that climb in quality over the term — is worth more than a curriculum that produces a higher single-point exam average and no observable change in behavior. The rubrics in this binder are constructed accordingly. They reward documented iteration over polished one-shot submission. They surface growth that absolute-position grading erases.
 
@@ -42,7 +42,7 @@ This is not a metaphor. It is a rubric design specification, applied consistentl
 
 Several elements of this binder use in-character terminology drawn from AlgoCratic Futures — the satirical corporate-dystopia frame within which CSC 289 and CTS 285 are delivered. Readers will encounter the **Sacred Workflow** (the named, repeatable Git process students practice through capstone — `Issue → Branch → Draft PR → Code & Test → Finish PR → Review → Merge`); the **clearance progression** (INFRARED → BLUE → INDIGO → VIOLET → ULTRAVIOLET, the in-world tiering system students traverse over the semester); **GREY clearance** (the cross-functional role assigned to Graphic Design collaborators inside the simulation); and the **YELLOW Exit Ticket** (the end-of-module competency check, named for its in-simulation tier). Where these terms appear, they are functioning as proper-noun technical vocabulary for components of an instructional system that has been built and deployed — not as decorative flavor. Glosses are provided on first use.
 
-The frame is load-bearing pedagogy. The structural argument for why it is load-bearing — Edmondson on psychological safety, Dweck on growth mindset, Lave and Wenger on situated learning — is laid out in Objective Zero. For now, the reader needs only one assurance: the absurdity is deliberate, the citations are real, and the work being documented is professional.
+The frame is load-bearing pedagogy. The structural argument for why it is load-bearing — Edmondson on psychological safety, Dweck on growth mindset, Lave and Wenger on situated learning — is laid out in Objective Zero. The reader needs one assurance before proceeding: the work documented here is professional. The absurdity is deliberate. The citations are real.
 
 ---
 
