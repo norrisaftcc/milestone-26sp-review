@@ -1,6 +1,6 @@
 # Objective 2: Source Control & Version Control (SCVC) Instructional Modules
 
-**Instructor:** [Name]
+**Instructor:** [REDACTED]
 **Course(s):** CSC 289 (Software Development Capstone), CTS 285 (Web Application Development)
 **Evaluation Period:** Spring 2026
 **Objective Status:** Achieved and exceeded.
