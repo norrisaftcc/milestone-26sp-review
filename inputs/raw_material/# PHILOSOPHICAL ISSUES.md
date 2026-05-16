@@ -1,46 +1,47 @@
 # PHILOSOPHICAL ISSUES
 
-OK, this is not my first rodeo, I know the binder / docs have to be a certain style and approach to not "bounce off" the admins if it goes above dean level.
+This is not the author's first rodeo. The binder and supporting documents have to hit a certain style and register to keep from "bouncing off" the administrators above dean level. That is what the polished objective documents in `/inputs` are for. This file is the working scratchpad — thinking out loud, before the polish goes on.
 
-We can do that later -- this is just thinking out loud.
+# User's background (and a note on redactions)
 
-# User's background (and note on redactions)
-User Teacherbot-GREEN-8337 (hereafter "User") has 15+ years in enterprise software development and 10 years in software development instruction, so he does have some idea of the landscape.
+User Teacherbot-GREEN-8337 (hereafter "User") has 15+ years in enterprise software development and 10 years in software development instruction, so the landscape is familiar territory.
 
-User is well aware that an "exceeds expectations" rating for an entire department is unlikely to succeed regardless of documentation, and notes that usually, one "exceeds" is round-robined out per department, to "keep things fair", as everyone is well aware *performance reviews do not measure actual performance*. 
+User is well aware that an "exceeds expectations" rating for an entire department is unlikely to land regardless of documentation, and notes that, in practice, one "exceeds" is typically round-robined per department to "keep things fair" — everyone being well aware that *performance reviews do not measure actual performance*.
 
-User is also aware that his contracted job is to instruct students in software development techniques, and that this is usually done as follows:
-- Obtain textbook
-- Populate LMS with textbook activities
-- Periodically confirm the autograder is working correctly
+User is also aware that his contracted job is to instruct students in software development techniques, which is conventionally done as follows:
 
-User arguably, failed to meet these expectations -- a case could be made for "Fails to Meet Expectations"! User instead followed these steps:
-- Noted "Future Ready" pivot and rebrand from administration (August 2026)
-- Committed to full recreation of all course material from scratch
-- Completed recreation of all course material from scratch, matching User's own requirements (User's understanding of what "Future-ready" means for software development students at the college level in 2026)
+- Obtain textbook.
+- Populate LMS with textbook activities.
+- Periodically confirm the autograder is working correctly.
 
-It is certainly hardest to argue, between these three options, that user "Meets Expectations".
+By that yardstick, User arguably failed to meet expectations — a case could be made for "Fails to Meet Expectations." User instead followed these steps:
+
+- Noted the "Future Ready" pivot and rebrand from administration (August 2025).
+- Committed to full recreation of all course material from scratch.
+- Completed that recreation, matching User's own understanding of what "Future-ready" means for software development students at the college level in 2026.
+
+Between these three options, "Meets Expectations" is the hardest to argue.
 
 ## Theoretical PIP
 
-If user fails to meet expectations, the PIP is simple:
-- contact Zybooks, Cengage, or Pearson representative
-- allow them to decide the course material and scope of work rather than instructor
-- obtain textbook, populate LMS, babysit the autograder
+If User fails to meet expectations, the PIP is simple:
 
-Since the above process is considered standard for most departments, this is known feasible.
+- Contact a Zybooks, Cengage, or Pearson representative.
+- Allow the vendor to decide the course material and scope of work rather than the instructor.
+- Obtain textbook, populate LMS, babysit the autograder.
 
-# AN ALTERNATE TAKE -- TWO TEAMS
+Since the above process is considered standard for most departments, the feasibility is known.
 
-Many of the logical inconsistencies seem to fall away if a different approach is taken. Simply put, *The Computer Programming & Development department is two things at once.*
+# An alternate take — two teams
 
-CP&D delivers all CSC courses and those CIS/CTI courses that fall under "Computer Programming". (The stated goal of the department.)
-The same individuals, under the unofficial label of "CPD Tools Group", act as a GitHub-integrated, stream-aligned Scrum development team. (Unstated and unpaid goal.)
+Many of the logical inconsistencies fall away if a different framing is adopted. Put simply: *the Computer Programming & Development department is two things at once.*
 
-Perhaps the problem comes from attempting to perform a "performance review" when the team's objectives undeniably fall outside of their contracted job description. 
+CP&D delivers all CSC courses and those CIS/CTI courses that fall under "Computer Programming." This is the stated goal of the department.
 
-On the other hand, Culinary students and faculty cook and serve food; Horticultural students and faculty maintain various horticultural exhibits; perhaps this simply falls under "community interaction".
+The same individuals, under the unofficial label of "CPD Tools Group," act as a GitHub-integrated, stream-aligned Scrum development team. This is the unstated and unpaid goal.
 
-Regardless, the argument made in Team Topologies (administration has a copy; you might be able to borrow it) is that formally acknowledging stream-aligned value delivering development teams as *something orthagonal to existing report structures* provides the flexibility for those teams to maximize value. 
+Perhaps the problem is the attempt to conduct a "performance review" when the team's objectives undeniably fall outside the contracted job description. On the other hand: Culinary students and faculty cook and serve food; Horticultural students and faculty maintain horticultural exhibits. Perhaps this simply falls under "community interaction."
 
-Just a thought... 
+Regardless, the argument made in *Team Topologies* (administration has a copy; you might be able to borrow it) is that formally acknowledging stream-aligned, value-delivering development teams as *something orthogonal to existing report structures* gives those teams the flexibility they need to maximize value.
+
+Just a thought.

@@ -6,7 +6,7 @@ The following documents three performance objectives completed during the Spring
 
 ## Context
 
-CSC 289 was previously taught using waterfall methodology. Initial course resources for CSC 289 and CTS 285 consisted of the Shelley Cashman *Systems Analysis and Design* textbook and MS Project licenses. The standard expectation for these courses did not include developing a novel pedagogical framework, writing original research syntheses, constructing custom software infrastructure, or producing a documentation library of this scope.
+CSC 289 was previously taught using waterfall methodology, with course resources for CSC 289 and CTS 285 consisting of the Shelley Cashman *Systems Analysis and Design* textbook and MS Project licenses. The standard expectation for these courses did not include developing a novel pedagogical framework, writing original research syntheses, constructing custom software infrastructure, or producing a documentation library of this scope — the work described below went beyond that baseline deliberately.
 
 The objectives below reflect a transition to agile/Scrum methodology aligned with current industry practice, undertaken because the existing course structure no longer matched the workflow students encounter in entry-level software roles. A unifying design principle runs through all three: measure **learning velocity** — the rate at which students develop competency — rather than absolute skill at a single point in time. This shapes the scaffolded progressions, iteration-rewarding rubrics, and assessment artifacts referenced below.
 
@@ -25,7 +25,7 @@ The objectives below reflect a transition to agile/Scrum methodology aligned wit
 
 **Delivered:**
 
-- **Cross-Discipline Protocol** (`26SP_Cross_Discipline_Protocol.md`) — three-document brief exchange (Product Brief, Technical Brief, Design Brief Response) with a milestone-anchored handoff schedule across Sprints 0 and 1.
+- **Cross-Discipline Protocol** (`26SP_Cross_Discipline_Protocol.md`) — three-document brief exchange (Product Brief, Technical Brief, Design Brief Response) with a milestone-anchored handoff schedule across Sprint 0 (the pre-build planning sprint) and Sprint 1.
 - **GREY-clearance role definition** for GRD students within the AlgoCratic Futures simulation framework. GRD students participate in CSC team Scrum ceremonies (sprint planning, async standups, sprint review, retrospective) as full cross-functional collaborators.
 - **Three formal touchpoints:**
   1. Creative Brief Exchange — end of Sprint 0
@@ -46,11 +46,11 @@ The objectives below reflect a transition to agile/Scrum methodology aligned wit
 
 ---
 
-## Objective 2: GitHub / Source Control Version Control Instructional Modules
+## Objective 2: Source Control & Version Control (SCVC) Instructional Modules
 
 **Status:** Completed; deployed in CSC 289 Spring 2026; extending to CTS 285.
 
-**Purpose:** Build instructional modules covering core SCVC competencies — Issues, Pull Requests, Branch & Merge Workflow, Self/Peer Review — with hands-on exercises.
+**Purpose:** Build instructional modules covering core SCVC competencies on GitHub — Issues, Pull Requests, Branch & Merge Workflow, Self/Peer Review — with hands-on exercises.
 
 **Requirements:**
 - One or more assignments on branch and merge strategies
@@ -68,12 +68,12 @@ Issue template with user story, acceptance criteria, technical notes, and defini
 Full feature-branch lifecycle documented as the Sacred Workflow's ten steps. Phased practice: **Solo Burger** (individual) → **Team Lunch** (pair) → **Full Sprint** (team).
 
 **Module 3 — Pull Request Process**
-PR template requiring related-issue link, changes summary, testing documentation, screenshots, and questions for reviewers. Draft-PR workflow taught explicitly as the early-feedback mechanism.
+PR template requiring related-issue link, changes summary, testing documentation, screenshots, and questions for reviewers. The Draft PR workflow — opening a pull request before the work is finished, to surface direction early — is taught explicitly as the early-feedback mechanism.
 
 **Module 4 — Self/Peer Review** (`Capstone_GameFAQs_Walkthrough.md`)
 Review framework with four categories (Functionality, Readability, Best Practices, Improvement Opportunities). Three-stage cycle: self-review → peer review → author response. Review quality itself graded to incentivize thoughtful feedback rather than rubber-stamping.
 
-**Assessment:** Exit ticket rubrics (`YELLOW_Exit_Ticket_Rubric.md`) tied to each module.
+**Assessment:** YELLOW Exit Ticket rubrics (`YELLOW_Exit_Ticket_Rubric.md`) — brief end-of-module competency checks, named for the in-simulation clearance tier — tied to each module.
 
 **Outcomes (CSC 289 Spring 2026):**
 
@@ -119,7 +119,7 @@ Review framework with four categories (Functionality, Readability, Best Practice
 
 ## Adjacent Faculty Engagement
 
-Beyond the formal collaboration structures in Objective 1, the work has generated informal engagement from peer faculty during the review period. Colleagues from adjacent departments have approached the instructor regarding AI-assisted development practices in their own teaching, and a peer instructor has independently developed an LLM-powered subnetting tutor during the same period. These engagements have not been systematically tracked.
+Beyond the formal collaboration structures in Objective 1, the work has generated informal engagement from peer faculty during the review period. Colleagues from adjacent departments have approached the instructor regarding AI-assisted development practices in their own teaching, and a peer instructor has independently developed an LLM-powered subnetting tutor during the same period. These engagements were not systematically tracked, but are noted here as evidence that the methodology has begun circulating beyond the formal pairings.
 
 ---
 

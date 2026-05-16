@@ -4,54 +4,54 @@
 
 ## Objective Statement
 
-**Purpose**: Develop and formalize a cross-departmental collaboration framework between Computer Science and Graphic Design capstone courses by implementing structured processes and assessment methods.
+**Purpose:** Develop and formalize a cross-departmental collaboration framework between Computer Science and Graphic Design capstone courses by implementing structured processes and assessment methods.
 
-**Requirements**:
+**Requirements:**
 
 - Document and standardize the Creative Brief process with the Graphic Design department
 - Establish three formal touchpoints/milestones in the collaboration cycle
 - Create rubrics for evaluating cross-team communication and deliverable integration
 
-**Status**: ✅ **Achieved** — January 2026
+**Status:** Achieved — January 2026.
 
 -----
 
 ## Why This Work Was the Right Call
 
-Before detailing what was built and how, it’s worth grounding the decision in what the field already knew.
+Before detailing what was built and how, it is worth grounding the decision in what the field already knew.
 
-The question facing any program that trains future software and design professionals isn’t whether students will work on cross-functional teams — they will. The question is whether they’ll encounter that dynamic for the first time on the job, or arrive having already navigated it, failed at it, recovered from it, and built the communication habits it requires. That distinction is what this initiative addresses, and it’s the reason the framework developed here represents more than a curriculum add-on.
+The question facing any program that trains future software and design professionals is not whether students will work on cross-functional teams — they will. The question is whether they will encounter that dynamic for the first time on the job, or arrive having already navigated it, failed at it, recovered from it, and built the communication habits it requires. That distinction is what this initiative addresses, and it is the reason the framework developed here represents more than a curriculum add-on.
 
 The national employer data makes the stakes concrete. According to the **NACE Job Outlook 2025**, nearly 90% of recruiters actively screen for problem-solving and nearly 80% for teamwork — not as soft preferences, but as primary filters when reviewing new-graduate candidates. By 2026, 70% of employers were using skills-based hiring practices (up from 65% the previous year), while the proportion still relying on GPA had dropped to 42% — down from 73% in 2019. What employers are buying, increasingly, is demonstrated collaborative capability, and GPA is not a proxy for it.
 
-The workforce trajectory amplifies this. The **World Economic Forum’s *Future of Jobs Report 2025*** projects that 39% of workers’ existing skill sets will be transformed or rendered obsolete by 2030. The skills rising to fill that gap — analytical thinking, creative reasoning, resilience, flexibility — are precisely the outputs of environments where students must negotiate across disciplines under real constraints. Credentials alone don’t build them. Cross-functional project experience does.
+The workforce trajectory amplifies this. The **World Economic Forum's *Future of Jobs Report 2025*** projects that 39% of workers' existing skill sets will be transformed or rendered obsolete by 2030. The skills rising to fill that gap — analytical thinking, creative reasoning, resilience, flexibility — are precisely the outputs of environments where students must negotiate across disciplines under real constraints. Credentials alone don't build them. Cross-functional project experience does.
 
-There is also a documented labor-market premium on professionals who can inhabit multiple roles. **Burning Glass Technologies’ *The Hybrid Job Economy*** (2019) found that roles requiring skills at the intersection of design and development grow at approximately twice the rate of the overall job market and command 20–40% higher compensation. These roles don’t require mastery of two disciplines simultaneously — they require what IDEO CEO Tim Brown called the T-shape: disciplinary depth *plus* “the disposition for collaboration across disciplines.” Without the latter, Brown observed, “you get gray compromises where the best you can achieve is the lowest common denominator.”
+There is also a documented labor-market premium on professionals who can inhabit multiple roles. **Burning Glass Technologies' *The Hybrid Job Economy*** (2019) found that roles requiring skills at the intersection of design and development grow at approximately twice the rate of the overall job market and command 20–40% higher compensation. These roles don't require mastery of two disciplines simultaneously — they require what IDEO CEO Tim Brown called the T-shape: disciplinary depth *plus* "the disposition for collaboration across disciplines." Without the latter, Brown observed, "you get gray compromises where the best you can achieve is the lowest common denominator."
 
-The research on interdisciplinary CS-and-design education at the postsecondary level confirms that the structural challenge is solvable. Heines, Jeffers, and Kuhn’s **“Performamatics”** series (*International Journal of Learning*, 2008; ACM SIGCSE, 2009) documented outcomes from pairing Computer Science and Design Arts students in joint projects at UMass Lowell, demonstrating measurable gains in motivation and engagement. McDonald and Wolfe’s work at DePaul (**“Using Computer Graphics to Foster Interdisciplinary Collaboration in Capstone Courses,”** *Journal of Computing Sciences in Colleges*, 2008) noted directly that “working effectively as a member of an interdisciplinary team is a skill highly valued by today’s employers” — and built an interdisciplinary capstone accordingly. At scale, Georgia Tech’s Junior Design sequence (Hutter, Lawrence, McDaniel & Murrell, ACM SIGCSE, 2018), serving 400–600 CS students per semester, contrasted mere parallel disciplinary labor against genuine integration, concluding that true integration results in “a smoother end product” — because the disciplines are allowed to inform each other rather than run in separate lanes.
+The research on interdisciplinary CS-and-design education at the postsecondary level confirms that the structural challenge is solvable. Heines, Jeffers, and Kuhn's **"Performamatics"** series (*International Journal of Learning*, 2008; ACM SIGCSE, 2009) documented outcomes from pairing Computer Science and Design Arts students in joint projects at UMass Lowell, demonstrating measurable gains in motivation and engagement. McDonald and Wolfe's work at DePaul (**"Using Computer Graphics to Foster Interdisciplinary Collaboration in Capstone Courses,"** *Journal of Computing Sciences in Colleges*, 2008) noted directly that "working effectively as a member of an interdisciplinary team is a skill highly valued by today's employers" — and built an interdisciplinary capstone accordingly. At scale, Georgia Tech's Junior Design sequence (Hutter, Lawrence, McDaniel & Murrell, ACM SIGCSE, 2018), serving 400–600 CS students per semester, contrasted mere parallel disciplinary labor against genuine integration, concluding that true integration results in "a smoother end product" — because the disciplines are allowed to inform each other rather than run in separate lanes.
 
-As institutions that have already made this investment continue to report stronger student outcomes and employer reception, programs without structured cross-disciplinary capstone experience are asking their graduates to learn in their first job what their peers learned in their last semester of school. This initiative was built on the premise that FTCC’s students deserve better than that starting position.
+As institutions that have already made this investment continue to report stronger student outcomes and employer reception, programs without structured cross-disciplinary capstone experience are asking their graduates to learn in their first job what their peers learned in their last semester of school. This initiative was built on the premise that FTCC's students deserve better than that starting position.
 
 -----
 
 ## The Design Problem — And Why Informal Coordination Had Already Failed
 
-The default state for cross-departmental collaboration in higher education is informal coordination: instructors agree in principle, students are told to work together, and friction resolves itself — or it doesn’t, and projects absorb the consequences late in the semester. That default state fails reliably and for predictable reasons:
+The default state for cross-departmental collaboration in higher education is informal coordination: instructors agree in principle, students are told to work together, and friction resolves itself — or it doesn't, and projects absorb the consequences late in the semester. That default state fails reliably and for predictable reasons:
 
 - Departments run on different milestone schedules, so deliverable timing never quite aligns
 - Disciplinary terminology diverges in ways neither party recognizes until handoffs break
 - Ownership of shared deliverables is ambiguous, so each side waits for the other
 - Collaboration quality is either not assessed at all, or assessed only as part of a product grade that obscures whether the team actually functioned
 
-The failure modes here are not character flaws — they are structural deficiencies. The industry literature on design-development collaboration identifies the same pathologies in professional teams. According to the **Nielsen Norman Group’s “Creating Design Specs for Development”** (2025), the absence of formal documentation creates “confusion and frustration in design and development teams” that would be preventable with what NN/g describes as a “contract between design and development.” The **Interaction Design Foundation’s 2026 handoff curriculum** catalogs the most common professional failures: vague specifications, disorganized files, missing edge-case documentation, and an over-the-wall mentality in which design and development treat each other as sequential rather than collaborative.
+The failure modes here are not character flaws — they are structural deficiencies. The industry literature on design-development collaboration identifies the same pathologies in professional teams. According to the **Nielsen Norman Group's "Creating Design Specs for Development"** (2025), the absence of formal documentation creates "confusion and frustration in design and development teams" that would be preventable with what NN/g describes as a "contract between design and development." The **Interaction Design Foundation's 2026 handoff curriculum** catalogs the most common professional failures: vague specifications, disorganized files, missing edge-case documentation, and an over-the-wall mentality in which design and development treat each other as sequential rather than collaborative.
 
-These are exactly the failure modes students encounter when collaboration structure isn’t built into the course. Naming them as industry defects — not just student shortcomings — is part of what makes this framework pedagogically honest.
+These are exactly the failure modes students encounter when collaboration structure isn't built into the course. Naming them as industry defects — not just student shortcomings — is part of what makes this framework pedagogically honest.
 
 -----
 
 ## Framework Architecture
 
-The framework is organized around one insight: structure doesn’t constrain creativity; it creates the conditions in which creativity can be delivered reliably.
+The framework is organized around one insight: structure doesn't constrain creativity; it creates the conditions in which creativity can be delivered reliably.
 
 ### Role Clarity: The GREY Clearance Model
 
@@ -64,13 +64,13 @@ When roles are vague, students default to either avoidance (waiting for the othe
 1. Integrated both departments into the same Scrum milestone structure, so neither operated on an external or implicit schedule
 1. Brought design students into CS Scrum ceremonies — standups, sprint planning, sprint reviews, retrospectives — as full participants
 
-This approach mirrors how professional cross-functional teams actually operate. The **Scrum Alliance** defines cross-functional teams as those whose members “can include developers, testers, designers, and any other roles required to achieve the sprint goal” — an explicit acknowledgment that design is not external to the development process. The **U.S. Digital Service TechFAR Hub** guidance reinforces this: federal agile teams are now expected to be cross-functional by default.
+This approach mirrors how professional cross-functional teams actually operate. The **Scrum Alliance** defines cross-functional teams as those whose members "can include developers, testers, designers, and any other roles required to achieve the sprint goal" — an explicit acknowledgment that design is not external to the development process. The **U.S. Digital Service TechFAR Hub** guidance reinforces this: federal agile teams are now expected to be cross-functional by default.
 
 -----
 
 ### Deliverable 1: The Standardized Creative Brief Process
 
-**Documentation created**: `26SP_Cross_Discipline_Protocol.md`
+**Documentation created:** `26SP_Cross_Discipline_Protocol.md`
 
 The Creative Brief process formalized a staged exchange between CS teams and GRD students across three document types:
 
@@ -78,7 +78,7 @@ The Creative Brief process formalized a staged exchange between CS teams and GRD
 - **Technical Brief** (CS → GRD): constraints, asset formats, integration specifications
 - **Design Brief Response** (GRD → CS): concept proposals, mockup iterations, delivery specifications
 
-**Process sequence:**
+**Process sequence (Sprint 0 is the pre-build planning sprint; Sprint 1 is the first build sprint):**
 
 |Stage |Event |Timing|
 |----------------|--------------------------------------------|------|
@@ -89,18 +89,18 @@ The Creative Brief process formalized a staged exchange between CS teams and GRD
 |Sprint 1, Wk 2 |CS team provides integration feedback |— |
 |Sprint 1, Wk 3–4|GRD student delivers production assets |— |
 
-**Why this structure maps to industry norms**: NN/g’s framing of design specifications as a “contract” between teams isn’t metaphorical — it reflects how high-functioning product teams assign accountability. When a student can point to a brief they submitted, a question they asked, and an asset they delivered to specification, they are rehearsing the documentation habits professional product teams depend on. They are also generating the paper trail that allows assessment to be specific rather than impressionistic.
+**Why this structure maps to industry norms:** NN/g's framing of design specifications as a "contract" between teams is not metaphorical — it reflects how high-functioning product teams assign accountability. When a student can point to a brief they submitted, a question they asked, and an asset they delivered to specification, they are rehearsing the documentation habits professional product teams depend on. They are also generating the paper trail that allows assessment to be specific rather than impressionistic.
 
-**Previous state**: Each CS/GRD pairing negotiated its own process, with no standardized artifacts and no baseline for evaluation.
-**Current state**: A documented protocol with clear handoffs, defined deliverable formats, and a repeatable sequence.
+**Previous state:** Each CS/GRD pairing negotiated its own process, with no standardized artifacts and no baseline for evaluation.
+**Current state:** A documented protocol with clear handoffs, defined deliverable formats, and a repeatable sequence.
 
 -----
 
 ### Deliverable 2: Three Formal Touchpoints
 
-**Documentation created**: `26SP_Platform_Project_Matrix.md`
+**Documentation created:** `26SP_Platform_Project_Matrix.md`
 
-Milestones do more than mark time — they convert vague expectations into specific commitments. Industry project management converges on the principle that milestones must define “what ‘done’ looks like at various intervals” to shift teams from activity-based to outcome-based execution. In interdisciplinary student teams, this distinction is particularly consequential: activity is easy to perform and easy to confuse with progress. Milestones prevent that confusion.
+Milestones do more than mark time — they convert vague expectations into specific commitments. Industry project management converges on the principle that milestones must define "what 'done' looks like at various intervals" to shift teams from activity-based to outcome-based execution. In interdisciplinary student teams, this distinction is particularly consequential: activity is easy to perform and easy to confuse with progress. Milestones prevent that confusion.
 
 **Touchpoint 1: Creative Brief Exchange** — End of Sprint 0
 
@@ -112,15 +112,15 @@ GRD presents initial mockups. CS provides integration feedback and technical fea
 
 **Touchpoint 3: Asset Delivery and Integration** — Sprint 1, Weeks 3–4
 
-GRD delivers production-ready assets to specification. CS integrates them into a working application. Both parties co-present at the Graduate Showcase. Assessment criteria at this stage include technical integration success and design implementation fidelity — measuring whether the collaboration produced a coherent whole rather than two well-executed halves that don’t quite fit together.
+GRD delivers production-ready assets to specification. CS integrates them into a working application. Both parties co-present at the Graduate Showcase. Assessment criteria at this stage include technical integration success and design implementation fidelity — measuring whether the collaboration produced a coherent whole rather than two well-executed halves that don't quite fit together.
 
-**Integration with Scrum ceremonies**: Design students participated in daily async standups, Sprint 1 planning, the Graduate Showcase Sprint Review, and a cross-departmental retrospective. This is the same ceremony structure Mahnič documented in his longitudinal Scrum capstone study (**“A Capstone Course on Agile Software Development Using Scrum,”** *IEEE Transactions on Education*, 2012), which found that these ceremonies produced “overwhelmingly positive” student outcomes with measurable improvements in planning and estimation — outcomes students explicitly linked to their employability.
+**Integration with Scrum ceremonies:** Design students participated in daily async standups, Sprint 1 planning, the Graduate Showcase Sprint Review, and a cross-departmental retrospective. This is the same ceremony structure Mahnič documented in his longitudinal Scrum capstone study (**"A Capstone Course on Agile Software Development Using Scrum,"** *IEEE Transactions on Education*, 2012), which found that these ceremonies produced "overwhelmingly positive" student outcomes with measurable improvements in planning and estimation — outcomes students explicitly linked to their employability.
 
 -----
 
 ### Deliverable 3: Collaboration Rubrics
 
-**Documentation created**: `Pitch_Presentation_Rubric.md`
+**Documentation created:** `Pitch_Presentation_Rubric.md`
 
 The rubric is where good intentions about collaboration become assessable commitments. The principle underlying the design is straightforward: if collaboration behaviors are not separately measured, they are not taught. Students learn to optimize for what gets scored. A rubric that only evaluates individual deliverable quality is, functionally, a rubric that treats collaboration as optional.
 
@@ -155,7 +155,7 @@ This three-axis structure — individual craft, collaboration behaviors, integra
 - Both cohorts identified the formal handoff structure as the element most responsible for reducing last-minute communication crises
 - Both departments expressed interest in continuing the protocol for subsequent terms
 
-**What the Graduate Showcase demonstrated to external stakeholders**: Faculty, industry partners, and fellow students encountered polished, professionally integrated web applications — not student prototypes that looked like student prototypes. That visible quality gap between AlgoCratic Futures projects and typical capstone output is the observable return on the structural investment described above.
+**What the Graduate Showcase demonstrated to external stakeholders:** Faculty, industry partners, and fellow students encountered polished, professionally integrated web applications — not student prototypes that looked like student prototypes. That visible quality gap between AlgoCratic Futures projects and typical capstone output is the observable return on the structural investment described above.
 
 -----
 
@@ -165,9 +165,9 @@ This three-axis structure — individual craft, collaboration behaviors, integra
 
 The protocols created here are not semester-specific documentation — they are reusable infrastructure. When a process is documented once and works, the cost of repeating it falls dramatically. When it fails in some respect, the documentation makes the failure diagnosable and correctable rather than mysterious.
 
-- **Spring 2026**: First full implementation (completed)
-- **Fall 2026**: Protocol refinement based on retrospective feedback
-- **Future terms**: Standardized framework with embedded continuous improvement
+- **Spring 2026:** First full implementation (completed).
+- **Fall 2026:** Protocol refinement based on retrospective feedback.
+- **Future terms:** Standardized framework with embedded continuous improvement.
 
 ### A Template for Adjacent Collaborations
 
@@ -177,7 +177,7 @@ The structured collaboration approach is now available as a model for other cros
 - Database courses + Business Analytics integration
 - Mobile Development + User Experience research
 
-Any program pairing where disciplinary handoffs are the primary design challenge can adopt this framework’s milestone structure, brief protocol, and rubric architecture without building from scratch.
+Any program pairing where disciplinary handoffs are the primary design challenge can adopt this framework's milestone structure, brief protocol, and rubric architecture without building from scratch.
 
 ### Career Readiness in the Language Employers Use
 
@@ -189,9 +189,9 @@ What this capstone framework does, structurally, is close that gap before gradua
 
 ## Conclusion: Objective Exceeded
 
-**Minimum requirement**: Document Creative Brief process, establish three touchpoints, create collaboration rubrics.
+**Minimum requirement:** Document Creative Brief process, establish three touchpoints, create collaboration rubrics.
 
-**Actual delivery**:
+**Actual delivery:**
 
 - Comprehensive cross-departmental framework with full process documentation
 - Milestone structure integrated with Scrum methodology and Scrum Alliance cross-functional team norms
@@ -203,8 +203,8 @@ The research had already established that this approach works. The employer data
 
 Both are now demonstrated.
 
-**Assessment: Objective not merely met, but exceeded — with infrastructure of lasting institutional value.**
+**Assessment:** Objective not merely met, but exceeded — with infrastructure of lasting institutional value.
 
 -----
 
-*Full research evidence base, citations, and source details: see Appendix — “Evidence Base for a CS / Graphic Design Cross-Departmental Capstone Framework.”*
+*Full research evidence base, citations, and source details: see Appendix — "Evidence Base for a CS / Graphic Design Cross-Departmental Capstone Framework."*

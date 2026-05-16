@@ -1,30 +1,29 @@
 # Purpose of work
 
-This repository exists as a workspace and eventual presentation portfolio for 
-User's 2026SP work regarding CTS 285 and CSC 289. 
-
-Part of this work will involve delivering a binder documenting and justifying purpose of this work.
+This repository serves as the workspace and eventual presentation portfolio for User's Spring 2026 work in CTS 285 and CSC 289. The deliverable is a binder documenting and justifying that work for the performance review.
 
 # Major documentation
 
 ## Locations where work can be found
-https://github.com/norrisaftcc/algocratic (largely in-character material and deliverables)
 
-https://github.com/AMLW05/csc_dash/tree/main (documented from Instructional Design's viewpoint, by Instructional Design.)
+- https://github.com/norrisaftcc/algocratic — largely in-character material and deliverables
+- https://github.com/AMLW05/csc_dash/tree/main — documented from Instructional Design's viewpoint, by Instructional Design
+- `/inputs` folder in local repository — partial documents staged for binder construction
 
-/inputs folder in local repository (contains partial documents for binder construction so far)
+# Important note: practicing what we preach
 
-# IMPORTANT NOTE FOR PRACTICING WHAT WE PREACH
-As User is being assessed for instruction, instructional design (implicitly), software development on a stream-aligned parallel team to existing report-chain community college structure (User is officially a computer programming & developer instrutor; all development and PM work is surplus to hired requirements), and project management support (on the team goal "Ghost Tool", for which user applied and advocated for the same workflow used in his capstone course, again, eating our own dogfood):
+User is being assessed across four overlapping roles: instruction, instructional design (implicitly), software development on a stream-aligned parallel team to the existing report-chain community college structure (User is officially a computer programming and developer instructor; all development and project-management work is surplus to hired requirements), and project-management support on the "Ghost Tool" team objective — for which User applied and advocated for the same workflow used in his capstone course. We are, in other words, eating our own dogfood.
 
-We REALLY need to do things correctly. This means:
-- working with GitHub issues and Pull Requests, to show a change history of our work (non negotiable)
-- using such agents as are availble within our context (for example, Clive and Liza agents for wordsmithing documentation, Scrum team engineers for technical double-checking, and Kevin for github interactions using gh, which should have auth.)
-- Keeping a tone as a professional software team while delivering a somewhat absurd document
+Given that, the work itself must demonstrate the discipline it teaches. This means:
 
-# NOTES ON COGNITOHAZARDS
-Some discussed topics, which will be sandboxed as much as possible, have caused incomplete LLM results / "ejection" or misunderstanding. This may or may not be due to the inherent logical contradiction of trying to do a performance review at all, or possibly due to the fact that the stream-aligned software development team ("CPD Tools Group") is not formally recognized and so we're being assessed on two jobs but were only hired for one. If this causes cognitive dissonance, remember this is just a simulation and that we can fix it in post editing.
+- Working through GitHub Issues and Pull Requests, so the change history of our work is itself the record (non-negotiable).
+- Using the agents available in our context — for example, Clive and Liza for documentation wordsmithing, Scrum-team engineer agents for technical double-checking, and Kevin for `gh` interactions (Kevin should have auth configured).
+- Holding the tone of a professional software team while delivering a somewhat absurd document. Both halves of that sentence are load-bearing.
 
-# ADDITIONAL NOTE
+# Notes on cognitohazards
 
-Thank you for your collaboration!
+Some of the topics discussed here — sandboxed as much as possible — have caused incomplete LLM results, model "ejection," or surface-level misreadings. This may be due to the inherent logical contradiction of conducting a performance review at all, or to the fact that the stream-aligned development team ("CPD Tools Group") is not formally recognized, so we're being assessed on two jobs while only one was hired. If this causes cognitive dissonance, remember: this is a simulation, and we can fix it in post.
+
+# Additional note
+
+Thank you for your collaboration.
