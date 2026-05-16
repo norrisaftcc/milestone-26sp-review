@@ -15,7 +15,7 @@ The fourth objective — labeled here as Objective Zero — is the design and co
 
 The binder is organized for two reading paths:
 
-- **The reviewer with time** reads it front-to-back: this Introduction, the Executive Summary, three objective chapters in order, then Objective Zero, then the supporting documentation appendix.
+- **The reviewer with time** reads it front-to-back: this Introduction, the Executive Summary, three objective chapters in order, then Objective Zero. Supporting documentation lives alongside this binder for any claim that warrants deeper investigation.
 - **The reviewer without time** reads the Executive Summary and stops. That summary is built to stand alone. The metrics, the per-objective synopses, and the bottom-line outcome statement are all there. The remainder of the binder is the evidence base for those claims, available when wanted.
 
 Either path is legitimate. The binder was designed to reward both.
@@ -48,6 +48,6 @@ The frame is load-bearing pedagogy. The structural argument for why it is load-b
 
 ## What the Reviewer Will Find Across This Binder
 
-The objectives in this binder were specified for a course delivery role. What was delivered exceeded that specification — not by doing more of the same thing, but by building, at the same time, the conditions under which the specified work could be performed reliably, measured honestly, and replicated by others. The four objective chapters and the supporting documentation appendix are the receipt for that claim.
+The objectives in this binder were specified for a course delivery role. What was delivered exceeded that specification — not by doing more of the same thing, but by building, at the same time, the conditions under which the specified work could be performed reliably, measured honestly, and replicated by others. The four objective chapters that follow are the receipt for that claim; supporting documentation is available alongside the binder for any claim that warrants verification.
 
 The Executive Summary that follows is the one-page version. Everything after it is the explanation.

@@ -193,4 +193,4 @@ The structured cross-disciplinary approach is now available as a model for other
 
 The standard capstone is Sauce & Spoon. You are given a scenario. You practice the skills. You produce the portfolio. **This is not that.** This is the work of designing the scenario — and then delivering it, iterating on it, instrumenting it for measurement, and making it replicable. That is a different job. It requires a different skill set. It produces a different institutional artifact.
 
-*Full theoretical grounding and source bibliography: see appendix — "Evidence Base for Multi-Level Immersive Instructional Design in Technical Education at the Community College Level."*
+*Source bibliography is inline above — citations to Dilts (Neurological Levels, 1980s), Dweck (*Mindset*, Ballantine Books, 2006), Edmondson (*ASQ*, 1999), Lave and Wenger (*Situated Learning*, Cambridge University Press, 1991), and Poole-Dayan et al. (arXiv:2406.17737, 2024) constitute the theoretical grounding for this chapter.*
