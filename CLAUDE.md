@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A portfolio workspace assembling the binder for the user's **Spring 2026 FTCC performance review** (CSC 289 Programming Capstone, CTS 285 Web Development, and the institutional "Ghost Tool" project). **This is not a software codebase** — there is no build, no test suite, no lint config, no package manifest. The deliverable is the binder itself. Source material lives in `inputs/`; finished binder artifacts will land in `outputs/`.
+A portfolio workspace assembling the binder for the user's **Spring 2026 FTCC performance review** (CSC 289 Programming Capstone, CTS 285 Web Development, and the institutional Ghost Student Discovery Tool project). The deliverable is the binder, not software. Source markdown in `inputs/`; built `.docx` artifacts in `outputs/` via `scripts/build_binder.sh` (pandoc + a designer-derived reference doc). No test suite, no linter, no package manifest — the build is one shell script over pandoc.
 
 ## Where the underlying work actually lives
 
@@ -17,19 +17,19 @@ If a question is really about the curriculum, the simulation, or the dashboard i
 
 ## The three objectives at a glance
 
-Authoritative summary: `inputs/Spring_2026_Performance_Objectives.md`. Long-form per-objective detail: `inputs/raw_material/`.
+Binder chapters at top-level `inputs/` with numeric prefixes signalling read order: `01_Introduction.md`, `02_Executive_Summary.md`, `03_Objective_1_*.md`, `04_Objective_2_*.md`, `05_Objective_3_*.md`, `06_Performance_Objective_Zero.md`. Appendix material in `inputs/supporting_documentation/` (some entries ship in the build, some don't — `scripts/build_binder.sh` has the allowlist).
 
 - **Objective 1 — Cross-Departmental Capstone Collaboration:** Formalized CSC ↔ Graphic Design protocol with three milestone touchpoints, GRAY-clearance role for GRD students inside the AlgoCratic Futures simulation, and a 100-point pitch/collaboration rubric.
 - **Objective 2 — GitHub / SCVC Instructional Modules:** Four modules anchored on the **Sacred Workflow** — `Issue → Branch → Draft PR → Code & Test → Finish PR → Review → Merge`. Scaffolded as Solo Burger → Team Lunch → Full Sprint.
-- **Objective 3 — Ghost Tool:** Applied the Objective 1/2 methodology (briefs, milestones, Sacred Workflow discipline) to a live institutional duplicate-enrollment project for Student Services.
+- **Objective 3 — Ghost Student Discovery Tool:** Applied the Objective 1/2 methodology as PM / Agile-Scrum / requirements / docs support to the CPD Tools Group dev team (lead developers **HS** + **MM**) on a live institutional ghost-student fraud detection tool. Tool shipped May 2026.
 
 ## Practicing what we preach (non-negotiable)
 
 Drawn directly from `inputs/# Purpose of work.md` — workflow discipline here is itself evidence for the review:
 
-- **All changes go through GitHub Issues and Pull Requests.** The change history is part of the deliverable; do not bypass it.
-- **Use the Sacred Workflow on this repo**, not just when teaching it. Issue first, branch, draft PR, then code/write.
-- **Use available subagents** when they fit: Clive / Linx for prose wordsmithing, Liza for creative ideation, scrum-team-engineer for technical double-checks, Kevin for `gh` interactions (auth is configured).
+- **All changes go through GitHub Issues and Pull Requests.** A `PreToolUse` hook at `.claude/hooks/block-main-commits.sh` blocks `git commit` / `git push` on `main` — enforce, don't bypass.
+- **Use the Sacred Workflow:** `gh issue create` → `git checkout -b <type>/<slug>` → make changes → `gh pr create --draft --body "Closes #N"`.
+- **Subagents in use:** **Liza** (`liza-creative-companion`) for prose drafting, **Linx** (`linx-wordsmith`) for editorial polish — the Liza→Linx two-agent pipeline is the established pattern for binder front matter. `scrum-team-engineer` for technical double-checks. Kevin for `gh` interactions (auth is configured).
 - **Tone:** professional software team delivering a somewhat absurd document. Don't drop the tone, don't break the simulation framing.
 
 ## Cognitohazard note
@@ -38,13 +38,27 @@ Per `inputs/# Purpose of work.md`: the meta-recursion of *a performance review d
 
 ## Working with the source documents
 
-- `inputs/` — in-progress source material in mixed `.md` and `.docx`. **Prefer editing the `.md` versions.** The `.docx` files are exports; do not regenerate them in isolation from their markdown source.
-- `inputs/raw_material/` — long-form per-objective detail plus `# PHILOSOPHICAL ISSUES.md`, a meta-document worth reading before touching the broader framing.
-- `outputs/` and `supporting_docs/` — currently empty, reserved for assembled binder deliverables.
+- `inputs/0N_*.md` — binder chapters in read order. Edit these for content changes.
+- `inputs/supporting_documentation/` — appendix research + extracted notes. `Adjacent_Faculty_Engagement.md` is tracked but **not built** into the binder (per author direction).
+- `inputs/design/` — design system. The **IDML** (`AF_PerformanceObjective_Report.idml`) is the source of truth for fonts and AF paragraph/character style names. `Binder_Style_and_InDesign_Audit.md` documents the calibrated style spec. `binder-reference.docx` is regenerated by `scripts/build_reference_doc.py`. Sample PDF in `SAMPLE_OUTPUT/`.
+- `inputs/sample_docx/` + `inputs/raw_material/*.docx` — design-reference example exports. Not actively edited.
+- `inputs/# Purpose of work.md` and `inputs/raw_material/# PHILOSOPHICAL ISSUES.md` — author scratchpads. Worth reading for framing; not built into the binder.
+- `outputs/0N_*.docx` — generated by `scripts/build_binder.sh`. Tracked in git for the designer review workflow (binary churn accepted).
+
+## Building the binder
+
+```bash
+scripts/build_binder.sh           # generate outputs/*.docx (8 files)
+scripts/build_binder.sh --clean   # wipe outputs/*.docx first
+scripts/build_reference_doc.py    # regen inputs/design/binder-reference.docx (only when font spec changes)
+```
+
+Prerequisite: `pandoc` on PATH (`brew install pandoc`). The build uses `inputs/design/binder-reference.docx` to enforce the designer's font system and AF-prefixed style names; `scripts/_postprocess_output_styles.py` runs after each pandoc invocation to rename pandoc-emit-time styles (`SourceCode`, `ListParagraph`) the reference doc can't reach. Every output `.docx` has every `pStyle` / `rStyle` resolving to an `AF *` w:name for clean InDesign import.
 
 ## What not to do
 
-- Don't propose CI, package management, test scaffolding, or linting. There is no code to lint.
-- Don't invent commands. There are none — `make`, `npm`, `pytest`, etc. do not apply.
-- Don't strip the in-character framing (AlgoCratic Futures, Sacred Workflow, GRAY clearance, YELLOW exit tickets) out of documents. It is load-bearing pedagogy, not decorative flavor.
-- Don't commit a regenerated `.docx` without a matching update to its `.md` source.
+- Don't propose CI, package management, test scaffolding, or linting. The build is one shell script over pandoc; treat as plumbing, not infrastructure to extend.
+- Don't invent commands beyond the `scripts/` set. `make`, `npm`, `pytest`, etc. do not apply.
+- Don't strip the in-character framing (AlgoCratic Futures, Sacred Workflow, GRAY clearance, YELLOW exit tickets). **GRAY clearance is an acronym** (Guidance, Review, Aesthetic Yield) per designer correction — do not auto-"correct" to GREY.
+- Don't hand-edit `outputs/*.docx` or `inputs/design/binder-reference.docx`. Both are generated; edit the source `.md` or the script and re-run.
+- Don't override the IDML's font/style assignments without designer confirmation. `inputs/design/AF_PerformanceObjective_Report.idml`'s `Resources/Styles.xml` is the source of truth.
