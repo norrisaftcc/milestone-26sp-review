@@ -34,7 +34,7 @@ scripts/build_binder.sh --clean
 
 ### What gets built
 
-Nine `.docx` files land flat in `outputs/`, in binder read order — six binder chapters plus the three-file supporting documentation appendix:
+Eight `.docx` files land flat in `outputs/`, in binder read order — six binder chapters plus the two-file supporting research appendix:
 
 | Output | Source | Role |
 |---|---|---|
@@ -46,9 +46,11 @@ Nine `.docx` files land flat in `outputs/`, in binder read order — six binder 
 | `06_Performance_Objective_Zero.docx` | `inputs/06_*.md` | Foundational meta-objective (AlgoCratic Futures architecture, Dilts six-level model) |
 | `07_capstone_research_support.docx` | `inputs/supporting_documentation/07_*.md` | Appendix — Obj 1 supporting research |
 | `08_ghost_tool_research_support.docx` | `inputs/supporting_documentation/08_*.md` | Appendix — Obj 3 supporting research (ghost-student fraud brief) |
-| `09_Adjacent_Faculty_Engagement.docx` | `inputs/supporting_documentation/09_*.md` | Appendix — adjacent faculty engagement note |
 
-Internal scratchpads (`inputs/# Purpose of work.md`, `inputs/raw_material/# PHILOSOPHICAL ISSUES.md`) remain excluded from the build — they are author scratchpads, not binder content.
+Not built into the binder:
+
+- `inputs/supporting_documentation/Adjacent_Faculty_Engagement.md` — appendix reference material kept alongside the binder but not part of the built `.docx` set.
+- `inputs/# Purpose of work.md` and `inputs/raw_material/# PHILOSOPHICAL ISSUES.md` — author scratchpads, not binder content.
 
 ### Reference doc (style consistency)
 
