@@ -87,20 +87,20 @@ Review framework with four categories (Functionality, Readability, Best Practice
 
 ---
 
-## Objective 3: Ghost Tool — Project Management & Requirements Support
+## Objective 3: Ghost Student Discovery Tool — Project Management & Requirements Support
 
-**Status:** Tool delivered by the development team; support role complete.
+**Status:** Tool shipped May 2026, delivered by the CPD Tools Group development team — lead developers **HS** and **MM**, supporting developer **BS**, team lead **DT**; support role complete.
 
-**Purpose:** Provide project management, documentation, and requirements-gathering support to the Ghost Tool development team — a team objective focused on detecting duplicate and potentially fraudulent enrollment patterns across the college's ~12,000 student records.
+**Purpose:** Provide project management, Agile/Scrum mentoring, requirements gathering, and documentation support to the Ghost Student Discovery Tool development team — a team objective focused on detecting ghost-student fraud and other anomalous enrollment patterns across the college's ~12,000 student records, in alignment with the U.S. Department of Education's mid-2025 identity-verification mandates and ahead of the Fall 2026 enrollment cycle.
 
-**Approach:** This objective applied the same methodology codified in Objectives 1 and 2 — structured product and technical briefs, milestone-anchored handoffs, and the Sacred Workflow's documentation discipline — to a live institutional project outside the classroom. The frameworks built for capstone instruction provided the blueprint for the support role here.
+**Approach:** This objective applied the same methodology codified in Objectives 1 and 2 — structured product and technical briefs, milestone-anchored handoffs, and the Sacred Workflow's documentation discipline — to a live institutional project outside the classroom. The frameworks built for capstone instruction provided the blueprint for the support role here. Full credit for the tool's technical design, build, and ship readiness belongs to the development team; the contribution documented below is the project-management scaffolding that ran alongside their work.
 
 **Personal contribution:**
 
-- **Requirements gathering** from Student Services stakeholders: interviews with administrative staff, documentation of the existing manual review process, identification of pain points, articulation of acceptance criteria for duplicate detection.
-- **Brief development** using the same dual-document structure taught in CSC 289 (product context and user needs; technical constraints and integration requirements).
-- **Documentation support** across the development cycle — user-facing materials for non-technical Student Services staff and configuration documentation for IT.
-- **Stakeholder feedback coordination** across iteration cycles, applying the same Sprint-review pattern students practice in capstone.
+- **Project Management Support** — milestone coordination, obstacle resolution, and stakeholder feedback cycles modeled on the Sprint-review pattern from CSC 289.
+- **Agile/Scrum Mentoring** — establishing the same GitHub-anchored Sacred Workflow taught in Objective 2 as the development team's non-optional standard, including issue tracking, branch discipline, and pull-request review.
+- **Requirements Gathering** — interviews with Student Services and administrative staff, documentation of the existing manual review process, identification of pain points, articulation of acceptance criteria; stakeholder-observed fraud patterns translated into signal categories that all shipped in the tool.
+- **Documentation** — user-facing materials for non-technical Student Services staff, configuration documentation for IT, and sustained brief and stakeholder communications across iteration cycles.
 
 **Tool capabilities (delivered by the development team, for context):**
 
