@@ -1,3 +1,9 @@
 # User-local Claude Code overrides (permission allowlists, personal hooks).
 # Project-wide Claude config belongs in .claude/settings.json instead.
 .claude/settings.local.json
+
+# Orphan editor save (no extension) — was byte-identical to the file
+# now tracked as
+# `inputs/raw_material/Objective_1_Cross-Departmental_Capstone_Collaboration_Framework.md`.
+# Kept on disk pending the author's confirmation it can be deleted.
+inputs/raw_material/\# Objective 1: Cross-Departmental Capstone Collabo
