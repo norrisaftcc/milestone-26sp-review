@@ -1,42 +1,45 @@
 #!/usr/bin/env python3
 """Build inputs/design/binder-reference.docx from pandoc's default reference.
 
-Source of truth: the designer's IDML
-(`inputs/design/AF_PerformanceObjective_Report.idml`). Style names and
-font assignments below are derived from `Resources/Styles.xml` inside
-that archive.
+Two reference sources:
+- IDML (`inputs/design/AF_PerformanceObjective_Report.idml`) — paragraph
+  and character style names in InDesign.
+- CSS specimen (`inputs/design/SAMPLE_OUTPUT/af-styles.css` +
+  `af-specimen.html`) — visual target for what `.docx` previews should
+  approximate when opened in Word *without* Adobe Fonts activated.
 
-Two substantive corrections to the prior iteration (PR #22):
+The CSS specimen defines fallback chains (e.g., `--font-body:
+"magistral", Georgia, serif`). This script uses the *system-installed
+fallback* as the primary `rFonts` value — Georgia for body, Arial
+Narrow for display, Courier New for monospace — so the .docx renders
+readably in any Word installation. The brand fonts (Magistral /
+Kallisto / Ethnocentric) get applied by InDesign at final layout via
+the AF paragraph-style name match; no fidelity is lost on the
+designer's machine.
 
-1.  Body and heading font families were swapped relative to the IDML.
-    Body = Magistral (the geometric sans does the body-face work);
-    headings = Kallisto (the serif does the display work). The PDF-
-    catalog analysis on PR #19 didn't tell us which family was
-    assigned to which role; the IDML does.
-2.  Style NAMES now match the designer's AF-prefixed paragraph styles
-    so InDesign import maps by name without manual reassignment.
+Heading hierarchy matches the CSS specimen:
 
-Substitutions:
+    pandoc emits     ->  AF style name (per HTML hierarchy)
+    ---------------------------------------------------------
+    Title            ->  AF Title
+    heading 1        ->  AF Title         (chapter title = h1 = af-title)
+    heading 2        ->  AF Headline      (section = h2 = af-headline)
+    heading 3        ->  AF Subheading    (subsection = h3 = af-subheading)
+    heading 4        ->  AF Heading Soft  (h4 = af-heading-soft)
+    heading 5        ->  AF Heading 6     (h5 = af-heading-6)
+    Body Text        ->  AF Body Text Clean
+    Block Text       ->  AF Pull Quote
+    Caption          ->  AF Caption
+    Verbatim Char    ->  AF Inline Code
+    Compact          ->  AF Body Text Clean   (fold to body)
+    First Paragraph  ->  AF Body Text Clean   (fold to body)
 
-    Body / Normal / Body Text       -> Magistral        (Adobe Typekit)
-    Heading 1 / 2 / 3               -> Kallisto         (Adobe Typekit)
-    Title                           -> Ethnocentric     (Adobe Typekit)
-    Inline code (VerbatimChar)      -> Courier Prime    (Google Fonts)
-    Heading ink color               -> #1A2332          (overridden by InDesign on import)
+Font substitutions (CSS fallback fonts as primary rFonts):
 
-Style name renames (pandoc emits the left side; InDesign expects the right):
-
-    Title           -> AF Title
-    heading 1       -> AF Headline
-    heading 2       -> AF Subheading
-    heading 3       -> AF Subheading   (per author: H3 folds to H2's AF style)
-    Body Text       -> AF Body Text Clean
-    Block Text      -> AF Pull Quote
-    List Paragraph  -> AF List Item
-    Caption         -> AF Caption
-    Verbatim Char   -> AF Inline Code  (the designer may want to create a matching
-                                        character style in InDesign; the current
-                                        IDML only has paragraph-level Typewriter)
+    Body / Normal / Body Text       -> Georgia      (CSS --font-body fallback)
+    Heading 1 / 2 / 3 / 4 / 5       -> Arial Narrow (CSS --font-display fallback)
+    Inline code (VerbatimChar)      -> Courier New  (CSS --font-mono primary)
+    Heading ink color               -> #1A2332      (overridden by InDesign on import)
 
 The audit's `Callout` paragraph style (a Sacred-Workflow callout block)
 is NOT yet created here — adding a new paragraph style to pandoc's
@@ -68,14 +71,19 @@ import zipfile
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_PATH = os.path.join(REPO_ROOT, "inputs/design/binder-reference.docx")
 
-# Per IDML: Resources/Styles.xml AppliedFont attribute on each AF paragraph
-# style. The previous iteration had body / heading swapped (Kallisto / Magistral)
-# based on PDF font-catalog analysis that couldn't tell which family was used
-# for which role.
-BODY_FONT = "Magistral"            # AF Body Text Clean, AF List Item, AF Heading Framed
-HEADING_FONT = "Kallisto"          # AF Headline, AF Subheading, AF Caption (serif)
-TITLE_FONT = "Ethnocentric"        # AF Title (was misread as wordmark-only)
-MONOSPACE_FONT = "Courier Prime"   # AF Body Text Typewriter, AF Label
+# The reference doc uses the CSS specimen's *system-font fallback chains* as
+# the primary rFonts values, NOT the Adobe Fonts (Magistral / Kallisto /
+# Ethnocentric) themselves. Rationale: when an author or reviewer opens the
+# output .docx in Word without Adobe Fonts activated, the brand fonts are
+# silently substituted by Word's default — and the user sees Calibri / Arial /
+# Consolas regardless of what's in the .docx. Using system fonts as primary
+# guarantees the Word preview matches the designer's stated fallback
+# behavior (`af-styles.css` font-family chains). The AF brand fonts still
+# get applied by InDesign on import via the AF style-name match — no
+# fidelity is lost on the designer's final-layout machine.
+BODY_FONT = "Georgia"              # CSS --font-body fallback after "magistral"
+HEADING_FONT = "Arial Narrow"      # CSS --font-display fallback after "ethnocentric"
+MONOSPACE_FONT = "Courier New"     # CSS --font-mono primary (no Adobe Fonts entry)
 INK_COLOR = "1A2332"               # heading color in pandoc's default; InDesign overrides on import
 
 
@@ -86,20 +94,23 @@ INK_COLOR = "1A2332"               # heading color in pandoc's default; InDesign
 # exit non-zero — preferable to silently producing a partially styled
 # reference doc that "looks right" but only covers some of the styles.
 SUBSTITUTIONS = [
-    # docDefaults rFonts (theme-referenced) -> Magistral (body face per IDML)
+    # docDefaults rFonts (theme-referenced) -> body face (Georgia, CSS fallback)
     (
-        "docDefaults rFonts -> Magistral (body face)",
+        f"docDefaults rFonts -> {BODY_FONT} (body face per CSS fallback)",
         '<w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia"'
         ' w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" />',
         f'<w:rFonts w:ascii="{BODY_FONT}" w:hAnsi="{BODY_FONT}"'
         f' w:eastAsia="{BODY_FONT}" w:cs="{BODY_FONT}" />',
         1,
     ),
-    # Heading rFonts (theme-referenced) -> Kallisto (display serif per IDML).
+    # Heading rFonts (theme-referenced) -> display face (Arial Narrow, CSS fallback).
     # Appears 6x in pandoc's default: H1/H2/H3 paragraph styles + Heading{N}Char
-    # character-style siblings.
+    # character-style siblings. Note: the CSS specimen uses Ethnocentric/Arial
+    # Narrow for H1 and H3 but Magistral/Georgia for H2; the reference doc applies
+    # one font to all three for simplicity (the per-heading differentiation is a
+    # future iteration). InDesign import resolves via AF style name regardless.
     (
-        "Heading rFonts -> Kallisto (display serif, H1/H2/H3)",
+        f"Heading rFonts -> {HEADING_FONT} (display face, H1/H2/H3)",
         '<w:rFonts w:asciiTheme="majorHAnsi"\n'
         '      w:eastAsiaTheme="majorEastAsia" w:hAnsiTheme="majorHAnsi"\n'
         '      w:cstheme="majorBidi" />',
@@ -118,9 +129,9 @@ SUBSTITUTIONS = [
         f'<w:color w:val="{INK_COLOR}" />',
         10,
     ),
-    # VerbatimChar / inline code monospace -> Courier Prime. One occurrence.
+    # VerbatimChar / inline code monospace -> Courier New (CSS canonical mono).
     (
-        "VerbatimChar (inline code) -> Courier Prime",
+        f"VerbatimChar (inline code) -> {MONOSPACE_FONT}",
         '<w:rFonts w:ascii="Consolas" w:hAnsi="Consolas" />',
         f'<w:rFonts w:ascii="{MONOSPACE_FONT}" w:hAnsi="{MONOSPACE_FONT}" />',
         1,
@@ -138,10 +149,18 @@ SUBSTITUTIONS = [
 # below are expected to duplicate, but the validation handles it if pandoc
 # shifts).
 STYLE_NAME_RENAMES = [
+    # Heading hierarchy per the CSS specimen (af-specimen.html):
+    #   <h1 class="af-title">  <h2 class="af-headline">  <h3 class="af-subheading">
+    #   <h4 class="af-heading-soft">  <h5 class="af-heading-6">
+    # Prior iteration mapped heading 1 -> AF Headline (one level too low);
+    # this iteration shifts the whole chain up so chapter titles render as
+    # AF Title display, not AF Headline body.
     ("Title",            "AF Title",            1),
-    ("heading 1",        "AF Headline",         1),
-    ("heading 2",        "AF Subheading",       1),
-    ("heading 3",        "AF Subheading",       1),  # author: H3 folds to H2's AF style
+    ("heading 1",        "AF Title",            1),
+    ("heading 2",        "AF Headline",         1),
+    ("heading 3",        "AF Subheading",       1),
+    ("heading 4",        "AF Heading Soft",     1),
+    ("heading 5",        "AF Heading 6",        1),
     ("Body Text",        "AF Body Text Clean",  1),
     ("Block Text",       "AF Pull Quote",       1),
     ("Caption",          "AF Caption",          1),

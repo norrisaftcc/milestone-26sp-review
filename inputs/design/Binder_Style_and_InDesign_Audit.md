@@ -181,27 +181,32 @@ Across all four documents combined, **486 of 557 runs carry direct character for
 
 ### Pandoc → AF style name mapping
 
-For the build pipeline to land in the right AF style on InDesign import, pandoc-emitted style names are rewritten in the reference doc:
+Updated to match the CSS specimen's HTML hierarchy (`af-specimen.html`: `<h1 class="af-title">`, `<h2 class="af-headline">`, `<h3 class="af-subheading">`). Pandoc-emitted style names are rewritten in the reference doc; `scripts/_postprocess_output_styles.py` covers the styles pandoc creates at emission time.
 
 | Pandoc emits (`w:name`) | Renamed to | Notes |
 |---|---|---|
 | `Title` | `AF Title` | |
-| `heading 1` | `AF Headline` | |
-| `heading 2` | `AF Subheading` | |
-| `heading 3` | `AF Subheading` | Folded per author direction |
-| `Body Text` | `AF Body Text Clean` | |
+| `heading 1` | `AF Title` | Chapter title = `<h1>` = `.af-title` per CSS specimen |
+| `heading 2` | `AF Headline` | Section = `<h2>` = `.af-headline` |
+| `heading 3` | `AF Subheading` | Subsection = `<h3>` = `.af-subheading` |
+| `heading 4` | `AF Heading Soft` | `<h4>` = `.af-heading-soft` |
+| `heading 5` | `AF Heading 6` | `<h5>` = `.af-heading-6` (reversed-bar treatment) |
+| `Body Text` / `Compact` / `First Paragraph` | `AF Body Text Clean` | All body variants folded to one AF target |
 | `Block Text` | `AF Pull Quote` | |
 | `Caption` | `AF Caption` | |
 | `Verbatim Char` | `AF Inline Code` | New character-style name; designer may want to create matching style in InDesign |
-| `List Paragraph` | (not yet renamed) | Pandoc creates this at emission, not in the reference doc. Known limitation — handled via InDesign style-mapping preset or a future post-emit script. |
+| `Source Code` | `AF Body Text Typewriter` | Pandoc-emit-time; handled by post-emit script |
+| `List Paragraph` | `AF List Item` | Pandoc-emit-time; handled by post-emit script |
 
-**On Adobe Typekit:** Typekit fonts cannot embed in `.docx` — Word and pandoc do not consume web-font CSS at export time, and the resulting `.docx` will not carry the typeface metrics. The designer's InDesign workstation has the kit activated via Adobe Fonts. The `.docx` export pipeline (Word, pandoc) therefore needs *one of*: (a) the same Adobe Fonts kit activated on whichever workstation runs the build, or (b) a documented font-fallback chain in the reference doc (e.g., a Google Fonts second-choice such as Lora for Kallisto's display-serif role, Exo for Magistral's sans-body role) that lets non-Typekit machines build the binder with acceptable substitution.
+**Reference doc uses CSS fallback fonts as primary `rFonts`** (not the Adobe Fonts themselves). When an author or reviewer opens an output `.docx` in Word without Adobe Fonts activated, the `.docx` specifies Georgia / Arial Narrow / Courier New (per the CSS specimen's fallback chains — `--font-body: "magistral", Georgia, serif` → use Georgia; `--font-display: "ethnocentric", "Arial Narrow", ... ` → use Arial Narrow). System-installed fonts render readably everywhere. The AF brand fonts (Magistral / Kallisto / Ethnocentric) still get applied by InDesign at final layout via the AF paragraph-style name match — no fidelity loss on the designer's machine. The trade-off: someone opening the `.docx` in Word doesn't see the brand fonts; they see the designer's stated fallbacks.
 
-**Audit recommendations explicitly retired** (recorded here so future readers don't reintroduce them):
+**Audit recommendations explicitly retired** (recorded so future readers don't reintroduce them):
 
-1. *"Body and headings share the same family"* (audit original) — retired by PR #21 in favor of a sans/serif split.
-2. *"Courier Prime reserved for distinctive in-character moments only; IBM Plex Mono for routine monospace"* (audit original) — retired by PR #21. Courier Prime is the single routine monospace voice.
-3. *"Body = Kallisto (serif); Heading = Magistral (sans)"* (PR #21 + PR #22 interpretation of the PDF font catalog) — retired by this PR. The IDML's `AppliedFont` attributes show Magistral on `AF Body Text Clean` and Kallisto on `AF Headline` / `AF Subheading` — the direction is reversed.
+1. *"Body and headings share the same family"* (audit original) — retired by PR #21.
+2. *"Courier Prime reserved for distinctive in-character moments only; IBM Plex Mono for routine monospace"* (audit original) — retired by PR #21. Single monospace voice.
+3. *"Body = Kallisto (serif); Heading = Magistral (sans)"* (PR #21 + PR #22 interpretation of the PDF font catalog) — retired by PR #24. The IDML's `AppliedFont` attributes reversed the direction.
+4. *"Heading 1 maps to AF Headline"* (PR #24) — retired by this iteration. The CSS specimen's HTML hierarchy shows `<h1>` = AF Title, so chapter top headings map up one tier. Also adds H4 → AF Heading Soft and H5 → AF Heading 6.
+5. *"Use Magistral/Kallisto/Ethnocentric as primary `rFonts` in the reference doc"* (PR #24) — retired by this iteration. Switched to the CSS specimen's system-font fallbacks (Georgia/Arial Narrow/Courier New) so Word previews render readably without Adobe Fonts. Brand fonts still applied by InDesign at layout time via AF style name match.
 
 ---
 
