@@ -163,20 +163,25 @@ Across all four documents combined, **486 of 557 runs carry direct character for
 
 ## Suggested font assignments
 
-These align with the author's stated intent. Where Adobe Typekit is named, note that **Typekit fonts cannot embed in `.docx`** — the CSS embed link in the Fonts notes only works in browsers. For InDesign you need the Typekit fonts activated via Creative Cloud on the import workstation (Typekit / Adobe Fonts sync), or — for the Google Fonts — the static `.ttf`/`.otf` files installed locally.
+> **Updated after the InDesign PDF calibration (PR #19).** The audit's original font assignments — built from the author's pre-design Fonts/Look-and-Feel notes — proposed Exo for body and Goldman for display, expecting AF brand fonts to arrive later. The designer's PDF export revealed the AF brand fonts are already in use as Adobe Typekit kit `qng8dvy`, with a deliberate sans-serif (display) / serif (body) split. The table below now reflects the designer's actual font system. The earlier proposal is preserved in git history.
 
 | Role | Recommended face | Source | Notes |
 |---|---|---|---|
-| Body copy (long-form prose) | **Exo** Regular 10–11pt, 1.4 line-height | Google Fonts | Geometric sans, good x-height, holds well at body size. The author's only listed sans-serif body candidate. |
-| Heading 1 (chapter / objective title) | **Goldman** Bold, 22–28pt | Google Fonts | Wedge-serif display face. Matches the "in-character / institutional banner" tone of the AlgoCratic Futures framing. If AF brand fonts arrive and include a display face, swap Goldman for that. |
-| Heading 2 (section) | **Exo** Bold 14–16pt | Google Fonts | Tonally consistent with body. |
-| Heading 3 (subsection) | **Exo** Semibold 11–12pt with small letterspacing | Google Fonts | |
-| Monospace (code, terminal voice, Sacred Workflow callouts, in-character "GRAY clearance" tags) | **IBM Plex Mono** Regular 9.5–10pt | Google Fonts | Best legibility of the three monospaces; supports the simulation framing. |
-| Display monospace (titles, banners, "AlgoCratic Futures™" wordmark contexts) | **Courier Prime** Bold | Google Fonts | Reserve for distinctive in-character moments; do not use for body code. |
-| Captions, footers, page numbers, classification banners | **Exo** Regular 8–9pt, tracking +20 | Google Fonts | The "Classification: Indigo and Above" banners in INDIGO and PerfZero v2 are currently Arial 7.5pt — Exo at the same visual size with +20 tracking will read as deliberate UI chrome. |
-| AF brand fonts (when delivered) | TBD by author | AF style guide | Likely candidates for Heading 1 / display roles, replacing Goldman if the style guide says so. |
+| Body copy (long-form prose) | **Kallisto** Light or Medium 10–11pt, 1.4 line-height | Adobe Typekit (kit `qng8dvy`) | Serif by Hannes von Döhren / ITC. Deliberate counterpoint to the Magistral display sans — the audit's earlier "same family for body and headings" recommendation is **retired** in favor of this sans/serif split. |
+| Heading 1 (chapter / objective title) | **Magistral** Bold or ExtraBold, 22–28pt | Adobe Typekit (kit `qng8dvy`) | Geometric humanist sans by Paratype. Display face for chapter titles and the binder's branded chrome moments. |
+| Heading 2 (section) | **Magistral** Medium 14–16pt | Adobe Typekit (kit `qng8dvy`) | Same family as Heading 1, lighter weight for section breaks. |
+| Heading 3 (subsection) | **Magistral** Book 11–12pt with small letterspacing | Adobe Typekit (kit `qng8dvy`) | |
+| Monospace — routine voice (code, file paths, callouts, Sacred Workflow, in-character "GRAY clearance" tags, AlgoCratic Futures wordmark contexts) | **Courier Prime** Regular 9.5–10pt | Google Fonts | The audit's earlier "Courier Prime reserved for distinctive in-character moments only / IBM Plex Mono for routine code" recommendation is **retired**. The designer uses Courier Prime as the single monospace voice across the binder, and that consolidation is the right call — drops one font, drops one decision per paragraph. |
+| Captions, footers, page numbers, classification banners | **Magistral** Book or **Kallisto** Light, 8–9pt with tracking +20 | Adobe Typekit (kit `qng8dvy`) | Designer's actual choice between these two for chrome text not yet confirmed; visual confirmation pending the designer working session. |
+| Wordmark / brand chrome (`ALGOCRATIC FUTURES™` strap, `INSTITUTIONAL EFFECTIVENESS DIVISION` chrome) | **Ethnocentric Rg-Regular** | Adobe Typekit (kit `qng8dvy`) | Futuristic / techno sans. Reserved for the brand chrome moments — the cover wordmark and the institutional headers. Should *not* leak into body heading or paragraph styles. |
+| Decorative accent | **Thirsty Script Regular** | Adobe Typekit (kit `qng8dvy`) | Script face used sparingly for signature or tagline moments. Treat as a "designer's reserved tool" — do not invoke from markdown source. |
 
-**On Adobe Typekit:** the Typekit CSS URL is **not useful for `.docx` export** — Word and pandoc do not consume web-font CSS at export time, and the resulting `.docx` will not carry the typeface metrics. If the author wants those Typekit faces in InDesign, the workstation that runs the InDesign import needs to be signed into Adobe Fonts and have those families synced. Otherwise the recommendation is to commit to the Google Fonts list, which **can** be installed as local OTF/TTF, and let the Typekit fonts be a "designer's nice-to-have during InDesign layout" rather than something the `.docx` pipeline needs to know about.
+**On Adobe Typekit:** Typekit fonts cannot embed in `.docx` — Word and pandoc do not consume web-font CSS at export time, and the resulting `.docx` will not carry the typeface metrics. The designer's InDesign workstation has the kit activated via Adobe Fonts; this is what allows the PDF to render the layout correctly. The `.docx` export pipeline (Word, pandoc) therefore needs *one of*: (a) the same Adobe Fonts kit activated on whichever workstation runs the build, or (b) a documented font-fallback chain in the reference doc (e.g., a Google Fonts second-choice such as Exo for Magistral's sans role, Lora for Kallisto's serif role) that lets non-Typekit machines build the binder with acceptable substitution and the designer's machine remains the source of truth for final layout.
+
+**Two audit recommendations explicitly retired** (recorded here so future readers don't reintroduce them):
+
+1. *"Body and headings share the same family"* — replaced by the deliberate Magistral (sans, display) + Kallisto (serif, body) split.
+2. *"Courier Prime reserved for distinctive in-character moments only; IBM Plex Mono for routine monospace"* — replaced by Courier Prime as the single routine monospace voice. IBM Plex Mono drops out of the recommendation set entirely.
 
 ---
 
@@ -187,13 +192,13 @@ Each of the four example documents contributes at least one element worth pullin
 | Element | Source | Adopted as |
 |---|---|---|
 | Coherent 3-color palette (`#1A2332` ink / `#2B4C6F` rule / `#595959` muted) | **Spring** | Base `ink` / `rule` / `muted` color tokens in the unified palette |
-| Single body face used consistently | **Spring** | The "one body face" principle — Exo (or the AF body face when delivered) replaces Calibri / Arial across the board |
+| Single body face used consistently | **Spring** | The "one body face" principle — Kallisto (the designer's settled body face, per PR #19's calibration) replaces Calibri / Arial across the board |
 | Restraint to three heading levels actually applied | **Spring** | Only `Heading1` / `Heading2` / `Heading3` defined in the reference doc; `Heading4`–`Heading6` stripped |
 | Classification-banner / clearance-frame aesthetic | **INDIGO** | The `accent-indigo` / `accent-gray` palette slots, the `Caption` paragraph spec at +20 tracking, and a dedicated treatment for clearance tags |
 | Full-page brief composition with a top color block | **INDIGO** | Reproduced in InDesign as a styled text frame with a color block, *not* imported as anonymous Word tables (see import notes) |
 | Per-document footer naming the classification and page number | **INDIGO** and **PerfZero v2** | A single footer convention: one classification line + page number, applied across the binder with per-doc clearance text |
 | Header rule above page chrome | **PerfZero v2** | A 0.5pt rule on the header paragraph in the reference doc |
-| In-character monospace voice (terminal callouts, AF wordmarks) | **PerfZero v1** / **PerfZero v2** | The `Callout` paragraph style (IBM Plex Mono) plus the `Code` character style |
+| In-character monospace voice (terminal callouts, AF wordmarks) | **PerfZero v1** / **PerfZero v2** | The `Callout` paragraph style (Courier Prime) plus the `Code` character style |
 | Hierarchical numbered lists for procedural content (Sacred Workflow stages, the seven-stage checklist) | **Spring** / **PerfZero v2** | The `NumberedList` paragraph style |
 | Coherent 3-color palette restricted to ink/rule/muted *within* body content, with brand violets reserved for clearance framing only | derived from the contrast between **Spring** (3 colors) and **PerfZero v2** (22 colors) | The "clearance palette stays out of body content" rule explicit in the color tokens table |
 
@@ -214,14 +219,14 @@ A minimal paragraph + character style list for the binder. Eight paragraph style
 
 | Style id | Role | Spec |
 |---|---|---|
-| `Normal` (or `Body`) | Default body paragraph | Exo Regular 10.5pt / 14.7pt leading / `#1A2332` / 0pt before / 6pt after / first-line indent 0 |
-| `Heading1` | Chapter title / objective name | Goldman Bold 24pt / 32pt leading / `#1A2332` / 0pt before / 12pt after / keep-with-next |
-| `Heading2` | Major section | Exo Bold 15pt / 20pt leading / `#1A2332` / 18pt before / 6pt after / keep-with-next |
-| `Heading3` | Subsection | Exo SemiBold 11.5pt / 16pt leading / `#1A2332` / 12pt before / 4pt after / keep-with-next |
-| `BulletList` | Unordered list item | Exo Regular 10.5pt / 14pt leading / hanging indent 0.25" / bullet `•` |
-| `NumberedList` | Ordered list item | Exo Regular 10.5pt / 14pt leading / hanging indent 0.25" / "1." numbering |
-| `Callout` | In-character / Sacred Workflow callout block | IBM Plex Mono Regular 9.5pt / 13pt leading / `#2B4C6F` / 0.25" left indent / 4pt rule on left |
-| `Caption` | Figure/table caption, classification footer text | Exo Regular 8pt / 11pt leading / `#595959` / tracking +20 |
+| `Normal` (or `Body`) | Default body paragraph | Kallisto Light or Medium 10.5pt / 14.7pt leading / `#1A2332` / 0pt before / 6pt after / first-line indent 0 |
+| `Heading1` | Chapter title / objective name | Magistral Bold or ExtraBold 24pt / 32pt leading / `#1A2332` / 0pt before / 12pt after / keep-with-next |
+| `Heading2` | Major section | Magistral Medium 15pt / 20pt leading / `#1A2332` / 18pt before / 6pt after / keep-with-next |
+| `Heading3` | Subsection | Magistral Book 11.5pt / 16pt leading / `#1A2332` / 12pt before / 4pt after / keep-with-next |
+| `BulletList` | Unordered list item | Kallisto Light or Medium 10.5pt / 14pt leading / hanging indent 0.25" / bullet `•` |
+| `NumberedList` | Ordered list item | Kallisto Light or Medium 10.5pt / 14pt leading / hanging indent 0.25" / "1." numbering |
+| `Callout` | In-character / Sacred Workflow callout block | Courier Prime Regular 9.5pt / 13pt leading / `#2B4C6F` / 0.25" left indent / 4pt rule on left |
+| `Caption` | Figure/table caption, classification footer text | Magistral Book or Kallisto Light 8pt / 11pt leading / `#595959` / tracking +20 |
 
 ### Character styles
 
@@ -229,7 +234,7 @@ A minimal paragraph + character style list for the binder. Eight paragraph style
 |---|---|---|
 | `Strong` | Inline bold within body text | Inherit, weight = Bold |
 | `Emphasis` | Inline italic | Inherit, italic |
-| `Code` | Inline code, file paths, command names | IBM Plex Mono Regular, size 95% of current, color `#2B4C6F` |
+| `Code` | Inline code, file paths, command names | Courier Prime Regular, size 95% of current, color `#2B4C6F` |
 | `Hyperlink` | Links | Inherit, underline, color `#2B4C6F` |
 
 ### Color palette to enforce
@@ -294,8 +299,8 @@ A trivial script could grep the markdown sources for things that will produce di
 
 ## Items needing human judgment
 
-1. **Which face takes the Heading 1 / display role: Goldman, Exo Bold, or an AF brand font not yet delivered?** Goldman is recommended above as a stand-in. If the AF brand kit contains a display face the author wants used everywhere, Goldman should be deleted from the recommendation. The author should decide before committing the reference doc.
-2. **Are Adobe Typekit fonts in or out of scope for the binder?** They cannot ride along in the `.docx` files. If the author wants to use them, the binder fonts at print time will come from the InDesign workstation's Adobe Fonts sync, not from the markdown pipeline. The Google Fonts list is the only candidate that can be installed locally and shared. Decide which world this binder lives in.
+1. ~~**Which face takes the Heading 1 / display role: Goldman, Exo Bold, or an AF brand font not yet delivered?**~~ **Resolved.** The designer's PDF export (`inputs/design/SAMPLE_OUTPUT/AF_PerformanceObjective_Report.pdf`, analyzed in PR #19) revealed that Magistral (Adobe Typekit) is the display face in use, with Kallisto for body and Courier Prime for monospace — these are the AF brand fonts, delivered as Typekit kit `qng8dvy`. The font-assignments table above reflects this resolution.
+2. ~~**Are Adobe Typekit fonts in or out of scope for the binder?**~~ **Resolved.** In. The designer's workstation has kit `qng8dvy` activated; the InDesign-side fonts are Typekit. The `.docx` pipeline needs a fallback chain (or the same Typekit activation on the build workstation) — captured in the "On Adobe Typekit" note above.
 3. **Is INDIGO's table-as-layout treatment intentional design, or an export artifact?** The current `.docx` builds the entire INDIGO brief as a series of full-width tables with cell shading. If that's the desired final design (institutional-classification banner aesthetic), it needs to be reproduced in InDesign as a proper text frame with a top color block — not as imported anonymous Word tables. If it's just how pandoc rendered something, the markdown source can be simplified.
 4. **Do PerfZero v1 and v2 both ship in the binder, or does v2 supersede v1?** They use different style names for the same logical heading levels, and v2's color palette in particular is much wider than v1's. If both ship, they need to reconcile. If only v2 ships, deleting v1 saves an inconsistency.
 5. **What goes in `Callout` paragraphs?** The recommended style above is reserved for "Sacred Workflow" / in-character pedagogy. The author should decide whether the AlgoCratic Futures clearance tags (GRAY clearance, YELLOW exit tickets, etc.) get their own dedicated paragraph or character style, or all share `Callout`. The current `.docx` files use direct color and bold for these but no named style.
