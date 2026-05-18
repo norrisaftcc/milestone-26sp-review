@@ -147,21 +147,9 @@ Exit interview data indicates students could describe the PR-based workflow flue
 
 -----
 
-## Scalability and Institutional Value
+## Materials available on request
 
-### Cross-Course Implementation
-
-The modular design of the Sacred Workflow framework enables staged adoption across the curriculum:
-
-- **CSC 289** (Capstone): Full four-module implementation, current semester
-- **CTS 285** (Web Development): Issue tracking and basic branch workflow, current semester
-- **CSC 151** (Intro CS): Issue tracking module, planned implementation
-
-Each time a student encounters this workflow in a subsequent course, the professional habit is reinforced rather than introduced. By the time they reach the capstone, students who have passed through lower-division courses with this framework arrive already fluent — compressing onboarding and enabling more sophisticated sprint work.
-
-### Reusable Artifacts Created
-
-All materials developed under this objective are immediately reusable by any instructor in the department:
+The same workflow currently runs in CSC 289 (full four-module implementation) and in CTS 285 (issue tracking and basic branch workflow). If any other faculty member wants to try it — in CSC 151 or elsewhere — the supporting materials are available:
 
 - `WORKFLOW_GUIDE.md` — Complete Sacred Workflow documentation
 - `ISSUE_TEMPLATE.md` — Issue creation template and guidelines
@@ -170,7 +158,7 @@ All materials developed under this objective are immediately reusable by any ins
 - `DAY_1_ESSENTIALS.md` — Day 1 orientation and setup guide
 - Sprint planning integration guide, peer review rubrics, and scaffolding progression documentation
 
-This is infrastructure, not coursework. Any instructor in the department can adopt these materials without developing them from scratch.
+Happy to share GitHub links with anyone who asks.
 
 -----
 
