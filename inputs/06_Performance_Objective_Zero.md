@@ -77,7 +77,9 @@ The transmission model also has no mechanism for identity-level work. Students t
 
 The framework is organized around a single design principle derived from Dilts: intervene at the level where the problem actually lives, and ensure every level above capability is actively supporting — not undermining — the capability work.
 
-| Level | Question | Standard Delivery | AlgoCratic Futures |
+The following table is the author's self-assessment of which Dilts levels the AlgoCratic Futures framing is designed to engage, relative to a stripped-down course-delivery baseline. It is not a measured outcome.
+
+| Level | Question | Standard Delivery (author self-assessment) | AlgoCratic Futures (author self-assessment) |
 |---|---|:---:|:---:|
 | **6 — PURPOSE** | *What for?* | ○ | **●** |
 | **5 — IDENTITY** | *Who am I?* | ○ | **●** |
@@ -85,7 +87,7 @@ The framework is organized around a single design principle derived from Dilts: 
 | **3 — CAPABILITY** | *How?* | **●** | **●** |
 | **2 — BEHAVIOR** | *What?* | **●** | **●** |
 | **1 — ENVIRONMENT** | *Where/When?* | ○ | **●** |
-| **TOTAL LEVELS ADDRESSED** | | **2** | **6** |
+| **TOTAL LEVELS ENGAGED (self-assessed)** | | **2** | **6** |
 
 ### Level 1: Environment — Where does this happen?
 
