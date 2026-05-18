@@ -4,6 +4,8 @@
 
 ## Objective Statement
 
+**Original objective (verbatim):** "Meet three times with cross-department students for assignments."
+
 **Purpose:** Develop and formalize a cross-departmental collaboration framework between Computer Science and Graphic Design capstone courses by implementing structured processes and assessment methods.
 
 **Requirements:**
