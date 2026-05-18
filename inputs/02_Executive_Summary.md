@@ -31,12 +31,6 @@ Three formal performance objectives were specified for the Spring 2026 review pe
 
 ---
 
-## The Distinction That Matters
-
-The Google Project Management Certificate capstone, *Sauce & Spoon*, asks students to manage a fictional restaurant. Thousands of practitioners have completed it. It is a well-regarded credential. **What was built here is the restaurant.** The work documented in this binder is not the work of running a scenario — it is the work of designing one, delivering it across two courses, instrumenting it for measurement, and making it replicable by other instructors. That is a different order of labor. It produces a different institutional artifact.
-
----
-
 ## Objective Summaries
 
 **Objective 1 — Cross-Departmental Capstone Collaboration Framework.** Formalized the collaboration protocol between CSC capstone teams and Graphic Design students with a documented three-brief exchange (Product Brief, Technical Brief, Design Brief Response), three milestone-anchored touchpoints across Sprint 0 and Sprint 1, and a 100-point pitch-and-collaboration rubric measuring communication quality, deliverable integration, collaboration process, and final product quality. GRD students were integrated into the AlgoCratic Futures simulation as a defined GRAY-clearance cross-functional role. Five paired teams, five completed projects, 100% milestone completion, average collaboration score 87/100, with both departments committing to continue and refine the protocol for Fall 2026.

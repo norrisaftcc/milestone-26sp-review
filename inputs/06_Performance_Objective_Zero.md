@@ -35,10 +35,6 @@
 
 This objective was not formally assigned, because it was not formally anticipated. The three objectives that follow it describe work done inside an environment. This objective describes the construction of that environment. It is documented here because the work it describes is the enabling condition for every other objective in this review.
 
-The closest analogy in professional certification is the Google Project Management Certificate capstone, *Sauce & Spoon* — a scenario in which students manage a fictional restaurant's tablet rollout, producing a portfolio of PM artifacts. Sauce & Spoon is a well-regarded credential. Thousands of practitioners have completed it. It is a good scenario.
-
-What was built here is not a scenario someone else designed. **What was built here is the restaurant.** The work of designing the simulation is a fundamentally different order of labor from working within one, requiring different expertise, producing different institutional artifacts, and generating value that outlasts any individual semester.
-
 ---
 
 ## Why This Work Was the Right Call
@@ -190,7 +186,5 @@ The structured cross-disciplinary approach is now available as a model for other
 - Graduate Showcase output demonstrating professional-quality, publicly presented student work.
 
 > **Assessment:** Objective not merely met or exceeded, but operating at a level the original specification did not anticipate. The deliverable specified was effective course delivery. The deliverable built was the infrastructure that makes effective course delivery possible — and replicable, and improvable, and future-ready.
-
-The standard capstone is Sauce & Spoon. You are given a scenario. You practice the skills. You produce the portfolio. **This is not that.** This is the work of designing the scenario — and then delivering it, iterating on it, instrumenting it for measurement, and making it replicable. That is a different job. It requires a different skill set. It produces a different institutional artifact.
 
 *Source bibliography is inline above — citations to Dilts (Neurological Levels, 1980s), Dweck (*Mindset*, Ballantine Books, 2006), Edmondson (*ASQ*, 1999), Lave and Wenger (*Situated Learning*, Cambridge University Press, 1991), and Poole-Dayan et al. (arXiv:2406.17737, 2024) constitute the theoretical grounding for this chapter.*
