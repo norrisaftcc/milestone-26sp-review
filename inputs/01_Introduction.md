@@ -2,7 +2,7 @@
 
 **Spring 2026 Performance Review · Binder Front Matter**
 **Instructor:** [REDACTED]
-**Program:** CSC 289 (Software Development Capstone) · CTS 285 (Web Application Development) · CPD Tools Group
+**Program:** CSC 289 (Software Development Capstone) · CTS 285 (Systems Analysis & Design) · CPD Tools Group
 **Review Period:** Spring 2026
 
 ---

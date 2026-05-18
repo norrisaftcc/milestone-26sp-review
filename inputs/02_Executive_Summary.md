@@ -45,4 +45,4 @@ Three formal performance objectives were specified for the Spring 2026 review pe
 
 ## Bottom Line
 
-All three specified objectives were met. Background on the AlgoCratic Futures instructional environment — the simulation inside which the Objective 2 assignments were delivered — appears as supporting context later in the binder. The rest of this binder is the evidence base for the three objectives.
+All three specified objectives were met. Background on the AlgoCratic Futures instructional environment — the simulation inside which the Objective 2 assignments were delivered — appears as supporting context later in the binder (labeled as "Objective Zero", as it was foundational.) The rest of this binder is the evidence base for the three objectives.

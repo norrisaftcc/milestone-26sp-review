@@ -106,7 +106,7 @@ In this framework, the question is: *How fast is this student improving, and in 
 >
 > These are not the same population.
 >
-> Treating them as equivalent is one of the most consequential errors in standard technical education.
+> Treating them as equivalent is one of the most consequential errors in standard technical education, in the author's opinion.
 
 The student who arrives at zero and finishes at fifty has demonstrated something more important for a hiring manager than the student who arrives at sixty and finishes at sixty-five: they demonstrated that they will not stay where they started. This is operationalized through rubric architecture that rewards documented iteration, through GitHub commit-history analysis that makes growth visible, and through a startup-aesthetic performance dashboard that reports velocity metrics in professional vocabulary while measuring genuine pedagogical outcomes underneath.
 
@@ -145,7 +145,7 @@ Projects include a financial aid tracker, a recommendation engine, a biometrics/
 
 ### Replicable Infrastructure
 
-AlgoCratic Futures is not a set of lesson plans for one semester. It is a documented, version-controlled, pedagogically grounded instructional platform. Any instructor willing to invest in understanding the framework can deploy it. The documentation exists. The infrastructure exists. The assessment architecture exists. The iteration cost of running it a second time is a fraction of the build cost.
+AlgoCratic Futures is not a set of lesson plans for one semester. It is a documented, version-controlled, pedagogically grounded instructional platform. Any instructor willing to invest in experimenting with the framework can deploy it. The documentation exists. The infrastructure exists. The assessment architecture exists. The iteration cost of running it a second time is a fraction of the build cost. 
 
 ### Future-Ready Alignment
 

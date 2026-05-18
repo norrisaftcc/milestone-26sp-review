@@ -9,7 +9,7 @@
 
 ## Objective Statement
 
-**Original objective (verbatim):** "Four assignments covering the topic 'GitHub collaboration and version control with your team'. (The assignments were delivered, but were disguised as portions of a game.)"
+**Original objective (verbatim):** "Four assignments covering the topic 'GitHub collaboration and version control with your team'. 
 
 **Purpose:** Develop four instructional modules covering foundational source control and collaborative development practices — issue tracking, pull request workflow, branch-and-merge strategy, and self/peer code review — along with corresponding hands-on exercises and assessment instruments.
 
@@ -19,7 +19,7 @@
 - Create and implement a self/peer review framework for code quality
 - Integrate issue tracking with the development workflow
 
-**Outcome:** All three stated requirements were met. The four assignments were delivered as the original objective specified, disguised as portions of a game.
+**Outcome:** All three stated requirements were met. The four assignments were delivered as the original objective specified, disguised as portions of a 'workforce simulation' (most of the course took place within this simulation: See Objective Zero for additional details.)
 
 -----
 
