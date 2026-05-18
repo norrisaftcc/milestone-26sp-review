@@ -15,7 +15,7 @@
 
 ## SMART Goal (reformulation)
 
-**Specific:** Provide project management support for the development and delivery of the Ghost Student Discovery Tool — an internal fraud detection utility targeting fraudulent enrollment and financial aid abuse — by gathering and documenting customer requirements from stakeholder departments, identifying and resolving planning and technical obstacles during the development cycle, and establishing a Scrum/GitHub workflow as a non-optional project standard.
+**Specific:** Support the CPD Tools Group development team's delivery of the Ghost Student Discovery Tool — an internal fraud detection utility targeting fraudulent enrollment and financial aid abuse — by providing project management, gathering and documenting customer requirements from stakeholder departments, identifying and resolving planning and technical obstacles during the development cycle, and reinforcing the team's Scrum/GitHub workflow discipline as a non-optional project standard.
 
 **Measurable:** The tool shipped in May 2026. Four discrete contribution areas were verified by the development team:
 
@@ -38,7 +38,7 @@ The Ghost Student Discovery Tool was designed, built, tested, and shipped by the
 
 - **HS** and **MM** — lead developers; primary design, implementation, and ship-readiness work.
 - **BS** — supporting developer.
-- **DT** — team lead.
+- **Chair (DT)** — Chair; thanked by the contributor for his collaboration on the project.
 - **[REDACTED]** (the contributor documented here) — project management support, as detailed in the Contribution Summary below.
 
 Full credit for the technical delivery belongs to the development team; the objective documented here covers the project-management, requirements, and process-discipline scaffolding that ran alongside their work.
@@ -64,7 +64,7 @@ The regional threat is concrete: the Melvin prosecution (sentenced June 2025) na
 
 ## Tool Capabilities
 
-Delivered by the development team (lead developers **HS** and **MM**, supporting developer **BS**, team lead **DT**); summarized here for binder context. Full technical credit belongs to the team.
+Delivered by the development team (lead developers **HS** and **MM**, supporting developer **BS**, with **Chair (DT)**); summarized here for binder context. Full technical credit belongs to the team.
 
 - Composite-signal duplicate detection across names, addresses, emails, and phone numbers.
 - Configurable sensitivity thresholds with weighted confidence scoring.
