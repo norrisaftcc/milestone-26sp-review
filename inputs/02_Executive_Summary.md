@@ -17,16 +17,16 @@ Three formal performance objectives were specified for the Spring 2026 review pe
 |---|---|
 | Performance objectives completed | 3 of 3 (plus Objective Zero) |
 | Courses delivered under the framework | 2 (CSC 289, CTS 285) |
-| Capstone teams paired with Graphic Design | 5 of 5 completed |
-| Cross-departmental milestone completion | 100% |
-| Average collaboration rubric score (Obj. 1) | 87 / 100 |
-| Students creating issues before code by Sprint 2 (Obj. 2) | 100% |
-| Pull requests properly linked to tracked issues (Obj. 2) | 95% |
-| Merge conflicts handled without instructor intervention (Obj. 2) | 89% |
-| Work lost to Git mistakes across the term (Obj. 2) | 0 |
-| Average peer review score (Obj. 2) | 85 / 100 |
+| Capstone teams paired with Graphic Design | 5 of 5 completed [SOURCE NEEDED: course roster / pairing record] |
+| Cross-departmental milestone completion | 100% [SOURCE NEEDED: milestone log] |
+| Average collaboration rubric score (Obj. 1) | 87 / 100 [SOURCE NEEDED: graded rubrics] |
+| Students creating issues before code by Sprint 2 (Obj. 2) | 100% [SOURCE NEEDED: GitHub org export / sprint artifact] |
+| Pull requests properly linked to tracked issues (Obj. 2) | 95% [SOURCE NEEDED: GitHub org export] |
+| Merge conflicts handled without instructor intervention (Obj. 2) | 89% [SOURCE NEEDED: instructor log / git history analysis] |
+| Work lost to Git mistakes across the term (Obj. 2) | 0 [SOURCE NEEDED: incident log / counting method] |
+| Average peer review score (Obj. 2) | 85 / 100 [SOURCE NEEDED: graded rubrics] |
 | Ghost Student Discovery Tool — ship status (Obj. 3) | Delivered May 2026 |
-| Student records covered by the tool's screening | ~12,000 |
+| Student records covered by the tool's screening | ~12,000 [SOURCE NEEDED: registrar export] |
 
 ---
 
