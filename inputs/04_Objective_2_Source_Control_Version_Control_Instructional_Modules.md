@@ -162,15 +162,11 @@ Happy to share GitHub links with anyone who asks.
 
 -----
 
-## Assessment: Why This Exceeds Minimum Expectations
+## Assessment
 
-The stated minimum for this objective was to create four instructional modules on branch strategy, peer review, and issue tracking. That minimum has been met.
+The original objective specified four assignments covering GitHub collaboration and version control with a team. Four assignments were delivered, in the form documented above. The objective is met.
 
-What distinguishes this outcome from minimum compliance is the nature of what was built. Minimum compliance produces four assignments. What was delivered is a **transferable pedagogical framework** grounded in peer-reviewed research, validated by quantifiable student outcomes, and positioned for adoption across the curriculum.
-
-Standard instruction in version control produces students who know Git commands. What this framework produces — as the outcome data confirms — is students who practice Git workflow discipline automatically, who understand the professional context for every step they take, and who can articulate that understanding to a hiring manager.
-
-The Garousi et al. meta-analysis establishes that configuration management is among the largest documented gaps between what CS programs produce and what employers require.<sup>[1]</sup> This objective directly, measurably, and scalably addresses that gap. That is not minimum performance. That is the work a department does when it takes industry alignment seriously.
+The supporting materials (the named workflow, the scaffolded exercise progression, the four-category review rubric, the day-one orientation) are the form the four assignments took. They are checked in and available on request to any other faculty in the department who wants to reuse them.
 
 -----
 
