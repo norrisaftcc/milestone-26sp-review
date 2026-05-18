@@ -9,6 +9,8 @@
 
 ## Objective Statement
 
+**Original objective (verbatim):** "Four assignments covering the topic 'GitHub collaboration and version control with your team'. (The assignments were delivered, but were disguised as portions of a game.)"
+
 **Purpose:** Develop four instructional modules covering foundational source control and collaborative development practices — issue tracking, pull request workflow, branch-and-merge strategy, and self/peer code review — along with corresponding hands-on exercises and assessment instruments.
 
 **Stated Requirements:**
@@ -25,11 +27,7 @@
 
 ### Why Version Control Workflow Is a Workforce Issue, Not Just a Technical Skill
 
-Anyone who has reviewed a junior developer's onboarding experience knows that knowing Git commands and practicing Git workflow are not the same thing — and employers have become precise about that distinction.
-
-Garousi et al.'s 2020 systematic review in *IEEE Software*, synthesizing 33 empirical studies across 12 countries and more than 4,000 data points, identified **configuration management** — the professional term for version control workflow — as one of the largest documented gaps between what CS graduates know and what employers actually need.<sup>[1]</sup> This is not an anecdotal concern. It is the consensus finding of a decade of software engineering education research.
-
-The scale of the gap becomes vivid when viewed against industry-use data. The Stack Overflow Developer Survey 2024 (n = 65,437 professional developers across 185 countries) reports that **93% of professional developers use Git** as their primary version control system.<sup>[2]</sup> GitHub's Octoverse 2025 report documents that developers merged **43.2 million pull requests per month** on average — a 23% year-over-year increase — across the platform's 180 million active users.<sup>[3]</sup> The pull request is not one workflow among many. It is the dominant transaction unit of professional software development.
+Anyone who has reviewed a junior developer's onboarding experience knows that knowing Git commands and practicing Git workflow are not the same thing — and employers have become precise about that distinction. Version control workflow ("configuration management") is widely cited in the software-engineering-education literature as a persistent gap between what CS graduates arrive knowing and what employers expect, and industry surveys put Git and pull-request-based collaboration at the center of day-to-day professional practice.<sup>[1][2][3]</sup>
 
 The pedagogical implication is straightforward: a capstone course whose students graduate without fluency in PR-based, issue-tracked, branch-managed collaboration is producing graduates who are literate in code but unprepared for the environment in which that code is written. This objective addresses that gap directly.
 
@@ -47,13 +45,7 @@ The modules created under this objective were designed to close that specific ga
 
 ### Design Rationale
 
-The four modules are organized under a single coherent framework called the **Sacred Workflow** — a ceremonial framing of the standard professional development process. This framing is a deliberate pedagogical choice, not an aesthetic one, and it is grounded in well-established learning theory.
-
-Lee Shulman's foundational work on **signature pedagogies** in professional education argues that the most effective training for professional practice is not content delivery but the ritualized enactment of professional acts — what Shulman calls pedagogies that develop "habits of the mind, habits of the heart, and habits of the hand."<sup>[5]</sup> The Sacred Workflow operationalizes this principle. By giving the workflow a name, a sequence, and a set of explicit commitments, students are not just learning a tool — they are being inducted into a community of practice.
-
-This is precisely the mechanism Lave and Wenger describe in *Situated Learning* (1991): newcomers become practitioners by performing the legitimate peripheral activities of the profession, not by studying those activities from a distance.<sup>[6]</sup> Opening a draft PR before code is complete, linking commits to issue numbers, and conducting a structured peer review before merging — these are not classroom simulations of professional practice. They are professional practice, at reduced scale and reduced stakes.
-
-When students encounter these same workflows in their first jobs — and given GitHub's 180 million active users, they will — they will not be encountering them for the first time. They will be continuing a practice they already know.
+The four modules are organized under a single coherent framework called the **Sacred Workflow** — an in-character name for the standard `Issue → Branch → PR → Review → Merge` sequence that professional development teams use every day. Giving the workflow a name, a sequence, and a set of explicit commitments lets students rehearse the same moves they will encounter on the job — opening a draft PR before code is complete, linking commits to issue numbers, conducting a structured peer review before merging — at reduced scale and reduced stakes. When students hit these workflows in their first jobs, they will be continuing a practice they already know rather than encountering it for the first time.
 
 ### The Five Commitments
 
@@ -117,7 +109,7 @@ Draft PR Opened → Self-Review → Peer Review → Changes Addressed →
 PR Approved → Merge to Main → Issue Closed
 ```
 
-This cycle — practiced at low stakes in Sprint 0, at moderate stakes in Sprint 1, and at full team complexity in Sprints 2 and 3 — builds the kind of **procedural automaticity** that Shulman identifies as the goal of signature-pedagogical formation: students stop *thinking about* the workflow and start *enacting* it reflexively.
+This cycle — practiced at low stakes in Sprint 0, at moderate stakes in Sprint 1, and at full team complexity in Sprints 2 and 3 — gives students enough repetitions that the workflow becomes routine: they stop *thinking about* the steps and start *enacting* them reflexively.
 
 The workflow maps directly onto Scrum ceremonies, reinforcing agile methodology instruction across the capstone simultaneously: sprint planning produces issues; standups reference branch and PR status; sprint review demonstrates merged work; retrospective evaluates workflow effectiveness. Students are not learning two separate things; they are learning one integrated professional practice.
 
@@ -131,15 +123,15 @@ The following data was collected from course artifacts and assessment instrument
 
 |Metric |Result |
 |------------------------------------------------------------------|-----------|
-|Students creating issues before code (by Sprint 2) |100% |
-|Average issue completeness score |92/100 |
-|PRs properly linked to issues |95% |
-|Students resolving merge conflicts without instructor intervention|89% |
-|Work lost due to Git errors |0 instances|
-|Average PR cycle time (create → merge) |2.3 days |
-|Average peer review score |85/100 |
-|Students who addressed review feedback constructively |94% |
-|Interpersonal conflicts arising from peer review process |0 |
+|Students creating issues before code (by Sprint 2) |100% [SOURCE NEEDED: GH org export — issue-creation timestamps vs first-commit timestamps] |
+|Average issue completeness score |92/100 [SOURCE NEEDED: graded rubric file] |
+|PRs properly linked to issues |95% [SOURCE NEEDED: GH org export of PR bodies] |
+|Students resolving merge conflicts without instructor intervention|89% [SOURCE NEEDED: instructor log / TA intake tickets] |
+|Work lost due to Git errors |0 instances [SOURCE NEEDED: instructor log — method of counting unclear] |
+|Average PR cycle time (create → merge) |2.3 days [SOURCE NEEDED: GH org export or analytics tool — what tool generated this?] |
+|Average peer review score |85/100 [SOURCE NEEDED: graded peer-review rubric file] |
+|Students who addressed review feedback constructively |94% [SOURCE NEEDED: graded rubric / reviewer follow-up log] |
+|Interpersonal conflicts arising from peer review process |0 [SOURCE NEEDED: instructor log] |
 
 These figures reflect not just technical competency but professional behavioral formation — the actual outcome the objective was designed to produce.
 
@@ -147,31 +139,19 @@ These figures reflect not just technical competency but professional behavioral 
 
 Student retrospective comments indicate that the ceremonial framing achieved its purpose:
 
-> *"The Sacred Workflow felt silly at first, but now I do it automatically."*
+> *"The Sacred Workflow felt silly at first, but now I do it automatically."* [SOURCE NEEDED: survey/retro/exit-ticket]
 
-> *"Draft PRs saved me from redoing work twice."*
+> *"Draft PRs saved me from redoing work twice."* [SOURCE NEEDED: survey/retro/exit-ticket]
 
-> *"Peer review taught me to write clearer code even before review."*
+> *"Peer review taught me to write clearer code even before review."* [SOURCE NEEDED: survey/retro/exit-ticket]
 
-Exit interview data indicates students could describe the PR-based workflow fluently, recognized it from internship and early job experiences, and reported confidence discussing version control discipline in job interviews — a concrete, measurable return on the instructional investment.
+Exit interview data indicates students could describe the PR-based workflow fluently, recognized it from internship and early job experiences, and reported confidence discussing version control discipline in job interviews — a concrete, measurable return on the instructional investment. [SOURCE NEEDED: exit interview instrument + responses]
 
 -----
 
-## Scalability and Institutional Value
+## Materials available on request
 
-### Cross-Course Implementation
-
-The modular design of the Sacred Workflow framework enables staged adoption across the curriculum:
-
-- **CSC 289** (Capstone): Full four-module implementation, current semester
-- **CTS 285** (Web Development): Issue tracking and basic branch workflow, current semester
-- **CSC 151** (Intro CS): Issue tracking module, planned implementation
-
-Each time a student encounters this workflow in a subsequent course, the professional habit is reinforced rather than introduced. By the time they reach the capstone, students who have passed through lower-division courses with this framework arrive already fluent — compressing onboarding and enabling more sophisticated sprint work.
-
-### Reusable Artifacts Created
-
-All materials developed under this objective are immediately reusable by any instructor in the department:
+The same workflow currently runs in CSC 289 (full four-module implementation) and in CTS 285 (issue tracking and basic branch workflow). If any other faculty member wants to try it — in CSC 151 or elsewhere — the supporting materials are available:
 
 - `WORKFLOW_GUIDE.md` — Complete Sacred Workflow documentation
 - `ISSUE_TEMPLATE.md` — Issue creation template and guidelines
@@ -180,19 +160,15 @@ All materials developed under this objective are immediately reusable by any ins
 - `DAY_1_ESSENTIALS.md` — Day 1 orientation and setup guide
 - Sprint planning integration guide, peer review rubrics, and scaffolding progression documentation
 
-This is infrastructure, not coursework. Any instructor in the department can adopt these materials without developing them from scratch.
+Happy to share GitHub links with anyone who asks.
 
 -----
 
-## Assessment: Why This Exceeds Minimum Expectations
+## Assessment
 
-The stated minimum for this objective was to create four instructional modules on branch strategy, peer review, and issue tracking. That minimum has been met.
+The original objective specified four assignments covering GitHub collaboration and version control with a team. Four assignments were delivered, in the form documented above. The objective is met.
 
-What distinguishes this outcome from minimum compliance is the nature of what was built. Minimum compliance produces four assignments. What was delivered is a **transferable pedagogical framework** grounded in peer-reviewed research, validated by quantifiable student outcomes, and positioned for adoption across the curriculum.
-
-Standard instruction in version control produces students who know Git commands. What this framework produces — as the outcome data confirms — is students who practice Git workflow discipline automatically, who understand the professional context for every step they take, and who can articulate that understanding to a hiring manager.
-
-The Garousi et al. meta-analysis establishes that configuration management is among the largest documented gaps between what CS programs produce and what employers require.<sup>[1]</sup> This objective directly, measurably, and scalably addresses that gap. That is not minimum performance. That is the work a department does when it takes industry alignment seriously.
+The supporting materials (the named workflow, the scaffolded exercise progression, the four-category review rubric, the day-one orientation) are the form the four assignments took. They are checked in and available on request to any other faculty in the department who wants to reuse them.
 
 -----
 
