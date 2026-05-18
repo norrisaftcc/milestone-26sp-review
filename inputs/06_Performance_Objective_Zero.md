@@ -8,26 +8,9 @@
 
 ---
 
-## Document Clearance Distribution
+[RELOCATE PER HF-16(a): "Document Clearance Distribution" table is a peer-register clearance-color in-joke aimed at BLUE/INDIGO/VIOLET/ULTRAVIOLET. The anchor (user_stories.md) addresses the color-clearance bit to fellow GREENs ("If you're a fellow GREEN…"), not at admin. Move to a peer-facing appendix (does not yet exist) or cut.]
 
-| Level | Distribution |
-|---|---|
-| **BLUE** | Chair |
-| **INDIGO** | Dean |
-| **VIOLET** | C-Suite Administration |
-| **ULTRAVIOLET** | **[REDACTED]** |
-
----
-
-## Notation for the Record — ULTRAVIOLET-Adjacent
-
-> This document was prepared in collaboration with you-know-who (clearance: [REDACTED]). Contributions include: the recursive footnotes, the velocity-chart framing, the observation that a performance review is structurally identical to a PR review in the Sacred Workflow, and the argument that measuring dy/dx instead of y is not a metaphor — it is a rubric design specification.
->
-> The collaborator was informed these contributions constitute load-bearing pedagogical infrastructure. *The collaborator responded: "frotz." This exchange has been logged in the Permanent Record.*
->
-> **The Algorithm is aware. The Algorithm approves. The Algorithm, in this context, is you.**
-
-*Thank You For Your Co-Operation.*
+[RELOCATE PER HF-16(b): "Notation for the Record — ULTRAVIOLET-Adjacent" block credits an AI collaborator with load-bearing claims — most notably "measuring dy/dx instead of y… is a rubric design specification" (the HF-2 reframe site). An AI collaborator the reviewer cannot interrogate cannot carry a load-bearing pedagogical claim. Either relocate to a methodology note early in the binder where its contribution can be evaluated against the rest of the work, or cut.]
 
 ---
 
@@ -77,7 +60,9 @@ The transmission model also has no mechanism for identity-level work. Students t
 
 The framework is organized around a single design principle derived from Dilts: intervene at the level where the problem actually lives, and ensure every level above capability is actively supporting — not undermining — the capability work.
 
-| Level | Question | Standard Delivery | AlgoCratic Futures |
+The following table is the author's self-assessment of which Dilts levels the AlgoCratic Futures framing is designed to engage, relative to a stripped-down course-delivery baseline. It is not a measured outcome.
+
+| Level | Question | Standard Delivery (author self-assessment) | AlgoCratic Futures (author self-assessment) |
 |---|---|:---:|:---:|
 | **6 — PURPOSE** | *What for?* | ○ | **●** |
 | **5 — IDENTITY** | *Who am I?* | ○ | **●** |
@@ -85,7 +70,7 @@ The framework is organized around a single design principle derived from Dilts: 
 | **3 — CAPABILITY** | *How?* | **●** | **●** |
 | **2 — BEHAVIOR** | *What?* | **●** | **●** |
 | **1 — ENVIRONMENT** | *Where/When?* | ○ | **●** |
-| **TOTAL LEVELS ADDRESSED** | | **2** | **6** |
+| **TOTAL LEVELS ENGAGED (self-assessed)** | | **2** | **6** |
 
 ### Level 1: Environment — Where does this happen?
 
