@@ -7,7 +7,13 @@
 
 ---
 
-## SMART Goal
+## Objective Statement
+
+**Original objective (verbatim):** "attend three meetings towards planning Ghost Tool delivery timetable."
+
+-----
+
+## SMART Goal (reformulation)
 
 **Specific:** Provide project management support for the development and delivery of the Ghost Student Discovery Tool — an internal fraud detection utility targeting fraudulent enrollment and financial aid abuse — by gathering and documenting customer requirements from stakeholder departments, identifying and resolving planning and technical obstacles during the development cycle, and establishing a Scrum/GitHub workflow as a non-optional project standard.
 

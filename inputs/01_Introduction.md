@@ -9,6 +9,12 @@
 
 ## What This Binder Documents
 
+**The original objectives, as assigned (verbatim baseline):**
+
+- **Objective 1:** "Meet three times with cross-department students for assignments."
+- **Objective 2:** "Four assignments covering the topic 'GitHub collaboration and version control with your team'. (The assignments were delivered, but were disguised as portions of a game.)"
+- **Objective 3:** "attend three meetings towards planning Ghost Tool delivery timetable."
+
 This binder documents three completed performance objectives undertaken during the Spring 2026 review period — and a fourth objective that was not, strictly speaking, assigned. The three formal objectives are discrete deliverables: a cross-departmental capstone framework, a four-module source-control curriculum, and a project-management contribution to a live institutional fraud-detection tool. They were specified in advance, completed on schedule, and assessed against criteria the reviewer can verify against the supporting artifacts.
 
 The fourth objective — labeled here as Objective Zero — is the design and construction of the instructional environment inside which the other three operate. It is documented last in the binder because it is the architecture, and architecture is most usefully read after the reader has held the finished rooms in hand.
