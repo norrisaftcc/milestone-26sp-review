@@ -79,6 +79,16 @@ Students learn issue tracking not as administrative overhead but as the mechanis
 
 The issue template used in this course — user story, acceptance criteria, technical notes, and explicit definition of done — mirrors industry-standard formats used by professional teams on GitHub, Jira, and Linear. Students who arrive at an employer already fluent in this format reduce their onboarding time and signal professional maturity from day one.
 
+#### Stakeholder Visibility Spike: GitHub Projects Kanban
+
+To increase report-chain visibility during delivery, the module now includes a presentation-ready GitHub Projects Kanban view driven by the same issue artifacts students already maintain. The board uses three status columns aligned to stakeholder language:
+
+- **Blocked** — issue has dependency/risk label and cannot proceed
+- **In Progress** — active branch or draft PR exists
+- **Completed** — merged PR and closed issue
+
+Because this view is powered by default GitHub issue/PR metadata (status, assignee, labels, linked PR state), no parallel tracking spreadsheet is required. Instructors can demonstrate current execution state and learning velocity (dy/dx) in one live screen during checkpoint reviews.
+
 ### Module 2 — Branch-and-Merge Workflow
 
 **Learning Objectives:** Isolate features in named branches following convention; commit incrementally with descriptive messages; open and manage pull requests through the full review-and-merge cycle; resolve merge conflicts without losing work.
