@@ -2,16 +2,22 @@
 
 **Spring 2026 Performance Review · Binder Front Matter**
 **Instructor:** [REDACTED]
-**Program:** CSC 289 (Software Development Capstone) · CTS 285 (Web Application Development) · CPD Tools Group
+**Program:** CSC 289 (Software Development Capstone) · CTS 285 (Systems Analysis & Design) · CPD Tools Group
 **Review Period:** Spring 2026
 
 ---
 
 ## What This Binder Documents
 
-This binder documents three completed performance objectives undertaken during the Spring 2026 review period — and a fourth objective that was not, strictly speaking, assigned. The three formal objectives are discrete deliverables: a cross-departmental capstone framework, a four-module source-control curriculum, and a project-management contribution to a live institutional fraud-detection tool. They were specified in advance, completed on schedule, and assessed against criteria the reviewer can verify against the supporting artifacts.
+This binder documents three completed performance objectives undertaken during the Spring 2026 review period. The original objectives, as assigned, were:
 
-The fourth objective — labeled here as Objective Zero — is the design and construction of the instructional environment inside which the other three operate. It is documented last in the binder because it is the architecture, and architecture is most usefully read after the reader has held the finished rooms in hand.
+- **Objective 1:** "Meet three times with cross-department students for assignments."
+- **Objective 2:** "Four assignments covering the topic 'GitHub collaboration and version control with your team.'"
+- **Objective 3:** "Attend three meetings towards planning Ghost Tool delivery timetable."
+
+Each was completed on schedule. The chapters that follow document what was delivered against each, along with supporting artifacts the reviewer can verify.
+
+A final chapter — "Performance Objective Zero" — describes the instructional environment (the AlgoCratic Futures in-character frame) inside which Objective 2's four assignments were delivered. It is documented last as background context, not as a separate performance objective. The anchor names it as the delivery mechanism for Objective 2: the assignments were delivered, but were disguised as portions of a game.
 
 The binder is organized for two reading paths:
 
@@ -22,19 +28,13 @@ Either path is legitimate. The binder was designed to reward both.
 
 ---
 
-## The Unifying Methodological Thread
+## A Note on Evaluation Preference
 
-A single design principle runs through every objective in this review, including the one that was never formally assigned: **measure rate of change, not absolute position.**
+The author has a personal request about how he would like to be measured in this review, included here because it surfaces in passing in the chapters that follow: **measure rate of change, not absolute position — dy/dx, not y, if that is feasible.**
 
-Standard performance assessment — for students, for instructors, for institutional initiatives — measures **y**: where someone is on a scale at a given moment. The student who finishes the semester at the 65th percentile is graded above the one who finishes at the 50th. The course that produced a 4.2 average on the end-of-term survey is rated higher than the one that produced a 4.0. The instructor whose evaluation numbers improved a fraction over the prior year is rated essentially the same as the one whose numbers held flat.
+A student who arrived at zero and finished at fifty has demonstrated something more consequential to a hiring manager than the student who arrived at sixty and finished at sixty-five: they will not stay where they started. The author would prefer to be evaluated on the same basis — on movement and iteration over the review period — rather than on absolute position at a single moment.
 
-This is the wrong measurement.
-
-What matters in a community college serving the Research Triangle job market — and what matters to any employer screening recent graduates — is **dy/dx**: the rate at which a person develops capability. A student who arrived at zero and finished at fifty has demonstrated something more consequential for a hiring manager than the student who arrived at sixty and finished at sixty-five: they will not stay where they started. Credentials measure y. Careers are built on dy/dx.
-
-The same logic applies one level up. A pedagogical framework that produces measurable iteration — students opening pull requests they would not previously have opened, design students sitting inside Scrum ceremonies they would not previously have attended, peer reviews that climb in quality over the term — is worth more than a curriculum that produces a higher single-point exam average and no observable change in behavior. The rubrics in this binder are constructed accordingly. They reward documented iteration over polished one-shot submission. They surface growth that absolute-position grading erases.
-
-This is not a metaphor. It is a rubric design specification, applied consistently across all three objectives and operationalized in the supporting infrastructure.
+This is a request to BLUE / INDIGO / VIOLET, not a rubric architecture applied to students. It is offered as a preference, not a deliverable.
 
 ---
 
@@ -48,6 +48,6 @@ The frame is load-bearing pedagogy. The structural argument for why it is load-b
 
 ## What the Reviewer Will Find Across This Binder
 
-The objectives in this binder were specified for a course delivery role. What was delivered exceeded that specification — not by doing more of the same thing, but by building, at the same time, the conditions under which the specified work could be performed reliably, measured honestly, and replicated by others. The four objective chapters and the supporting documentation appendix that follow are the receipt for that claim.
+The three objectives in this binder were specified for a course delivery role. Each was met. The three objective chapters, the background chapter on the instructional environment, and the supporting documentation appendix that follow are the receipt for that claim.
 
 The Executive Summary that follows is the one-page version. Everything after it is the explanation.
