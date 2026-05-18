@@ -187,23 +187,19 @@ What this capstone framework does, structurally, is close that gap before gradua
 
 -----
 
-## Conclusion: Objective Exceeded
+## Conclusion
 
-**Minimum requirement:** Document Creative Brief process, establish three touchpoints, create collaboration rubrics.
+**Original objective:** Document the Creative Brief process, establish three formal touchpoints, and create collaboration rubrics.
 
-**Actual delivery:**
+**What was delivered:**
 
-- Comprehensive cross-departmental framework with full process documentation
-- Milestone structure integrated with Scrum methodology and Scrum Alliance cross-functional team norms
-- Multi-dimensional assessment rubric with empirical grounding in collaboration-competency literature
-- Successful first implementation with five completed, publicly presented projects
-- Replicable protocol positioned for institutional reuse and adjacent-program adoption
+- The Creative Brief process is documented (`26SP_Cross_Discipline_Protocol.md`).
+- Three formal touchpoints are in place and were used across all five pairings this term.
+- The collaboration rubric is written and was used to grade the Spring 2026 cohort.
 
-The research had already established that this approach works. The employer data had already established that these skills are what the market requires. What remained was the institutional will to build it and the execution discipline to make it run.
+The protocol documents and the rubric are checked in and available on request to any other faculty who want to try the approach or adapt it for a different course pairing.
 
-Both are now demonstrated.
-
-**Assessment:** Objective not merely met, but exceeded — with infrastructure of lasting institutional value.
+**Assessment:** Objective met.
 
 -----
 
