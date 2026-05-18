@@ -27,7 +27,6 @@ Three formal performance objectives were specified for the Spring 2026 review pe
 | Average peer review score (Obj. 2) | 85 / 100 |
 | Ghost Student Discovery Tool — ship status (Obj. 3) | Delivered May 2026 |
 | Student records covered by the tool's screening | ~12,000 |
-| Dilts neurological levels addressed by the framework (Obj. 0) | 6 of 6 |
 
 ---
 
