@@ -47,13 +47,7 @@ The modules created under this objective were designed to close that specific ga
 
 ### Design Rationale
 
-The four modules are organized under a single coherent framework called the **Sacred Workflow** — a ceremonial framing of the standard professional development process. This framing is a deliberate pedagogical choice, not an aesthetic one, and it is grounded in well-established learning theory.
-
-Lee Shulman's foundational work on **signature pedagogies** in professional education argues that the most effective training for professional practice is not content delivery but the ritualized enactment of professional acts — what Shulman calls pedagogies that develop "habits of the mind, habits of the heart, and habits of the hand."<sup>[5]</sup> The Sacred Workflow operationalizes this principle. By giving the workflow a name, a sequence, and a set of explicit commitments, students are not just learning a tool — they are being inducted into a community of practice.
-
-This is precisely the mechanism Lave and Wenger describe in *Situated Learning* (1991): newcomers become practitioners by performing the legitimate peripheral activities of the profession, not by studying those activities from a distance.<sup>[6]</sup> Opening a draft PR before code is complete, linking commits to issue numbers, and conducting a structured peer review before merging — these are not classroom simulations of professional practice. They are professional practice, at reduced scale and reduced stakes.
-
-When students encounter these same workflows in their first jobs — and given GitHub's 180 million active users, they will — they will not be encountering them for the first time. They will be continuing a practice they already know.
+The four modules are organized under a single coherent framework called the **Sacred Workflow** — an in-character name for the standard `Issue → Branch → PR → Review → Merge` sequence that professional development teams use every day. Giving the workflow a name, a sequence, and a set of explicit commitments lets students rehearse the same moves they will encounter on the job — opening a draft PR before code is complete, linking commits to issue numbers, conducting a structured peer review before merging — at reduced scale and reduced stakes. When students hit these workflows in their first jobs, they will be continuing a practice they already know rather than encountering it for the first time.
 
 ### The Five Commitments
 
@@ -117,7 +111,7 @@ Draft PR Opened → Self-Review → Peer Review → Changes Addressed →
 PR Approved → Merge to Main → Issue Closed
 ```
 
-This cycle — practiced at low stakes in Sprint 0, at moderate stakes in Sprint 1, and at full team complexity in Sprints 2 and 3 — builds the kind of **procedural automaticity** that Shulman identifies as the goal of signature-pedagogical formation: students stop *thinking about* the workflow and start *enacting* it reflexively.
+This cycle — practiced at low stakes in Sprint 0, at moderate stakes in Sprint 1, and at full team complexity in Sprints 2 and 3 — gives students enough repetitions that the workflow becomes routine: they stop *thinking about* the steps and start *enacting* them reflexively.
 
 The workflow maps directly onto Scrum ceremonies, reinforcing agile methodology instruction across the capstone simultaneously: sprint planning produces issues; standups reference branch and PR status; sprint review demonstrates merged work; retrospective evaluates workflow effectiveness. Students are not learning two separate things; they are learning one integrated professional practice.
 
