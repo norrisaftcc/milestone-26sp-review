@@ -7,7 +7,7 @@
 
 ## Headline
 
-Three formal performance objectives were specified for the Spring 2026 review period. All three were achieved, with documented outcomes that meet or exceed the stated criteria. A fourth objective — the design and construction of the instructional infrastructure inside which the other three operate — was completed in parallel and is documented as Objective Zero. The deliverable specified by the original objectives was effective course delivery. The deliverable built was the infrastructure that makes effective course delivery possible, replicable, and measurable.
+Three formal performance objectives were specified for the Spring 2026 review period. All three were achieved, with documented outcomes that meet or exceed the stated criteria. The instructional environment inside which Objective 2's four assignments were delivered — the AlgoCratic Futures in-character simulation — is documented in a background chapter at the end of the binder as supporting context for how those assignments were delivered, not as a separate performance objective. The deliverable specified by the original objectives was effective course delivery. The deliverable built was the infrastructure that makes effective course delivery possible, replicable, and measurable.
 
 ---
 
@@ -15,7 +15,7 @@ Three formal performance objectives were specified for the Spring 2026 review pe
 
 | Metric | Value |
 |---|---|
-| Performance objectives completed | 3 of 3 (plus Objective Zero) |
+| Performance objectives completed | 3 of 3 |
 | Courses delivered under the framework | 2 (CSC 289, CTS 285) |
 | Capstone teams paired with Graphic Design | 5 of 5 completed |
 | Cross-departmental milestone completion | 100% |
@@ -45,7 +45,7 @@ The Google Project Management Certificate capstone, *Sauce & Spoon*, asks studen
 
 **Objective 3 — Ghost Student Discovery Tool (Project Management Contribution).** Provided project management, Agile/Scrum mentoring, requirements gathering, and documentation support to the CPD Tools Group development team — lead developers **HS** and **MM**, supporting developer **BS**, team lead **DT** — on a tool detecting ghost-student fraud and anomalous enrollment patterns across the college's ~12,000 student records. The same methodology codified in Objectives 1 and 2 (structured briefs, milestone-anchored handoffs, Sacred Workflow discipline) was applied to a live institutional project aligned with the U.S. Department of Education's mid-2025 identity-verification mandates and ahead of the Fall 2026 enrollment cycle. Tool delivered May 2026; all stakeholder-identified detection signals implemented as working capabilities; manual review burden reduced from ~12,000 records to a tractable flagged subset. Full credit for technical design and build belongs to the development team. The regional threat is documented and prosecuted — the $4.7M Melvin case (sentenced June 2025) named FTCC directly.
 
-**Objective Zero — Multi-Level Immersive Instructional Environment.** Designed and deployed the AlgoCratic Futures pedagogical framework: a six-level immersive instructional system grounded in Dilts' Neurological Levels (1980s), Dweck's mindset research (Ballantine Books, 2006), Edmondson on psychological safety (*ASQ*, 1999), Lave and Wenger on situated learning (Cambridge UP, 1991), and Poole-Dayan et al. on LLM equity gaps (arXiv:2406.17737, 2024). Operationalized growth-mindset research in rubric form by measuring **dy/dx** (learning velocity) rather than absolute position. Includes per-group AI access infrastructure (System 1 with context injection, System 2 with Claude Code per-group setup, `CLAUDE.md` guardrail files) constituting a structural mitigation of documented LLM underperformance for community-college-served populations.
+**Background — The Instructional Environment.** The four Objective 2 assignments were delivered inside the AlgoCratic Futures in-character simulation: a six-level immersive instructional system grounded in Dilts' Neurological Levels (1980s), Dweck's mindset research (Ballantine Books, 2006), Edmondson on psychological safety (*ASQ*, 1999), Lave and Wenger on situated learning (Cambridge UP, 1991), and Poole-Dayan et al. on LLM equity gaps (arXiv:2406.17737, 2024). The simulation operationalizes growth-mindset research in rubric form by measuring **dy/dx** (learning velocity) rather than absolute position, and includes per-group AI access infrastructure (System 1 with context injection, System 2 with Claude Code per-group setup, `CLAUDE.md` guardrail files) constituting a structural mitigation of documented LLM underperformance for community-college-served populations. Documented in the background chapter that follows the three objective chapters; presented there as the delivery mechanism for Objective 2, not as a separate performance objective.
 
 ---
 
