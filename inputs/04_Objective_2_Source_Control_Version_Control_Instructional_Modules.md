@@ -125,15 +125,15 @@ The following data was collected from course artifacts and assessment instrument
 
 |Metric |Result |
 |------------------------------------------------------------------|-----------|
-|Students creating issues before code (by Sprint 2) |100% |
-|Average issue completeness score |92/100 |
-|PRs properly linked to issues |95% |
-|Students resolving merge conflicts without instructor intervention|89% |
-|Work lost due to Git errors |0 instances|
-|Average PR cycle time (create → merge) |2.3 days |
-|Average peer review score |85/100 |
-|Students who addressed review feedback constructively |94% |
-|Interpersonal conflicts arising from peer review process |0 |
+|Students creating issues before code (by Sprint 2) |100% [SOURCE NEEDED: GH org export — issue-creation timestamps vs first-commit timestamps] |
+|Average issue completeness score |92/100 [SOURCE NEEDED: graded rubric file] |
+|PRs properly linked to issues |95% [SOURCE NEEDED: GH org export of PR bodies] |
+|Students resolving merge conflicts without instructor intervention|89% [SOURCE NEEDED: instructor log / TA intake tickets] |
+|Work lost due to Git errors |0 instances [SOURCE NEEDED: instructor log — method of counting unclear] |
+|Average PR cycle time (create → merge) |2.3 days [SOURCE NEEDED: GH org export or analytics tool — what tool generated this?] |
+|Average peer review score |85/100 [SOURCE NEEDED: graded peer-review rubric file] |
+|Students who addressed review feedback constructively |94% [SOURCE NEEDED: graded rubric / reviewer follow-up log] |
+|Interpersonal conflicts arising from peer review process |0 [SOURCE NEEDED: instructor log] |
 
 These figures reflect not just technical competency but professional behavioral formation — the actual outcome the objective was designed to produce.
 
@@ -141,13 +141,13 @@ These figures reflect not just technical competency but professional behavioral 
 
 Student retrospective comments indicate that the ceremonial framing achieved its purpose:
 
-> *"The Sacred Workflow felt silly at first, but now I do it automatically."*
+> *"The Sacred Workflow felt silly at first, but now I do it automatically."* [SOURCE NEEDED: survey/retro/exit-ticket]
 
-> *"Draft PRs saved me from redoing work twice."*
+> *"Draft PRs saved me from redoing work twice."* [SOURCE NEEDED: survey/retro/exit-ticket]
 
-> *"Peer review taught me to write clearer code even before review."*
+> *"Peer review taught me to write clearer code even before review."* [SOURCE NEEDED: survey/retro/exit-ticket]
 
-Exit interview data indicates students could describe the PR-based workflow fluently, recognized it from internship and early job experiences, and reported confidence discussing version control discipline in job interviews — a concrete, measurable return on the instructional investment.
+Exit interview data indicates students could describe the PR-based workflow fluently, recognized it from internship and early job experiences, and reported confidence discussing version control discipline in job interviews — a concrete, measurable return on the instructional investment. [SOURCE NEEDED: exit interview instrument + responses]
 
 -----
 

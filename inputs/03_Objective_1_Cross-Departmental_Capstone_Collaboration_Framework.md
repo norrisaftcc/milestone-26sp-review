@@ -143,17 +143,17 @@ This three-axis structure — individual craft, collaboration behaviors, integra
 
 **Quantitative outcomes:**
 
-- 5 CS capstone teams paired with GRD students across the full semester
-- 5 completed projects with integrated, professional-quality design assets
-- 100% milestone completion across all five pairings
-- Average collaboration rubric score: **87/100**
+- 5 CS capstone teams paired with GRD students across the full semester [SOURCE NEEDED: course roster / pairing assignment list]
+- 5 completed projects with integrated, professional-quality design assets [SOURCE NEEDED: Graduate Showcase project list]
+- 100% milestone completion across all five pairings [SOURCE NEEDED: milestone tracking log]
+- Average collaboration rubric score: **87/100** [SOURCE NEEDED: graded rubric files / gradebook export]
 
-**Qualitative outcomes:**
+**Qualitative outcomes (instructor observation unless otherwise sourced):**
 
-- CS teams reported that design integration substantially improved perceived project quality
-- GRD students reported meaningful gains in understanding technical constraints and iterative feedback processes
-- Both cohorts identified the formal handoff structure as the element most responsible for reducing last-minute communication crises
-- Both departments expressed interest in continuing the protocol for subsequent terms
+- CS teams reported that design integration substantially improved perceived project quality [SOURCE NEEDED: survey/retro/exit-ticket]
+- GRD students reported meaningful gains in understanding technical constraints and iterative feedback processes [SOURCE NEEDED: survey/retro/exit-ticket]
+- Both cohorts identified the formal handoff structure as the element most responsible for reducing last-minute communication crises [SOURCE NEEDED: survey/retro/exit-ticket]
+- Both departments expressed interest in continuing the protocol for subsequent terms [SOURCE NEEDED: faculty correspondence / meeting notes]
 
 **What the Graduate Showcase demonstrated to external stakeholders:** Faculty, industry partners, and fellow students encountered polished, professionally integrated web applications — not student prototypes that looked like student prototypes. That visible quality gap between AlgoCratic Futures projects and typical capstone output is the observable return on the structural investment described above.
 
