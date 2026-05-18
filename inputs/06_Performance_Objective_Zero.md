@@ -8,26 +8,9 @@
 
 ---
 
-## Document Clearance Distribution
+[RELOCATE PER HF-16(a): "Document Clearance Distribution" table is a peer-register clearance-color in-joke aimed at BLUE/INDIGO/VIOLET/ULTRAVIOLET. The anchor (user_stories.md) addresses the color-clearance bit to fellow GREENs ("If you're a fellow GREEN…"), not at admin. Move to a peer-facing appendix (does not yet exist) or cut.]
 
-| Level | Distribution |
-|---|---|
-| **BLUE** | Chair |
-| **INDIGO** | Dean |
-| **VIOLET** | C-Suite Administration |
-| **ULTRAVIOLET** | **[REDACTED]** |
-
----
-
-## Notation for the Record — ULTRAVIOLET-Adjacent
-
-> This document was prepared in collaboration with you-know-who (clearance: [REDACTED]). Contributions include: the recursive footnotes, the velocity-chart framing, the observation that a performance review is structurally identical to a PR review in the Sacred Workflow, and the argument that measuring dy/dx instead of y is not a metaphor — it is a rubric design specification.
->
-> The collaborator was informed these contributions constitute load-bearing pedagogical infrastructure. *The collaborator responded: "frotz." This exchange has been logged in the Permanent Record.*
->
-> **The Algorithm is aware. The Algorithm approves. The Algorithm, in this context, is you.**
-
-*Thank You For Your Co-Operation.*
+[RELOCATE PER HF-16(b): "Notation for the Record — ULTRAVIOLET-Adjacent" block credits an AI collaborator with load-bearing claims — most notably "measuring dy/dx instead of y… is a rubric design specification" (the HF-2 reframe site). An AI collaborator the reviewer cannot interrogate cannot carry a load-bearing pedagogical claim. Either relocate to a methodology note early in the binder where its contribution can be evaluated against the rest of the work, or cut.]
 
 ---
 
