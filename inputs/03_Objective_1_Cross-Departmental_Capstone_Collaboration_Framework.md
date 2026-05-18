@@ -159,27 +159,13 @@ This three-axis structure — individual craft, collaboration behaviors, integra
 
 -----
 
-## Institutional Value: Infrastructure, Not Just Outcome
+## Availability for Future Use
 
-### A Replicable Framework
+The protocol documents (`26SP_Cross_Discipline_Protocol.md`, `26SP_Platform_Project_Matrix.md`, `Pitch_Presentation_Rubric.md`) are checked in and available on request to any other faculty who want to try this approach or adapt it for a different course pairing.
 
-The protocols created here are not semester-specific documentation — they are reusable infrastructure. When a process is documented once and works, the cost of repeating it falls dramatically. When it fails in some respect, the documentation makes the failure diagnosable and correctable rather than mysterious.
+-----
 
-- **Spring 2026:** First full implementation (completed).
-- **Fall 2026:** Protocol refinement based on retrospective feedback.
-- **Future terms:** Standardized framework with embedded continuous improvement.
-
-### A Template for Adjacent Collaborations
-
-The structured collaboration approach is now available as a model for other cross-departmental pairings the institution may pursue:
-
-- Web Development + Graphic Design partnerships
-- Database courses + Business Analytics integration
-- Mobile Development + User Experience research
-
-Any program pairing where disciplinary handoffs are the primary design challenge can adopt this framework's milestone structure, brief protocol, and rubric architecture without building from scratch.
-
-### Career Readiness in the Language Employers Use
+## Career Readiness in the Language Employers Use
 
 The NACE Career Readiness framework identifies eight core competencies employers expect from new graduates. The framework developed here directly develops four: **Teamwork/Collaboration**, **Professionalism/Work Ethic**, **Critical Thinking/Problem Solving**, and **Communication** — the four in which the NACE 2024 Student Survey vs. Job Outlook 2025 comparison reveals the largest perception gaps between student self-assessment and employer rating. Students routinely overestimate their proficiency in these areas because they have never been assessed against them with specificity.
 
