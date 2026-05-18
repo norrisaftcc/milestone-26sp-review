@@ -25,11 +25,7 @@
 
 ### Why Version Control Workflow Is a Workforce Issue, Not Just a Technical Skill
 
-Anyone who has reviewed a junior developer's onboarding experience knows that knowing Git commands and practicing Git workflow are not the same thing — and employers have become precise about that distinction.
-
-Garousi et al.'s 2020 systematic review in *IEEE Software*, synthesizing 33 empirical studies across 12 countries and more than 4,000 data points, identified **configuration management** — the professional term for version control workflow — as one of the largest documented gaps between what CS graduates know and what employers actually need.<sup>[1]</sup> This is not an anecdotal concern. It is the consensus finding of a decade of software engineering education research.
-
-The scale of the gap becomes vivid when viewed against industry-use data. The Stack Overflow Developer Survey 2024 (n = 65,437 professional developers across 185 countries) reports that **93% of professional developers use Git** as their primary version control system.<sup>[2]</sup> GitHub's Octoverse 2025 report documents that developers merged **43.2 million pull requests per month** on average — a 23% year-over-year increase — across the platform's 180 million active users.<sup>[3]</sup> The pull request is not one workflow among many. It is the dominant transaction unit of professional software development.
+Anyone who has reviewed a junior developer's onboarding experience knows that knowing Git commands and practicing Git workflow are not the same thing — and employers have become precise about that distinction. Version control workflow ("configuration management") is widely cited in the software-engineering-education literature as a persistent gap between what CS graduates arrive knowing and what employers expect, and industry surveys put Git and pull-request-based collaboration at the center of day-to-day professional practice.<sup>[1][2][3]</sup>
 
 The pedagogical implication is straightforward: a capstone course whose students graduate without fluency in PR-based, issue-tracked, branch-managed collaboration is producing graduates who are literate in code but unprepared for the environment in which that code is written. This objective addresses that gap directly.
 
