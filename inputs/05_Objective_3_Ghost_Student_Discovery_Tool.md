@@ -118,7 +118,7 @@ Delivered by the development team (lead developers **HS** and **MM**, supporting
 
 ## Alignment with Institutional Mission
 
-The Ghost Student Discovery Tool directly protects FTCC's ability to serve legitimate students by reducing enrollment fraud, safeguarding federal financial aid eligibility, and closing vulnerabilities that have already been exploited in documented, prosecuted cases targeting this institution. Deploying detection tooling places FTCC ahead of the NC Community College System's current posture — which research indicates **has not yet adopted** the AI-powered screening, identity verification, or system-wide fraud prevention frameworks deployed by peer systems in Virginia, California, and Pennsylvania — and aligns with the Department of Education's escalating enforcement posture.
+The Ghost Student Discovery Tool directly protects FTCC's ability to serve legitimate students by reducing enrollment fraud, safeguarding federal financial aid eligibility, and closing vulnerabilities that have already been exploited in documented, prosecuted cases targeting this institution. The tool aligns with the U.S. Department of Education's escalating enforcement posture.
 
 ---
 
