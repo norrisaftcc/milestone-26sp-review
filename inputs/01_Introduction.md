@@ -48,6 +48,6 @@ The frame is load-bearing pedagogy. The structural argument for why it is load-b
 
 ## What the Reviewer Will Find Across This Binder
 
-The objectives in this binder were specified for a course delivery role. What was delivered exceeded that specification — not by doing more of the same thing, but by building, at the same time, the conditions under which the specified work could be performed reliably, measured honestly, and replicated by others. The four objective chapters and the supporting documentation appendix that follow are the receipt for that claim.
+The objectives in this binder were specified for a course delivery role. Each was met. Some supporting infrastructure was built alongside — rubrics, milestone protocols, the instructional environment described in Objective Zero — because building it was the path of least resistance to delivering the assigned work reliably. The objective chapters and the supporting documentation appendix that follow are the receipt for that claim.
 
 The Executive Summary that follows is the one-page version. Everything after it is the explanation.

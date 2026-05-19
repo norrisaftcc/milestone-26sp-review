@@ -7,7 +7,7 @@
 
 ## Headline
 
-Three formal performance objectives were specified for the Spring 2026 review period. All three were achieved, with documented outcomes that meet or exceed the stated criteria. A fourth objective — the design and construction of the instructional infrastructure inside which the other three operate — was completed in parallel and is documented as Objective Zero. The deliverable specified by the original objectives was effective course delivery. The deliverable built was the infrastructure that makes effective course delivery possible, replicable, and measurable.
+Three formal performance objectives were specified for the Spring 2026 review period. All three were met, with documented outcomes against the stated criteria. A fourth objective — the design and construction of the instructional infrastructure inside which the other three operate — was completed in parallel and is documented as Objective Zero.
 
 ---
 
@@ -44,4 +44,4 @@ Three formal performance objectives were specified for the Spring 2026 review pe
 
 ## Bottom Line
 
-All three specified objectives were achieved — and the supporting infrastructure that made them achievable was built in parallel and is now available for institutional reuse. The original performance objectives were written for a course delivery role. The work documented here operates at the level above — the level at which the conditions for effective course delivery are designed, built, instrumented, and made replicable. The rest of this binder is the evidence base.
+All three specified objectives were met. Supporting infrastructure that made them achievable was built in parallel and is available to any colleague who wants it. The rest of this binder is the evidence base.
