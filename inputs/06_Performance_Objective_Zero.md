@@ -1,4 +1,4 @@
-# Performance Objective Zero: Design and Implement a Multi-Level Immersive Instructional Environment
+# Background: The Instructional Environment These Objectives Were Delivered Inside
 
 **Instructor:** [REDACTED]
 **Program:** CTS 285 / CSC 289 · [REDACTED] Technical Community College
@@ -14,9 +14,9 @@
 
 ---
 
-## A Note on Why This Objective Appears Last in Numbering but First in Logic
+## A Note on Why This Background Chapter Appears Last
 
-This objective was not formally assigned, because it was not formally anticipated. The three objectives that follow it describe work done inside an environment. This objective describes the construction of that environment. It is documented here because the work it describes is the enabling condition for every other objective in this review.
+The three objectives that precede this chapter describe work done inside an instructional environment. This chapter documents the construction of that environment, because the in-character AlgoCratic Futures simulation is the delivery mechanism for the four assignments named in Objective 2 — the assignments were delivered, but were disguised as portions of a game. It appears last as supporting context, not as a separate performance objective.
 
 ---
 
