@@ -9,6 +9,12 @@
 
 ## What This Binder Documents
 
+**The original objectives, as assigned (verbatim baseline):**
+
+- **Objective 1:** "Meet three times with cross-department students for assignments."
+- **Objective 2:** "Four assignments covering the topic 'GitHub collaboration and version control with your team'. (The assignments were delivered, but were disguised as portions of a game.)"
+- **Objective 3:** "attend three meetings towards planning Ghost Tool delivery timetable."
+
 This binder documents three completed performance objectives undertaken during the Spring 2026 review period — and a fourth objective that was not, strictly speaking, assigned. The three formal objectives are discrete deliverables: a cross-departmental capstone framework, a four-module source-control curriculum, and a project-management contribution to a live institutional fraud-detection tool. They were specified in advance, completed on schedule, and assessed against criteria the reviewer can verify against the supporting artifacts.
 
 The fourth objective — labeled here as Objective Zero — is the design and construction of the instructional environment inside which the other three operate. It is documented last in the binder because it is the architecture, and architecture is most usefully read after the reader has held the finished rooms in hand.
@@ -22,19 +28,13 @@ Either path is legitimate. The binder was designed to reward both.
 
 ---
 
-## The Unifying Methodological Thread
+## A Note on Evaluation Preference
 
-A single design principle runs through every objective in this review, including the one that was never formally assigned: **measure rate of change, not absolute position.**
+The author has a personal request about how he would like to be measured in this review, surfaced here because the underlying motif appears in passing in the chapters that follow: **measure rate of change, not absolute position — dy/dx, not y, if that is feasible.**
 
-Standard performance assessment — for students, for instructors, for institutional initiatives — measures **y**: where someone is on a scale at a given moment. The student who finishes the semester at the 65th percentile is graded above the one who finishes at the 50th. The course that produced a 4.2 average on the end-of-term survey is rated higher than the one that produced a 4.0. The instructor whose evaluation numbers improved a fraction over the prior year is rated essentially the same as the one whose numbers held flat.
+A student who arrived at zero and finished at fifty has demonstrated something more consequential to a hiring manager than the student who arrived at sixty and finished at sixty-five: they will not stay where they started. The author would prefer to be evaluated on the same basis — on movement and iteration over the review period — rather than on absolute position at a single moment.
 
-This is the wrong measurement.
-
-What matters in a community college serving the Research Triangle job market — and what matters to any employer screening recent graduates — is **dy/dx**: the rate at which a person develops capability. A student who arrived at zero and finished at fifty has demonstrated something more consequential for a hiring manager than the student who arrived at sixty and finished at sixty-five: they will not stay where they started. Credentials measure y. Careers are built on dy/dx.
-
-The same logic applies one level up. A pedagogical framework that produces measurable iteration — students opening pull requests they would not previously have opened, design students sitting inside Scrum ceremonies they would not previously have attended, peer reviews that climb in quality over the term — is worth more than a curriculum that produces a higher single-point exam average and no observable change in behavior. The rubrics in this binder are constructed accordingly. They reward documented iteration over polished one-shot submission. They surface growth that absolute-position grading erases.
-
-This is not a metaphor. It is a rubric design specification, applied consistently across all three objectives and operationalized in the supporting infrastructure.
+This is a request to BLUE / INDIGO / VIOLET, not a rubric architecture applied to students. It is offered as a preference, not a deliverable.
 
 ---
 

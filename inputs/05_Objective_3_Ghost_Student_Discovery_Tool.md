@@ -7,9 +7,15 @@
 
 ---
 
-## SMART Goal
+## Objective Statement
 
-**Specific:** Provide project management support for the development and delivery of the Ghost Student Discovery Tool — an internal fraud detection utility targeting fraudulent enrollment and financial aid abuse — by gathering and documenting customer requirements from stakeholder departments, identifying and resolving planning and technical obstacles during the development cycle, and establishing a Scrum/GitHub workflow as a non-optional project standard.
+**Original objective (verbatim):** "attend three meetings towards planning Ghost Tool delivery timetable."
+
+-----
+
+## SMART Goal (reformulation)
+
+**Specific:** Support the CPD Tools Group development team's delivery of the Ghost Student Discovery Tool — an internal fraud detection utility targeting fraudulent enrollment and financial aid abuse — by providing project management, gathering and documenting customer requirements from stakeholder departments, identifying and resolving planning and technical obstacles during the development cycle, and reinforcing the team's Scrum/GitHub workflow discipline as a non-optional project standard.
 
 **Measurable:** The tool shipped in May 2026. Four discrete contribution areas were verified by the development team:
 
@@ -32,7 +38,7 @@ The Ghost Student Discovery Tool was designed, built, tested, and shipped by the
 
 - **HS** and **MM** — lead developers; primary design, implementation, and ship-readiness work.
 - **BS** — supporting developer.
-- **DT** — team lead.
+- **Chair (DT)** — Chair; thanked by the contributor for his collaboration on the project.
 - **[REDACTED]** (the contributor documented here) — project management support, as detailed in the Contribution Summary below.
 
 Full credit for the technical delivery belongs to the development team; the objective documented here covers the project-management, requirements, and process-discipline scaffolding that ran alongside their work.
@@ -41,6 +47,54 @@ Full credit for the technical delivery belongs to the development team; the obje
 
 ## Supporting Evidence: Why This Tool Matters
 
+The regional threat is concrete: the Melvin prosecution (sentenced June 2025) named FTCC among the NC community colleges targeted by a $4.7M fraudulent financial aid scheme operated from Fayetteville. The federal compliance timeline is the U.S. Department of Education's Summer 2025 identity verification mandate for flagged FAFSA applicants at Title IV institutions, with a permanent centralized screening process launched for Fall 2025. The Ghost Tool's May 2026 ship date is aligned with that timeline. Full threat brief (regional cases, national OIG figures, community-college targeting analysis, peer-institution deployment outcomes, federal mandate detail) relocated — see fenced block at end of chapter.
+
+---
+
+## Contribution Summary
+
+| Contribution Area | Description | Impact |
+|---|---|---|
+| **Project Management Support** | Coordinated planning, milestone tracking, and obstacle resolution across the development cycle; surfaced and helped resolve cross-team blockers; maintained brief-and-feedback cadences modeled on the Sprint-review patterns codified in Objectives 1 and 2. | Kept the project on track for a May 2026 ship date aligned with federal compliance timelines and ahead of Fall 2026 enrollment. |
+| **Agile/Scrum Mentoring** | Advocated for and established Scrum methodology and GitHub-based version control, issue tracking, and pull-request workflows as non-optional project standards for the team — the same Sacred Workflow taught in CSC 289 (Objective 2), now applied to a live institutional project. | Provided the process discipline necessary for a cross-functional tool with institutional compliance implications, consistent with AACRAO guidance recommending structured workflows for fraud prevention teams. |
+| **Requirements Gathering** | Collected and documented customer requirements from institutional stakeholders (Student Services, financial aid, admissions, registrar, IT). Translated stakeholder-observed fraud patterns — shared phone numbers across applicants, mismatched and out-of-state addresses, synthetic email constructions, target-program concentration — into structured signal categories handed to the development team as action items. | All requested detection signals shipped as implemented capabilities in the May 2026 release. |
+| **Documentation** | Produced and maintained user-facing materials for non-technical Student Services staff and configuration documentation for IT; sustained brief artifacts and stakeholder communications across iteration cycles. | Reduced onboarding friction for downstream users and produced reusable documentation artifacts for the team's continued refinement and for any future similar engagements. |
+
+---
+
+## Tool Capabilities
+
+Delivered by the development team (lead developers **HS** and **MM**, supporting developer **BS**, with **Chair (DT)**); summarized here for binder context. Full technical credit belongs to the team.
+
+- Composite-signal duplicate detection across names, addresses, emails, and phone numbers.
+- Configurable sensitivity thresholds with weighted confidence scoring.
+- Flagged-record reporting with field-level match breakdown for staff review.
+
+---
+
+## Outcomes
+
+- Tool operational and in use by Student Services for ongoing enrollment-cycle screening.
+- Manual review burden reduced from ~12,000 records to a tractable flagged subset.
+- Stakeholder validation: Student Services confirmed the tool's signal set — phone, address, program-placement, and email-design patterns — matches the patterns they encounter operationally (25–40 suspected applications per average week, hundreds at peak two weeks before first day of class).
+- Requirements and documentation artifacts available for the team's continued refinement and for any future similar engagements.
+- The engagement served as a live application of the curriculum methodology outside the classroom — the same briefing, milestone, and feedback patterns used in CSC 289 operating in a cross-stakeholder institutional context.
+
+---
+
+## Alignment with Institutional Mission
+
+The Ghost Student Discovery Tool directly protects FTCC's ability to serve legitimate students by reducing enrollment fraud, safeguarding federal financial aid eligibility, and closing vulnerabilities that have already been exploited in documented, prosecuted cases targeting this institution. The tool aligns with the U.S. Department of Education's escalating enforcement posture.
+
+---
+
+*Evidence compiled from federal court records, DOJ press releases, DOE/OIG reports, investigative journalism (ABC News, ABC11, Fortune, WJLA), and higher education industry sources (EDUCAUSE Review, AACRAO, IntelliBoard, EdSource). Full research brief available on request.*
+
+---
+
+`[RELOCATED PER HF-15: belongs in tool-context appendix that does not yet exist]`
+
+```
 ### The regional threat is severe and actively prosecuted
 
 The largest ghost student fraud prosecution in North Carolina history was sentenced in June 2025 — a Fayetteville-based scheme that generated over **$4.7 million in fraudulent financial aid awards** across multiple NC community colleges, including FTCC, Wake Tech, and Cape Fear CC. The perpetrator recruited approximately 80 individuals whose identities were used to submit fraudulent admissions applications and FAFSAs. Over $3.5 million was actually disbursed before the scheme was detected.
@@ -82,44 +136,4 @@ Schools that adopted AI-powered fraud screening and identity verification have d
 
 Effective Summer 2025, the U.S. Department of Education implemented mandatory identity verification for flagged FAFSA applicants at all Title IV institutions, including photo ID requirements compliant with NIST IAL-2 standards. A permanent centralized screening process launched for Fall 2025, flagging approximately 300,000 applications for enhanced verification. The DOE also resumed cross-referencing student aid records against the Social Security Death Index, immediately identifying $30 million in aid previously disbursed to deceased individuals.
 *(Sources: U.S. Department of Education press release, June 2025; FSA Partners electronic announcement, June 2025)*
-
----
-
-## Contribution Summary
-
-| Contribution Area | Description | Impact |
-|---|---|---|
-| **Project Management Support** | Coordinated planning, milestone tracking, and obstacle resolution across the development cycle; surfaced and helped resolve cross-team blockers; maintained brief-and-feedback cadences modeled on the Sprint-review patterns codified in Objectives 1 and 2. | Kept the project on track for a May 2026 ship date aligned with federal compliance timelines and ahead of Fall 2026 enrollment. |
-| **Agile/Scrum Mentoring** | Advocated for and established Scrum methodology and GitHub-based version control, issue tracking, and pull-request workflows as non-optional project standards for the team — the same Sacred Workflow taught in CSC 289 (Objective 2), now applied to a live institutional project. | Provided the process discipline necessary for a cross-functional tool with institutional compliance implications, consistent with AACRAO guidance recommending structured workflows for fraud prevention teams. |
-| **Requirements Gathering** | Collected and documented customer requirements from institutional stakeholders (Student Services, financial aid, admissions, registrar, IT). Translated stakeholder-observed fraud patterns — shared phone numbers across applicants, mismatched and out-of-state addresses, synthetic email constructions, target-program concentration — into structured signal categories handed to the development team as action items. | All requested detection signals shipped as implemented capabilities in the May 2026 release. |
-| **Documentation** | Produced and maintained user-facing materials for non-technical Student Services staff and configuration documentation for IT; sustained brief artifacts and stakeholder communications across iteration cycles. | Reduced onboarding friction for downstream users and produced reusable documentation artifacts for the team's continued refinement and for any future similar engagements. |
-
----
-
-## Tool Capabilities
-
-Delivered by the development team (lead developers **HS** and **MM**, supporting developer **BS**, team lead **DT**); summarized here for binder context. Full technical credit belongs to the team.
-
-- Composite-signal duplicate detection across names, addresses, emails, and phone numbers.
-- Configurable sensitivity thresholds with weighted confidence scoring.
-- Flagged-record reporting with field-level match breakdown for staff review.
-
----
-
-## Outcomes
-
-- Tool operational and in use by Student Services for ongoing enrollment-cycle screening.
-- Manual review burden reduced from ~12,000 records to a tractable flagged subset.
-- Stakeholder validation: Student Services confirmed the tool's signal set — phone, address, program-placement, and email-design patterns — matches the patterns they encounter operationally (25–40 suspected applications per average week, hundreds at peak two weeks before first day of class).
-- Requirements and documentation artifacts available for the team's continued refinement and for any future similar engagements.
-- The engagement served as a live application of the curriculum methodology outside the classroom — the same briefing, milestone, and feedback patterns used in CSC 289 operating in a cross-stakeholder institutional context.
-
----
-
-## Alignment with Institutional Mission
-
-The Ghost Student Discovery Tool directly protects FTCC's ability to serve legitimate students by reducing enrollment fraud, safeguarding federal financial aid eligibility, and closing vulnerabilities that have already been exploited in documented, prosecuted cases targeting this institution. Deploying detection tooling places FTCC ahead of the NC Community College System's current posture — which research indicates **has not yet adopted** the AI-powered screening, identity verification, or system-wide fraud prevention frameworks deployed by peer systems in Virginia, California, and Pennsylvania — and aligns with the Department of Education's escalating enforcement posture.
-
----
-
-*Evidence compiled from federal court records, DOJ press releases, DOE/OIG reports, investigative journalism (ABC News, ABC11, Fortune, WJLA), and higher education industry sources (EDUCAUSE Review, AACRAO, IntelliBoard, EdSource). Full research brief available on request.*
+```
