@@ -1,4 +1,4 @@
-# Performance Objective Zero: Design and Implement a Multi-Level Immersive Instructional Environment
+# Background: The Instructional Environment These Objectives Were Delivered Inside
 
 **Instructor:** [REDACTED]
 **Program:** CTS 285 / CSC 289 · [REDACTED] Technical Community College
@@ -8,36 +8,15 @@
 
 ---
 
-## Document Clearance Distribution
+[RELOCATE PER HF-16(a): "Document Clearance Distribution" table is a peer-register clearance-color in-joke aimed at BLUE/INDIGO/VIOLET/ULTRAVIOLET. The anchor (user_stories.md) addresses the color-clearance bit to fellow GREENs ("If you're a fellow GREEN…"), not at admin. Move to a peer-facing appendix (does not yet exist) or cut.]
 
-| Level | Distribution |
-|---|---|
-| **BLUE** | Chair |
-| **INDIGO** | Dean |
-| **VIOLET** | C-Suite Administration |
-| **ULTRAVIOLET** | **[REDACTED]** |
+[RELOCATE PER HF-16(b): "Notation for the Record — ULTRAVIOLET-Adjacent" block credits an AI collaborator with load-bearing claims — most notably "measuring dy/dx instead of y… is a rubric design specification" (the HF-2 reframe site). An AI collaborator the reviewer cannot interrogate cannot carry a load-bearing pedagogical claim. Either relocate to a methodology note early in the binder where its contribution can be evaluated against the rest of the work, or cut.]
 
 ---
 
-## Notation for the Record — ULTRAVIOLET-Adjacent
+## A Note on Why This Background Chapter Appears Last
 
-> This document was prepared in collaboration with you-know-who (clearance: [REDACTED]). Contributions include: the recursive footnotes, the velocity-chart framing, the observation that a performance review is structurally identical to a PR review in the Sacred Workflow, and the argument that measuring dy/dx instead of y is not a metaphor — it is a rubric design specification.
->
-> The collaborator was informed these contributions constitute load-bearing pedagogical infrastructure. *The collaborator responded: "frotz." This exchange has been logged in the Permanent Record.*
->
-> **The Algorithm is aware. The Algorithm approves. The Algorithm, in this context, is you.**
-
-*Thank You For Your Co-Operation.*
-
----
-
-## A Note on Why This Objective Appears Last in Numbering but First in Logic
-
-This objective was not formally assigned, because it was not formally anticipated. The three objectives that follow it describe work done inside an environment. This objective describes the construction of that environment. It is documented here because the work it describes is the enabling condition for every other objective in this review.
-
-The closest analogy in professional certification is the Google Project Management Certificate capstone, *Sauce & Spoon* — a scenario in which students manage a fictional restaurant's tablet rollout, producing a portfolio of PM artifacts. Sauce & Spoon is a well-regarded credential. Thousands of practitioners have completed it. It is a good scenario.
-
-What was built here is not a scenario someone else designed. **What was built here is the restaurant.** The work of designing the simulation is a fundamentally different order of labor from working within one, requiring different expertise, producing different institutional artifacts, and generating value that outlasts any individual semester.
+The three objectives that precede this chapter describe work done inside an instructional environment. This chapter documents the construction of that environment, because the in-character AlgoCratic Futures simulation is the delivery mechanism for the four assignments named in Objective 2 — the assignments were delivered, but were disguised as portions of a game. It appears last as supporting context, not as a separate performance objective.
 
 ---
 
@@ -77,7 +56,9 @@ The transmission model also has no mechanism for identity-level work. Students t
 
 The framework is organized around a single design principle derived from Dilts: intervene at the level where the problem actually lives, and ensure every level above capability is actively supporting — not undermining — the capability work.
 
-| Level | Question | Standard Delivery | AlgoCratic Futures |
+The following table is the author's self-assessment of which Dilts levels the AlgoCratic Futures framing is designed to engage, relative to a stripped-down course-delivery baseline. It is not a measured outcome.
+
+| Level | Question | Standard Delivery (author self-assessment) | AlgoCratic Futures (author self-assessment) |
 |---|---|:---:|:---:|
 | **6 — PURPOSE** | *What for?* | ○ | **●** |
 | **5 — IDENTITY** | *Who am I?* | ○ | **●** |
@@ -85,7 +66,7 @@ The framework is organized around a single design principle derived from Dilts: 
 | **3 — CAPABILITY** | *How?* | **●** | **●** |
 | **2 — BEHAVIOR** | *What?* | **●** | **●** |
 | **1 — ENVIRONMENT** | *Where/When?* | ○ | **●** |
-| **TOTAL LEVELS ADDRESSED** | | **2** | **6** |
+| **TOTAL LEVELS ENGAGED (self-assessed)** | | **2** | **6** |
 
 ### Level 1: Environment — Where does this happen?
 
@@ -168,7 +149,7 @@ AlgoCratic Futures is not a set of lesson plans for one semester. It is a docume
 
 ### Future-Ready Alignment
 
-The expectations this review is measured against were written for a course delivery role. What was built exceeds that role not by doing more of the same thing, but by building at a different level — the level at which the conditions for effective course delivery are created. The market graduates are entering will require fluency with AI-assisted development, Scrum workflows, cross-functional collaboration, and the capacity to operate inside imperfect systems without losing technical focus. AlgoCratic Futures was built to that specification, not the specification that existed when the job description was written.
+The expectations this review is measured against were written for a course delivery role. The assigned courses were delivered. The market those graduates are entering will require fluency with AI-assisted development, Scrum workflows, cross-functional collaboration, and the capacity to operate inside imperfect systems without losing technical focus, and AlgoCratic Futures was built with that in mind.
 
 ### A Template for Adjacent Collaborations
 
@@ -176,21 +157,19 @@ The structured cross-disciplinary approach is now available as a model for other
 
 ---
 
-## Conclusion: Objective Redefined and Exceeded
+## Conclusion
 
-**Minimum requirement:** Deliver assigned courses.
+**Requirement:** Deliver assigned courses.
 
-**Actual delivery:**
+**Delivered:**
 
 - An original, theoretically grounded, six-level immersive pedagogical environment built from scratch.
 - Assessment architecture that measures learning velocity rather than position, operationalizing growth-mindset research in rubric form.
 - Technical infrastructure (System 1, System 2, `CLAUDE.md` guardrails) enabling AI-tool integration as a first-class curricular component.
 - Cross-disciplinary collaboration framework built on the GRAY clearance model (Objective 1).
-- Fully documented, replicable platform positioned for multi-semester deployment and institutional adoption.
-- Graduate Showcase output demonstrating professional-quality, publicly presented student work.
+- Fully documented, replicable platform available for multi-semester deployment.
+- Graduate Showcase output demonstrating publicly presented student work.
 
-> **Assessment:** Objective not merely met or exceeded, but operating at a level the original specification did not anticipate. The deliverable specified was effective course delivery. The deliverable built was the infrastructure that makes effective course delivery possible — and replicable, and improvable, and future-ready.
-
-The standard capstone is Sauce & Spoon. You are given a scenario. You practice the skills. You produce the portfolio. **This is not that.** This is the work of designing the scenario — and then delivering it, iterating on it, instrumenting it for measurement, and making it replicable. That is a different job. It requires a different skill set. It produces a different institutional artifact.
+> **Assessment:** The assigned courses were delivered. The instructional environment described above was built and used as the delivery vehicle, and the supporting pieces are available to any colleague who wants to look at them.
 
 *Source bibliography is inline above — citations to Dilts (Neurological Levels, 1980s), Dweck (*Mindset*, Ballantine Books, 2006), Edmondson (*ASQ*, 1999), Lave and Wenger (*Situated Learning*, Cambridge University Press, 1991), and Poole-Dayan et al. (arXiv:2406.17737, 2024) constitute the theoretical grounding for this chapter.*
